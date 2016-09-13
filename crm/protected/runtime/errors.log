@@ -1,0 +1,962 @@
+2016/08/04 21:56:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "delete/delete/index".' in /home/bbrokers/audemo/crm/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(141): CWebApplication->runController('delete/delete/i...')
+#1 /home/bbrokers/audemo/crm/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /home/bbrokers/audemo/crm/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/crm/index.php/delete
+HTTP_REFERER=http://audemo.businessbrokerscrm.com/crm/index.php/clistings/260
+---
+2016/08/04 21:56:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "delete/delete/index".' in /home/bbrokers/audemo/crm/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(141): CWebApplication->runController('delete/delete/i...')
+#1 /home/bbrokers/audemo/crm/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /home/bbrokers/audemo/crm/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/crm/index.php/delete
+HTTP_REFERER=http://audemo.businessbrokerscrm.com/crm/index.php/clistings/260
+---
+2016/08/04 21:57:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "delete/delete/index".' in /home/bbrokers/audemo/crm/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(141): CWebApplication->runController('delete/delete/i...')
+#1 /home/bbrokers/audemo/crm/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /home/bbrokers/audemo/crm/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/crm/index.php/delete
+HTTP_REFERER=http://audemo.businessbrokerscrm.com/crm/index.php/clistings/260
+---
+2016/08/04 21:57:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "delete/delete/index".' in /home/bbrokers/audemo/crm/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(141): CWebApplication->runController('delete/delete/i...')
+#1 /home/bbrokers/audemo/crm/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /home/bbrokers/audemo/crm/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/crm/index.php/delete
+HTTP_REFERER=http://audemo.businessbrokerscrm.com/crm/index.php/clistings/260
+---
+2016/08/04 21:57:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "delete/delete/index".' in /home/bbrokers/audemo/crm/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(141): CWebApplication->runController('delete/delete/i...')
+#1 /home/bbrokers/audemo/crm/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /home/bbrokers/audemo/crm/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/crm/index.php/delete
+HTTP_REFERER=http://audemo.businessbrokerscrm.com/crm/index.php/clistings/260
+---
+2016/08/04 21:57:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "delete/delete/index".' in /home/bbrokers/audemo/crm/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(141): CWebApplication->runController('delete/delete/i...')
+#1 /home/bbrokers/audemo/crm/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /home/bbrokers/audemo/crm/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/crm/index.php/delete
+HTTP_REFERER=http://audemo.businessbrokerscrm.com/crm/index.php/clistings/260
+---
+2016/08/04 21:57:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "delete/delete/index".' in /home/bbrokers/audemo/crm/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(141): CWebApplication->runController('delete/delete/i...')
+#1 /home/bbrokers/audemo/crm/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /home/bbrokers/audemo/crm/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/crm/index.php/delete
+HTTP_REFERER=http://audemo.businessbrokerscrm.com/crm/index.php/clistings/260
+---
+2016/08/04 21:57:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "delete/delete/index".' in /home/bbrokers/audemo/crm/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(141): CWebApplication->runController('delete/delete/i...')
+#1 /home/bbrokers/audemo/crm/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /home/bbrokers/audemo/crm/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/crm/index.php/delete
+HTTP_REFERER=http://audemo.businessbrokerscrm.com/crm/index.php/clistings/260
+---
+2016/08/04 21:57:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "delete/delete/index".' in /home/bbrokers/audemo/crm/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(141): CWebApplication->runController('delete/delete/i...')
+#1 /home/bbrokers/audemo/crm/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /home/bbrokers/audemo/crm/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/crm/index.php/delete
+HTTP_REFERER=http://audemo.businessbrokerscrm.com/crm/index.php/clistings/260
+---
+2016/08/04 21:57:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "delete/delete/index".' in /home/bbrokers/audemo/crm/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(141): CWebApplication->runController('delete/delete/i...')
+#1 /home/bbrokers/audemo/crm/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /home/bbrokers/audemo/crm/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/crm/index.php/delete
+HTTP_REFERER=http://audemo.businessbrokerscrm.com/crm/index.php/clistings/260
+---
+2016/08/04 21:57:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "delete/delete/index".' in /home/bbrokers/audemo/crm/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(141): CWebApplication->runController('delete/delete/i...')
+#1 /home/bbrokers/audemo/crm/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /home/bbrokers/audemo/crm/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/crm/index.php/delete
+HTTP_REFERER=http://audemo.businessbrokerscrm.com/crm/index.php/clistings/260
+---
+2016/08/04 21:57:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "delete/delete/index".' in /home/bbrokers/audemo/crm/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(141): CWebApplication->runController('delete/delete/i...')
+#1 /home/bbrokers/audemo/crm/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /home/bbrokers/audemo/crm/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/crm/index.php/delete
+HTTP_REFERER=http://audemo.businessbrokerscrm.com/crm/index.php/clistings/260
+---
+2016/08/04 21:57:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "delete/delete/index".' in /home/bbrokers/audemo/crm/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(141): CWebApplication->runController('delete/delete/i...')
+#1 /home/bbrokers/audemo/crm/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /home/bbrokers/audemo/crm/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/crm/index.php/delete
+HTTP_REFERER=http://audemo.businessbrokerscrm.com/crm/index.php/clistings/260
+---
+2016/08/04 21:57:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "delete/delete/index".' in /home/bbrokers/audemo/crm/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(141): CWebApplication->runController('delete/delete/i...')
+#1 /home/bbrokers/audemo/crm/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /home/bbrokers/audemo/crm/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/crm/index.php/delete
+HTTP_REFERER=http://audemo.businessbrokerscrm.com/crm/index.php/clistings/260
+---
+2016/08/04 21:57:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "delete/delete/index".' in /home/bbrokers/audemo/crm/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(141): CWebApplication->runController('delete/delete/i...')
+#1 /home/bbrokers/audemo/crm/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /home/bbrokers/audemo/crm/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/crm/index.php/delete
+HTTP_REFERER=http://audemo.businessbrokerscrm.com/crm/index.php/clistings/260
+---
+2016/08/04 21:57:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "delete/delete/index".' in /home/bbrokers/audemo/crm/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(141): CWebApplication->runController('delete/delete/i...')
+#1 /home/bbrokers/audemo/crm/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /home/bbrokers/audemo/crm/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/crm/index.php/delete
+HTTP_REFERER=http://audemo.businessbrokerscrm.com/crm/index.php/clistings/260
+---
+2016/08/04 21:57:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "delete/delete/index".' in /home/bbrokers/audemo/crm/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(141): CWebApplication->runController('delete/delete/i...')
+#1 /home/bbrokers/audemo/crm/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /home/bbrokers/audemo/crm/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/crm/index.php/delete
+HTTP_REFERER=http://audemo.businessbrokerscrm.com/crm/index.php/clistings/260
+---
+2016/08/04 21:57:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "delete/delete/index".' in /home/bbrokers/audemo/crm/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(141): CWebApplication->runController('delete/delete/i...')
+#1 /home/bbrokers/audemo/crm/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /home/bbrokers/audemo/crm/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/crm/index.php/delete
+HTTP_REFERER=http://audemo.businessbrokerscrm.com/crm/index.php/clistings/260
+---
+2016/08/04 21:57:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "delete/delete/index".' in /home/bbrokers/audemo/crm/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(141): CWebApplication->runController('delete/delete/i...')
+#1 /home/bbrokers/audemo/crm/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /home/bbrokers/audemo/crm/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/crm/index.php/delete
+HTTP_REFERER=http://audemo.businessbrokerscrm.com/crm/index.php/clistings/260
+---
+2016/08/04 21:57:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "delete/delete/index".' in /home/bbrokers/audemo/crm/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(141): CWebApplication->runController('delete/delete/i...')
+#1 /home/bbrokers/audemo/crm/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /home/bbrokers/audemo/crm/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/crm/index.php/delete
+HTTP_REFERER=http://audemo.businessbrokerscrm.com/crm/index.php/clistings/260
+---
+2016/08/04 21:58:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "delete/delete/index".' in /home/bbrokers/audemo/crm/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(141): CWebApplication->runController('delete/delete/i...')
+#1 /home/bbrokers/audemo/crm/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /home/bbrokers/audemo/crm/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/crm/index.php/delete
+HTTP_REFERER=http://audemo.businessbrokerscrm.com/crm/index.php/clistings/265
+---
+2016/08/04 21:58:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "delete/delete/index".' in /home/bbrokers/audemo/crm/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(141): CWebApplication->runController('delete/delete/i...')
+#1 /home/bbrokers/audemo/crm/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /home/bbrokers/audemo/crm/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/crm/index.php/delete
+HTTP_REFERER=http://audemo.businessbrokerscrm.com/crm/index.php/clistings/265
+---
+2016/08/04 21:58:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "delete/delete/index".' in /home/bbrokers/audemo/crm/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(141): CWebApplication->runController('delete/delete/i...')
+#1 /home/bbrokers/audemo/crm/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /home/bbrokers/audemo/crm/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/crm/index.php/delete
+HTTP_REFERER=http://audemo.businessbrokerscrm.com/crm/index.php/clistings/265
+---
+2016/08/04 21:58:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "delete/delete/index".' in /home/bbrokers/audemo/crm/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(141): CWebApplication->runController('delete/delete/i...')
+#1 /home/bbrokers/audemo/crm/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /home/bbrokers/audemo/crm/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/crm/index.php/delete
+HTTP_REFERER=http://audemo.businessbrokerscrm.com/crm/index.php/clistings/265
+---
+2016/08/04 21:58:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "order/order/index".' in /home/bbrokers/audemo/crm/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(141): CWebApplication->runController('order/order/ind...')
+#1 /home/bbrokers/audemo/crm/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /home/bbrokers/audemo/crm/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/crm/index.php/order
+HTTP_REFERER=http://audemo.businessbrokerscrm.com/crm/index.php/clistings/265
+---
+2016/08/26 17:27:50 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Login Required' in /home/bbrokers/audemo/crm/framework/web/auth/CWebUser.php:394
+Stack trace:
+#0 /home/bbrokers/audemo/crm/framework/web/auth/CAccessControlFilter.php(180): CWebUser->loginRequired()
+#1 /home/bbrokers/audemo/crm/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(X2WebUser), 'You are not aut...')
+#2 /home/bbrokers/audemo/crm/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#3 /home/bbrokers/audemo/crm/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /home/bbrokers/audemo/crm/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /home/bbrokers/audemo/crm/protected/controllers/x2base.php(1106): CFilterChain->run()
+#7 /home/bbrokers/audemo/crm/framework/web/filters/CInlineFilter.php(58): x2base->filterSetPortlets(Object(CFilterChain))
+#8 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/bbrokers/audemo/crm/protected/controllers/x2base.php(1106): CFilterChain->run()
+#10 /home/bbrokers/audemo/crm/framework/web/filters/CInlineFilter.php(58): x2base->filterSetPortlets(Object(CFilterChain))
+#11 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 /home/bbrokers/audemo/crm/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#14 /home/bbrokers/audemo/crm/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#15 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#16 /home/bbrokers/audemo/crm/framework/web/CController.php(291): CFilterChain->run()
+#17 /home/bbrokers/audemo/crm/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(282): CController->run('fullscreen')
+#19 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(141): CWebApplication->runController('site/fullscreen')
+#20 /home/bbrokers/audemo/crm/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#21 /home/bbrokers/audemo/crm/index.php(40): CApplication->run()
+#22 {main}
+REQUEST_URI=/crm/index.php/site/fullscreen?fs=0
+HTTP_REFERER=http://audemo.businessbrokerscrm.com/crm/index.php/contacts/id/332
+---
+2016/08/28 09:01:35 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Login Required' in /home/bbrokers/audemo/crm/framework/web/auth/CWebUser.php:394
+Stack trace:
+#0 /home/bbrokers/audemo/crm/framework/web/auth/CAccessControlFilter.php(180): CWebUser->loginRequired()
+#1 /home/bbrokers/audemo/crm/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(X2WebUser), 'You are not aut...')
+#2 /home/bbrokers/audemo/crm/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#3 /home/bbrokers/audemo/crm/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /home/bbrokers/audemo/crm/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /home/bbrokers/audemo/crm/protected/controllers/x2base.php(1106): CFilterChain->run()
+#7 /home/bbrokers/audemo/crm/framework/web/filters/CInlineFilter.php(58): x2base->filterSetPortlets(Object(CFilterChain))
+#8 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/bbrokers/audemo/crm/protected/controllers/x2base.php(1106): CFilterChain->run()
+#10 /home/bbrokers/audemo/crm/framework/web/filters/CInlineFilter.php(58): x2base->filterSetPortlets(Object(CFilterChain))
+#11 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 /home/bbrokers/audemo/crm/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#14 /home/bbrokers/audemo/crm/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#15 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#16 /home/bbrokers/audemo/crm/framework/web/CController.php(291): CFilterChain->run()
+#17 /home/bbrokers/audemo/crm/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(282): CController->run('ajaxSave')
+#19 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(141): CWebApplication->runController('site/ajaxSave')
+#20 /home/bbrokers/audemo/crm/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#21 /home/bbrokers/audemo/crm/index.php(40): CApplication->run()
+#22 {main}
+REQUEST_URI=/crm/index.php/site/ajaxSave
+HTTP_REFERER=http://audemo.businessbrokerscrm.com/crm/index.php/clistings/279
+---
+2016/08/31 10:29:02 [error] [exception.CHttpException.404] exception 'CHttpException' in /home/bbrokers/audemo/crm/protected/controllers/ProfileController.php:639
+Stack trace:
+#0 [internal function]: ProfileController->actionDeleteCredentials('26')
+#1 /home/bbrokers/audemo/crm/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(ProfileController), Array)
+#2 /home/bbrokers/audemo/crm/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProfileController), Object(ReflectionMethod), Array)
+#3 /home/bbrokers/audemo/crm/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /home/bbrokers/audemo/crm/protected/controllers/x2base.php(1106): CFilterChain->run()
+#6 /home/bbrokers/audemo/crm/framework/web/filters/CInlineFilter.php(58): x2base->filterSetPortlets(Object(CFilterChain))
+#7 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 /home/bbrokers/audemo/crm/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /home/bbrokers/audemo/crm/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 /home/bbrokers/audemo/crm/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 /home/bbrokers/audemo/crm/protected/controllers/x2base.php(1106): CFilterChain->run()
+#13 /home/bbrokers/audemo/crm/framework/web/filters/CInlineFilter.php(58): x2base->filterSetPortlets(Object(CFilterChain))
+#14 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 /home/bbrokers/audemo/crm/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#16 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#17 /home/bbrokers/audemo/crm/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#18 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#19 /home/bbrokers/audemo/crm/framework/web/CController.php(291): CFilterChain->run()
+#20 /home/bbrokers/audemo/crm/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(282): CController->run('deleteCredentia...')
+#22 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(141): CWebApplication->runController('profile/deleteC...')
+#23 /home/bbrokers/audemo/crm/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#24 /home/bbrokers/audemo/crm/index.php(40): CApplication->run()
+#25 {main}
+REQUEST_URI=/crm/index.php/profile/deleteCredentials/26
+HTTP_REFERER=http://audemo.businessbrokerscrm.com/crm/index.php/profile/manageCredentials
+---
+2016/08/31 10:29:18 [error] [exception.CHttpException.404] exception 'CHttpException' in /home/bbrokers/audemo/crm/protected/controllers/ProfileController.php:639
+Stack trace:
+#0 [internal function]: ProfileController->actionDeleteCredentials('25')
+#1 /home/bbrokers/audemo/crm/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(ProfileController), Array)
+#2 /home/bbrokers/audemo/crm/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProfileController), Object(ReflectionMethod), Array)
+#3 /home/bbrokers/audemo/crm/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /home/bbrokers/audemo/crm/protected/controllers/x2base.php(1106): CFilterChain->run()
+#6 /home/bbrokers/audemo/crm/framework/web/filters/CInlineFilter.php(58): x2base->filterSetPortlets(Object(CFilterChain))
+#7 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 /home/bbrokers/audemo/crm/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /home/bbrokers/audemo/crm/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 /home/bbrokers/audemo/crm/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 /home/bbrokers/audemo/crm/protected/controllers/x2base.php(1106): CFilterChain->run()
+#13 /home/bbrokers/audemo/crm/framework/web/filters/CInlineFilter.php(58): x2base->filterSetPortlets(Object(CFilterChain))
+#14 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 /home/bbrokers/audemo/crm/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#16 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#17 /home/bbrokers/audemo/crm/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#18 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#19 /home/bbrokers/audemo/crm/framework/web/CController.php(291): CFilterChain->run()
+#20 /home/bbrokers/audemo/crm/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(282): CController->run('deleteCredentia...')
+#22 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(141): CWebApplication->runController('profile/deleteC...')
+#23 /home/bbrokers/audemo/crm/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#24 /home/bbrokers/audemo/crm/index.php(40): CApplication->run()
+#25 {main}
+REQUEST_URI=/crm/index.php/profile/deleteCredentials/25
+HTTP_REFERER=http://audemo.businessbrokerscrm.com/crm/index.php/profile/manageCredentials
+---
+2016/08/31 13:11:40 [error] [php] Trying to get property of non-object (/home/bbrokers/audemo/crm/protected/controllers/AdminController.php:2182)
+Stack trace:
+#0 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(133): AdminController->runAction()
+#1 /home/bbrokers/audemo/crm/protected/controllers/AdminController.php(635): CFilterChain->run()
+#2 /home/bbrokers/audemo/crm/framework/web/filters/CInlineFilter.php(58): AdminController->filterClearCache()
+#3 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#4 /home/bbrokers/audemo/crm/framework/web/CController.php(291): CFilterChain->run()
+#5 /home/bbrokers/audemo/crm/framework/web/CController.php(265): AdminController->runActionWithFilters()
+#6 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(282): AdminController->run()
+#7 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(141): X2WebApplication->runController()
+#8 /home/bbrokers/audemo/crm/framework/base/CApplication.php(184): X2WebApplication->processRequest()
+#9 /home/bbrokers/audemo/crm/index.php(40): X2WebApplication->run()
+REQUEST_URI=/crm/index.php/admin/getRole?mode=exception
+2016/09/01 15:17:21 [error] [php] Undefined variable: inlineEdit (/home/bbrokers/audemo/crm/protected/components/views/_detailView.php:261)
+Stack trace:
+#0 /home/bbrokers/audemo/crm/framework/web/CController.php(869): SellerController->renderFile()
+#1 /home/bbrokers/audemo/crm/protected/modules/seller/views/seller/view.php(109): SellerController->renderPartial()
+#2 /home/bbrokers/audemo/crm/framework/web/CBaseController.php(126): require()
+#3 /home/bbrokers/audemo/crm/framework/web/CBaseController.php(95): SellerController->renderInternal()
+#4 /home/bbrokers/audemo/crm/framework/web/CController.php(869): SellerController->renderFile()
+#5 /home/bbrokers/audemo/crm/protected/controllers/x2base.php(1264): SellerController->renderPartial()
+#6 /home/bbrokers/audemo/crm/protected/controllers/x2base.php(263): SellerController->render()
+#7 /home/bbrokers/audemo/crm/protected/modules/seller/controllers/SellerController.php(75): SellerController->view()
+#8 unknown(0): SellerController->actionView()
+#9 /home/bbrokers/audemo/crm/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs()
+#10 /home/bbrokers/audemo/crm/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#11 /home/bbrokers/audemo/crm/framework/web/CController.php(308): CInlineAction->runWithParams()
+#12 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(133): SellerController->runAction()
+#13 /home/bbrokers/audemo/crm/protected/controllers/x2base.php(1106): CFilterChain->run()
+#14 /home/bbrokers/audemo/crm/framework/web/filters/CInlineFilter.php(58): SellerController->filterSetPortlets()
+#15 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#16 /home/bbrokers/audemo/crm/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#17 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): FileUploadsFilter->filter()
+#18 /home/bbrokers/audemo/crm/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#19 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): X2AjaxHandlerFilter->filter()
+#20 /home/bbrokers/audemo/crm/framework/web/CController.php(291): CFilterChain->run()
+#21 /home/bbrokers/audemo/crm/framework/web/CController.php(265): SellerController->runActionWithFilters()
+#22 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(282): SellerController->run()
+#23 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(141): X2WebApplication->runController()
+#24 /home/bbrokers/audemo/crm/framework/base/CApplication.php(184): X2WebApplication->processRequest()
+#25 /home/bbrokers/audemo/crm/index.php(40): X2WebApplication->run()
+REQUEST_URI=/crm/index.php/seller/78
+2016/09/01 15:26:36 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home/bbrokers/audemo/crm/protected/controllers/x2base.php:106
+Stack trace:
+#0 /home/bbrokers/audemo/crm/protected/components/permissions/X2ControllerPermissionsBehavior.php(93): x2base->denied()
+#1 /home/bbrokers/audemo/crm/protected/controllers/x2base.php(95): X2ControllerPermissionsBehavior->beforeAction(Object(CInlineAction))
+#2 /home/bbrokers/audemo/crm/framework/web/CController.php(306): x2base->beforeAction(Object(CInlineAction))
+#3 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 /home/bbrokers/audemo/crm/protected/controllers/x2base.php(1106): CFilterChain->run()
+#5 /home/bbrokers/audemo/crm/framework/web/filters/CInlineFilter.php(58): x2base->filterSetPortlets(Object(CFilterChain))
+#6 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 /home/bbrokers/audemo/crm/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#9 /home/bbrokers/audemo/crm/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#11 /home/bbrokers/audemo/crm/framework/web/CController.php(291): CFilterChain->run()
+#12 /home/bbrokers/audemo/crm/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(282): CController->run('update')
+#14 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(141): CWebApplication->runController('clistings/clist...')
+#15 /home/bbrokers/audemo/crm/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#16 /home/bbrokers/audemo/crm/index.php(40): CApplication->run()
+#17 {main}
+REQUEST_URI=/crm/index.php/clistings/update/id/244
+HTTP_REFERER=http://audemo.businessbrokerscrm.com/crm/index.php/clistings/244
+---
+2016/09/01 15:27:19 [error] [php] Undefined variable: inlineEdit (/home/bbrokers/audemo/crm/protected/components/views/_detailView.php:261)
+Stack trace:
+#0 /home/bbrokers/audemo/crm/framework/web/CController.php(869): SellerController->renderFile()
+#1 /home/bbrokers/audemo/crm/protected/modules/seller/views/seller/view.php(109): SellerController->renderPartial()
+#2 /home/bbrokers/audemo/crm/framework/web/CBaseController.php(126): require()
+#3 /home/bbrokers/audemo/crm/framework/web/CBaseController.php(95): SellerController->renderInternal()
+#4 /home/bbrokers/audemo/crm/framework/web/CController.php(869): SellerController->renderFile()
+#5 /home/bbrokers/audemo/crm/protected/controllers/x2base.php(1264): SellerController->renderPartial()
+#6 /home/bbrokers/audemo/crm/protected/controllers/x2base.php(263): SellerController->render()
+#7 /home/bbrokers/audemo/crm/protected/modules/seller/controllers/SellerController.php(75): SellerController->view()
+#8 unknown(0): SellerController->actionView()
+#9 /home/bbrokers/audemo/crm/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs()
+#10 /home/bbrokers/audemo/crm/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#11 /home/bbrokers/audemo/crm/framework/web/CController.php(308): CInlineAction->runWithParams()
+#12 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(133): SellerController->runAction()
+#13 /home/bbrokers/audemo/crm/protected/controllers/x2base.php(1106): CFilterChain->run()
+#14 /home/bbrokers/audemo/crm/framework/web/filters/CInlineFilter.php(58): SellerController->filterSetPortlets()
+#15 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#16 /home/bbrokers/audemo/crm/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#17 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): FileUploadsFilter->filter()
+#18 /home/bbrokers/audemo/crm/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#19 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): X2AjaxHandlerFilter->filter()
+#20 /home/bbrokers/audemo/crm/framework/web/CController.php(291): CFilterChain->run()
+#21 /home/bbrokers/audemo/crm/framework/web/CController.php(265): SellerController->runActionWithFilters()
+#22 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(282): SellerController->run()
+#23 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(141): X2WebApplication->runController()
+#24 /home/bbrokers/audemo/crm/framework/base/CApplication.php(184): X2WebApplication->processRequest()
+#25 /home/bbrokers/audemo/crm/index.php(40): X2WebApplication->run()
+REQUEST_URI=/crm/index.php/seller/78
+2016/09/06 06:40:26 [error] [php] Undefined variable: inlineEdit (/home/bbrokers/audemo/crm/protected/components/views/_detailView.php:261)
+Stack trace:
+#0 /home/bbrokers/audemo/crm/framework/web/CController.php(869): SellerController->renderFile()
+#1 /home/bbrokers/audemo/crm/protected/modules/seller/views/seller/view.php(109): SellerController->renderPartial()
+#2 /home/bbrokers/audemo/crm/framework/web/CBaseController.php(126): require()
+#3 /home/bbrokers/audemo/crm/framework/web/CBaseController.php(95): SellerController->renderInternal()
+#4 /home/bbrokers/audemo/crm/framework/web/CController.php(869): SellerController->renderFile()
+#5 /home/bbrokers/audemo/crm/protected/controllers/x2base.php(1264): SellerController->renderPartial()
+#6 /home/bbrokers/audemo/crm/protected/controllers/x2base.php(263): SellerController->render()
+#7 /home/bbrokers/audemo/crm/protected/modules/seller/controllers/SellerController.php(75): SellerController->view()
+#8 unknown(0): SellerController->actionView()
+#9 /home/bbrokers/audemo/crm/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs()
+#10 /home/bbrokers/audemo/crm/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#11 /home/bbrokers/audemo/crm/framework/web/CController.php(308): CInlineAction->runWithParams()
+#12 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(133): SellerController->runAction()
+#13 /home/bbrokers/audemo/crm/protected/controllers/x2base.php(1106): CFilterChain->run()
+#14 /home/bbrokers/audemo/crm/framework/web/filters/CInlineFilter.php(58): SellerController->filterSetPortlets()
+#15 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#16 /home/bbrokers/audemo/crm/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#17 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): FileUploadsFilter->filter()
+#18 /home/bbrokers/audemo/crm/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#19 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): X2AjaxHandlerFilter->filter()
+#20 /home/bbrokers/audemo/crm/framework/web/CController.php(291): CFilterChain->run()
+#21 /home/bbrokers/audemo/crm/framework/web/CController.php(265): SellerController->runActionWithFilters()
+#22 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(282): SellerController->run()
+#23 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(141): X2WebApplication->runController()
+#24 /home/bbrokers/audemo/crm/framework/base/CApplication.php(184): X2WebApplication->processRequest()
+#25 /home/bbrokers/audemo/crm/index.php(40): X2WebApplication->run()
+REQUEST_URI=/crm/index.php/seller/78
+2016/09/06 06:40:55 [error] [php] Undefined variable: inlineEdit (/home/bbrokers/audemo/crm/protected/components/views/_detailView.php:261)
+Stack trace:
+#0 /home/bbrokers/audemo/crm/framework/web/CController.php(869): SellerController->renderFile()
+#1 /home/bbrokers/audemo/crm/protected/modules/seller/views/seller/view.php(109): SellerController->renderPartial()
+#2 /home/bbrokers/audemo/crm/framework/web/CBaseController.php(126): require()
+#3 /home/bbrokers/audemo/crm/framework/web/CBaseController.php(95): SellerController->renderInternal()
+#4 /home/bbrokers/audemo/crm/framework/web/CController.php(869): SellerController->renderFile()
+#5 /home/bbrokers/audemo/crm/protected/controllers/x2base.php(1264): SellerController->renderPartial()
+#6 /home/bbrokers/audemo/crm/protected/controllers/x2base.php(263): SellerController->render()
+#7 /home/bbrokers/audemo/crm/protected/modules/seller/controllers/SellerController.php(75): SellerController->view()
+#8 unknown(0): SellerController->actionView()
+#9 /home/bbrokers/audemo/crm/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs()
+#10 /home/bbrokers/audemo/crm/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#11 /home/bbrokers/audemo/crm/framework/web/CController.php(308): CInlineAction->runWithParams()
+#12 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(133): SellerController->runAction()
+#13 /home/bbrokers/audemo/crm/protected/controllers/x2base.php(1106): CFilterChain->run()
+#14 /home/bbrokers/audemo/crm/framework/web/filters/CInlineFilter.php(58): SellerController->filterSetPortlets()
+#15 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#16 /home/bbrokers/audemo/crm/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#17 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): FileUploadsFilter->filter()
+#18 /home/bbrokers/audemo/crm/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#19 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): X2AjaxHandlerFilter->filter()
+#20 /home/bbrokers/audemo/crm/framework/web/CController.php(291): CFilterChain->run()
+#21 /home/bbrokers/audemo/crm/framework/web/CController.php(265): SellerController->runActionWithFilters()
+#22 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(282): SellerController->run()
+#23 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(141): X2WebApplication->runController()
+#24 /home/bbrokers/audemo/crm/framework/base/CApplication.php(184): X2WebApplication->processRequest()
+#25 /home/bbrokers/audemo/crm/index.php(40): X2WebApplication->run()
+REQUEST_URI=/crm/index.php/seller/77
+2016/09/06 06:44:14 [error] [php] Undefined variable: inlineEdit (/home/bbrokers/audemo/crm/protected/components/views/_detailView.php:261)
+Stack trace:
+#0 /home/bbrokers/audemo/crm/framework/web/CController.php(869): SellerController->renderFile()
+#1 /home/bbrokers/audemo/crm/protected/modules/seller/views/seller/view.php(109): SellerController->renderPartial()
+#2 /home/bbrokers/audemo/crm/framework/web/CBaseController.php(126): require()
+#3 /home/bbrokers/audemo/crm/framework/web/CBaseController.php(95): SellerController->renderInternal()
+#4 /home/bbrokers/audemo/crm/framework/web/CController.php(869): SellerController->renderFile()
+#5 /home/bbrokers/audemo/crm/protected/controllers/x2base.php(1264): SellerController->renderPartial()
+#6 /home/bbrokers/audemo/crm/protected/controllers/x2base.php(263): SellerController->render()
+#7 /home/bbrokers/audemo/crm/protected/modules/seller/controllers/SellerController.php(75): SellerController->view()
+#8 unknown(0): SellerController->actionView()
+#9 /home/bbrokers/audemo/crm/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs()
+#10 /home/bbrokers/audemo/crm/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#11 /home/bbrokers/audemo/crm/framework/web/CController.php(308): CInlineAction->runWithParams()
+#12 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(133): SellerController->runAction()
+#13 /home/bbrokers/audemo/crm/protected/controllers/x2base.php(1106): CFilterChain->run()
+#14 /home/bbrokers/audemo/crm/framework/web/filters/CInlineFilter.php(58): SellerController->filterSetPortlets()
+#15 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#16 /home/bbrokers/audemo/crm/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#17 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): FileUploadsFilter->filter()
+#18 /home/bbrokers/audemo/crm/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#19 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): X2AjaxHandlerFilter->filter()
+#20 /home/bbrokers/audemo/crm/framework/web/CController.php(291): CFilterChain->run()
+#21 /home/bbrokers/audemo/crm/framework/web/CController.php(265): SellerController->runActionWithFilters()
+#22 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(282): SellerController->run()
+#23 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(141): X2WebApplication->runController()
+#24 /home/bbrokers/audemo/crm/framework/base/CApplication.php(184): X2WebApplication->processRequest()
+#25 /home/bbrokers/audemo/crm/index.php(40): X2WebApplication->run()
+REQUEST_URI=/crm/index.php/seller/78
+2016/09/06 06:46:36 [error] [php] Undefined variable: inlineEdit (/home/bbrokers/audemo/crm/protected/components/views/_detailView.php:261)
+Stack trace:
+#0 /home/bbrokers/audemo/crm/framework/web/CController.php(869): SellerController->renderFile()
+#1 /home/bbrokers/audemo/crm/protected/modules/seller/views/seller/view.php(109): SellerController->renderPartial()
+#2 /home/bbrokers/audemo/crm/framework/web/CBaseController.php(126): require()
+#3 /home/bbrokers/audemo/crm/framework/web/CBaseController.php(95): SellerController->renderInternal()
+#4 /home/bbrokers/audemo/crm/framework/web/CController.php(869): SellerController->renderFile()
+#5 /home/bbrokers/audemo/crm/protected/controllers/x2base.php(1264): SellerController->renderPartial()
+#6 /home/bbrokers/audemo/crm/protected/controllers/x2base.php(263): SellerController->render()
+#7 /home/bbrokers/audemo/crm/protected/modules/seller/controllers/SellerController.php(75): SellerController->view()
+#8 unknown(0): SellerController->actionView()
+#9 /home/bbrokers/audemo/crm/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs()
+#10 /home/bbrokers/audemo/crm/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#11 /home/bbrokers/audemo/crm/framework/web/CController.php(308): CInlineAction->runWithParams()
+#12 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(133): SellerController->runAction()
+#13 /home/bbrokers/audemo/crm/protected/controllers/x2base.php(1106): CFilterChain->run()
+#14 /home/bbrokers/audemo/crm/framework/web/filters/CInlineFilter.php(58): SellerController->filterSetPortlets()
+#15 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#16 /home/bbrokers/audemo/crm/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#17 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): FileUploadsFilter->filter()
+#18 /home/bbrokers/audemo/crm/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#19 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): X2AjaxHandlerFilter->filter()
+#20 /home/bbrokers/audemo/crm/framework/web/CController.php(291): CFilterChain->run()
+#21 /home/bbrokers/audemo/crm/framework/web/CController.php(265): SellerController->runActionWithFilters()
+#22 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(282): SellerController->run()
+#23 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(141): X2WebApplication->runController()
+#24 /home/bbrokers/audemo/crm/framework/base/CApplication.php(184): X2WebApplication->processRequest()
+#25 /home/bbrokers/audemo/crm/index.php(40): X2WebApplication->run()
+REQUEST_URI=/crm/index.php/seller/77
+2016/09/06 06:48:29 [error] [php] Undefined variable: inlineEdit (/home/bbrokers/audemo/crm/protected/components/views/_detailView.php:261)
+Stack trace:
+#0 /home/bbrokers/audemo/crm/framework/web/CController.php(869): SellerController->renderFile()
+#1 /home/bbrokers/audemo/crm/protected/modules/seller/views/seller/view.php(109): SellerController->renderPartial()
+#2 /home/bbrokers/audemo/crm/framework/web/CBaseController.php(126): require()
+#3 /home/bbrokers/audemo/crm/framework/web/CBaseController.php(95): SellerController->renderInternal()
+#4 /home/bbrokers/audemo/crm/framework/web/CController.php(869): SellerController->renderFile()
+#5 /home/bbrokers/audemo/crm/protected/controllers/x2base.php(1264): SellerController->renderPartial()
+#6 /home/bbrokers/audemo/crm/protected/controllers/x2base.php(263): SellerController->render()
+#7 /home/bbrokers/audemo/crm/protected/modules/seller/controllers/SellerController.php(75): SellerController->view()
+#8 unknown(0): SellerController->actionView()
+#9 /home/bbrokers/audemo/crm/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs()
+#10 /home/bbrokers/audemo/crm/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#11 /home/bbrokers/audemo/crm/framework/web/CController.php(308): CInlineAction->runWithParams()
+#12 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(133): SellerController->runAction()
+#13 /home/bbrokers/audemo/crm/protected/controllers/x2base.php(1106): CFilterChain->run()
+#14 /home/bbrokers/audemo/crm/framework/web/filters/CInlineFilter.php(58): SellerController->filterSetPortlets()
+#15 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#16 /home/bbrokers/audemo/crm/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#17 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): FileUploadsFilter->filter()
+#18 /home/bbrokers/audemo/crm/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#19 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): X2AjaxHandlerFilter->filter()
+#20 /home/bbrokers/audemo/crm/framework/web/CController.php(291): CFilterChain->run()
+#21 /home/bbrokers/audemo/crm/framework/web/CController.php(265): SellerController->runActionWithFilters()
+#22 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(282): SellerController->run()
+#23 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(141): X2WebApplication->runController()
+#24 /home/bbrokers/audemo/crm/framework/base/CApplication.php(184): X2WebApplication->processRequest()
+#25 /home/bbrokers/audemo/crm/index.php(40): X2WebApplication->run()
+REQUEST_URI=/crm/index.php/seller/79
+2016/09/06 06:50:36 [error] [php] Undefined variable: inlineEdit (/home/bbrokers/audemo/crm/protected/components/views/_detailView.php:261)
+Stack trace:
+#0 /home/bbrokers/audemo/crm/framework/web/CController.php(869): SellerController->renderFile()
+#1 /home/bbrokers/audemo/crm/protected/modules/seller/views/seller/view.php(109): SellerController->renderPartial()
+#2 /home/bbrokers/audemo/crm/framework/web/CBaseController.php(126): require()
+#3 /home/bbrokers/audemo/crm/framework/web/CBaseController.php(95): SellerController->renderInternal()
+#4 /home/bbrokers/audemo/crm/framework/web/CController.php(869): SellerController->renderFile()
+#5 /home/bbrokers/audemo/crm/protected/controllers/x2base.php(1264): SellerController->renderPartial()
+#6 /home/bbrokers/audemo/crm/protected/controllers/x2base.php(263): SellerController->render()
+#7 /home/bbrokers/audemo/crm/protected/modules/seller/controllers/SellerController.php(75): SellerController->view()
+#8 unknown(0): SellerController->actionView()
+#9 /home/bbrokers/audemo/crm/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs()
+#10 /home/bbrokers/audemo/crm/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#11 /home/bbrokers/audemo/crm/framework/web/CController.php(308): CInlineAction->runWithParams()
+#12 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(133): SellerController->runAction()
+#13 /home/bbrokers/audemo/crm/protected/controllers/x2base.php(1106): CFilterChain->run()
+#14 /home/bbrokers/audemo/crm/framework/web/filters/CInlineFilter.php(58): SellerController->filterSetPortlets()
+#15 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#16 /home/bbrokers/audemo/crm/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#17 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): FileUploadsFilter->filter()
+#18 /home/bbrokers/audemo/crm/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#19 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): X2AjaxHandlerFilter->filter()
+#20 /home/bbrokers/audemo/crm/framework/web/CController.php(291): CFilterChain->run()
+#21 /home/bbrokers/audemo/crm/framework/web/CController.php(265): SellerController->runActionWithFilters()
+#22 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(282): SellerController->run()
+#23 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(141): X2WebApplication->runController()
+#24 /home/bbrokers/audemo/crm/framework/base/CApplication.php(184): X2WebApplication->processRequest()
+#25 /home/bbrokers/audemo/crm/index.php(40): X2WebApplication->run()
+REQUEST_URI=/crm/index.php/seller/78
+2016/09/06 06:53:10 [error] [php] Undefined variable: inlineEdit (/home/bbrokers/audemo/crm/protected/components/views/_detailView.php:261)
+Stack trace:
+#0 /home/bbrokers/audemo/crm/framework/web/CController.php(869): SellerController->renderFile()
+#1 /home/bbrokers/audemo/crm/protected/modules/seller/views/seller/view.php(109): SellerController->renderPartial()
+#2 /home/bbrokers/audemo/crm/framework/web/CBaseController.php(126): require()
+#3 /home/bbrokers/audemo/crm/framework/web/CBaseController.php(95): SellerController->renderInternal()
+#4 /home/bbrokers/audemo/crm/framework/web/CController.php(869): SellerController->renderFile()
+#5 /home/bbrokers/audemo/crm/protected/controllers/x2base.php(1264): SellerController->renderPartial()
+#6 /home/bbrokers/audemo/crm/protected/controllers/x2base.php(263): SellerController->render()
+#7 /home/bbrokers/audemo/crm/protected/modules/seller/controllers/SellerController.php(75): SellerController->view()
+#8 unknown(0): SellerController->actionView()
+#9 /home/bbrokers/audemo/crm/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs()
+#10 /home/bbrokers/audemo/crm/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#11 /home/bbrokers/audemo/crm/framework/web/CController.php(308): CInlineAction->runWithParams()
+#12 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(133): SellerController->runAction()
+#13 /home/bbrokers/audemo/crm/protected/controllers/x2base.php(1106): CFilterChain->run()
+#14 /home/bbrokers/audemo/crm/framework/web/filters/CInlineFilter.php(58): SellerController->filterSetPortlets()
+#15 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#16 /home/bbrokers/audemo/crm/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#17 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): FileUploadsFilter->filter()
+#18 /home/bbrokers/audemo/crm/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#19 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): X2AjaxHandlerFilter->filter()
+#20 /home/bbrokers/audemo/crm/framework/web/CController.php(291): CFilterChain->run()
+#21 /home/bbrokers/audemo/crm/framework/web/CController.php(265): SellerController->runActionWithFilters()
+#22 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(282): SellerController->run()
+#23 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(141): X2WebApplication->runController()
+#24 /home/bbrokers/audemo/crm/framework/base/CApplication.php(184): X2WebApplication->processRequest()
+#25 /home/bbrokers/audemo/crm/index.php(40): X2WebApplication->run()
+REQUEST_URI=/crm/index.php/seller/78
+2016/09/06 07:00:49 [error] [php] Undefined variable: inlineEdit (/home/bbrokers/audemo/crm/protected/components/views/_detailView.php:261)
+Stack trace:
+#0 /home/bbrokers/audemo/crm/framework/web/CController.php(869): SellerController->renderFile()
+#1 /home/bbrokers/audemo/crm/protected/modules/seller/views/seller/view.php(109): SellerController->renderPartial()
+#2 /home/bbrokers/audemo/crm/framework/web/CBaseController.php(126): require()
+#3 /home/bbrokers/audemo/crm/framework/web/CBaseController.php(95): SellerController->renderInternal()
+#4 /home/bbrokers/audemo/crm/framework/web/CController.php(869): SellerController->renderFile()
+#5 /home/bbrokers/audemo/crm/protected/controllers/x2base.php(1264): SellerController->renderPartial()
+#6 /home/bbrokers/audemo/crm/protected/controllers/x2base.php(263): SellerController->render()
+#7 /home/bbrokers/audemo/crm/protected/modules/seller/controllers/SellerController.php(75): SellerController->view()
+#8 unknown(0): SellerController->actionView()
+#9 /home/bbrokers/audemo/crm/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs()
+#10 /home/bbrokers/audemo/crm/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#11 /home/bbrokers/audemo/crm/framework/web/CController.php(308): CInlineAction->runWithParams()
+#12 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(133): SellerController->runAction()
+#13 /home/bbrokers/audemo/crm/protected/controllers/x2base.php(1106): CFilterChain->run()
+#14 /home/bbrokers/audemo/crm/framework/web/filters/CInlineFilter.php(58): SellerController->filterSetPortlets()
+#15 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#16 /home/bbrokers/audemo/crm/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#17 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): FileUploadsFilter->filter()
+#18 /home/bbrokers/audemo/crm/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#19 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): X2AjaxHandlerFilter->filter()
+#20 /home/bbrokers/audemo/crm/framework/web/CController.php(291): CFilterChain->run()
+#21 /home/bbrokers/audemo/crm/framework/web/CController.php(265): SellerController->runActionWithFilters()
+#22 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(282): SellerController->run()
+#23 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(141): X2WebApplication->runController()
+#24 /home/bbrokers/audemo/crm/framework/base/CApplication.php(184): X2WebApplication->processRequest()
+#25 /home/bbrokers/audemo/crm/index.php(40): X2WebApplication->run()
+REQUEST_URI=/crm/index.php/seller/78
+2016/09/06 07:03:39 [error] [php] Undefined variable: inlineEdit (/home/bbrokers/audemo/crm/protected/components/views/_detailView.php:261)
+Stack trace:
+#0 /home/bbrokers/audemo/crm/framework/web/CController.php(869): SellerController->renderFile()
+#1 /home/bbrokers/audemo/crm/protected/modules/seller/views/seller/view.php(109): SellerController->renderPartial()
+#2 /home/bbrokers/audemo/crm/framework/web/CBaseController.php(126): require()
+#3 /home/bbrokers/audemo/crm/framework/web/CBaseController.php(95): SellerController->renderInternal()
+#4 /home/bbrokers/audemo/crm/framework/web/CController.php(869): SellerController->renderFile()
+#5 /home/bbrokers/audemo/crm/protected/controllers/x2base.php(1264): SellerController->renderPartial()
+#6 /home/bbrokers/audemo/crm/protected/controllers/x2base.php(263): SellerController->render()
+#7 /home/bbrokers/audemo/crm/protected/modules/seller/controllers/SellerController.php(75): SellerController->view()
+#8 unknown(0): SellerController->actionView()
+#9 /home/bbrokers/audemo/crm/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs()
+#10 /home/bbrokers/audemo/crm/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#11 /home/bbrokers/audemo/crm/framework/web/CController.php(308): CInlineAction->runWithParams()
+#12 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(133): SellerController->runAction()
+#13 /home/bbrokers/audemo/crm/protected/controllers/x2base.php(1106): CFilterChain->run()
+#14 /home/bbrokers/audemo/crm/framework/web/filters/CInlineFilter.php(58): SellerController->filterSetPortlets()
+#15 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#16 /home/bbrokers/audemo/crm/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#17 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): FileUploadsFilter->filter()
+#18 /home/bbrokers/audemo/crm/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#19 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): X2AjaxHandlerFilter->filter()
+#20 /home/bbrokers/audemo/crm/framework/web/CController.php(291): CFilterChain->run()
+#21 /home/bbrokers/audemo/crm/framework/web/CController.php(265): SellerController->runActionWithFilters()
+#22 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(282): SellerController->run()
+#23 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(141): X2WebApplication->runController()
+#24 /home/bbrokers/audemo/crm/framework/base/CApplication.php(184): X2WebApplication->processRequest()
+#25 /home/bbrokers/audemo/crm/index.php(40): X2WebApplication->run()
+REQUEST_URI=/crm/index.php/seller/78
+2016/09/06 07:05:15 [error] [php] Undefined variable: inlineEdit (/home/bbrokers/audemo/crm/protected/components/views/_detailView.php:261)
+Stack trace:
+#0 /home/bbrokers/audemo/crm/framework/web/CController.php(869): SellerController->renderFile()
+#1 /home/bbrokers/audemo/crm/protected/modules/seller/views/seller/view.php(109): SellerController->renderPartial()
+#2 /home/bbrokers/audemo/crm/framework/web/CBaseController.php(126): require()
+#3 /home/bbrokers/audemo/crm/framework/web/CBaseController.php(95): SellerController->renderInternal()
+#4 /home/bbrokers/audemo/crm/framework/web/CController.php(869): SellerController->renderFile()
+#5 /home/bbrokers/audemo/crm/protected/controllers/x2base.php(1264): SellerController->renderPartial()
+#6 /home/bbrokers/audemo/crm/protected/controllers/x2base.php(263): SellerController->render()
+#7 /home/bbrokers/audemo/crm/protected/modules/seller/controllers/SellerController.php(75): SellerController->view()
+#8 unknown(0): SellerController->actionView()
+#9 /home/bbrokers/audemo/crm/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs()
+#10 /home/bbrokers/audemo/crm/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#11 /home/bbrokers/audemo/crm/framework/web/CController.php(308): CInlineAction->runWithParams()
+#12 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(133): SellerController->runAction()
+#13 /home/bbrokers/audemo/crm/protected/controllers/x2base.php(1106): CFilterChain->run()
+#14 /home/bbrokers/audemo/crm/framework/web/filters/CInlineFilter.php(58): SellerController->filterSetPortlets()
+#15 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#16 /home/bbrokers/audemo/crm/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#17 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): FileUploadsFilter->filter()
+#18 /home/bbrokers/audemo/crm/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#19 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): X2AjaxHandlerFilter->filter()
+#20 /home/bbrokers/audemo/crm/framework/web/CController.php(291): CFilterChain->run()
+#21 /home/bbrokers/audemo/crm/framework/web/CController.php(265): SellerController->runActionWithFilters()
+#22 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(282): SellerController->run()
+#23 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(141): X2WebApplication->runController()
+#24 /home/bbrokers/audemo/crm/framework/base/CApplication.php(184): X2WebApplication->processRequest()
+#25 /home/bbrokers/audemo/crm/index.php(40): X2WebApplication->run()
+REQUEST_URI=/crm/index.php/seller/78
+2016/09/06 07:06:24 [error] [php] Undefined variable: inlineEdit (/home/bbrokers/audemo/crm/protected/components/views/_detailView.php:261)
+Stack trace:
+#0 /home/bbrokers/audemo/crm/framework/web/CController.php(869): SellerController->renderFile()
+#1 /home/bbrokers/audemo/crm/protected/modules/seller/views/seller/view.php(109): SellerController->renderPartial()
+#2 /home/bbrokers/audemo/crm/framework/web/CBaseController.php(126): require()
+#3 /home/bbrokers/audemo/crm/framework/web/CBaseController.php(95): SellerController->renderInternal()
+#4 /home/bbrokers/audemo/crm/framework/web/CController.php(869): SellerController->renderFile()
+#5 /home/bbrokers/audemo/crm/protected/controllers/x2base.php(1264): SellerController->renderPartial()
+#6 /home/bbrokers/audemo/crm/protected/controllers/x2base.php(263): SellerController->render()
+#7 /home/bbrokers/audemo/crm/protected/modules/seller/controllers/SellerController.php(75): SellerController->view()
+#8 unknown(0): SellerController->actionView()
+#9 /home/bbrokers/audemo/crm/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs()
+#10 /home/bbrokers/audemo/crm/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#11 /home/bbrokers/audemo/crm/framework/web/CController.php(308): CInlineAction->runWithParams()
+#12 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(133): SellerController->runAction()
+#13 /home/bbrokers/audemo/crm/protected/controllers/x2base.php(1106): CFilterChain->run()
+#14 /home/bbrokers/audemo/crm/framework/web/filters/CInlineFilter.php(58): SellerController->filterSetPortlets()
+#15 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#16 /home/bbrokers/audemo/crm/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#17 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): FileUploadsFilter->filter()
+#18 /home/bbrokers/audemo/crm/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#19 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): X2AjaxHandlerFilter->filter()
+#20 /home/bbrokers/audemo/crm/framework/web/CController.php(291): CFilterChain->run()
+#21 /home/bbrokers/audemo/crm/framework/web/CController.php(265): SellerController->runActionWithFilters()
+#22 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(282): SellerController->run()
+#23 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(141): X2WebApplication->runController()
+#24 /home/bbrokers/audemo/crm/framework/base/CApplication.php(184): X2WebApplication->processRequest()
+#25 /home/bbrokers/audemo/crm/index.php(40): X2WebApplication->run()
+REQUEST_URI=/crm/index.php/seller/78
+2016/09/06 15:44:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /home/bbrokers/audemo/crm/protected/components/CommonControllerBehavior.php:97
+Stack trace:
+#0 /home/bbrokers/audemo/crm/protected/components/CommonControllerBehavior.php(164): CommonControllerBehavior->getModel('352')
+#1 [internal function]: CommonControllerBehavior->loadModel('352')
+#2 /home/bbrokers/audemo/crm/framework/base/CComponent.php(261): call_user_func_array(Array, Array)
+#3 /home/bbrokers/audemo/crm/protected/modules/contacts/controllers/ContactsController.php(1135): CComponent->__call('loadModel', Array)
+#4 /home/bbrokers/audemo/crm/protected/modules/contacts/controllers/ContactsController.php(1135): ContactsController->loadModel('352')
+#5 [internal function]: ContactsController->actionQtip('352')
+#6 /home/bbrokers/audemo/crm/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(ContactsController), Array)
+#7 /home/bbrokers/audemo/crm/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(ContactsController), Object(ReflectionMethod), Array)
+#8 /home/bbrokers/audemo/crm/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#10 /home/bbrokers/audemo/crm/protected/controllers/x2base.php(1106): CFilterChain->run()
+#11 /home/bbrokers/audemo/crm/framework/web/filters/CInlineFilter.php(58): x2base->filterSetPortlets(Object(CFilterChain))
+#12 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /home/bbrokers/audemo/crm/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#14 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#15 /home/bbrokers/audemo/crm/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#16 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#17 /home/bbrokers/audemo/crm/framework/web/CController.php(291): CFilterChain->run()
+#18 /home/bbrokers/audemo/crm/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(282): CController->run('qtip')
+#20 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(141): CWebApplication->runController('contacts/contac...')
+#21 /home/bbrokers/audemo/crm/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#22 /home/bbrokers/audemo/crm/index.php(40): CApplication->run()
+#23 {main}
+REQUEST_URI=/crm/index.php/contacts/qtip?id=352&suppressTitle=0
+HTTP_REFERER=http://audemo.businessbrokerscrm.com/crm/index.php/profile/14
+---
+2016/09/08 05:38:49 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Login Required' in /home/bbrokers/audemo/crm/framework/web/auth/CWebUser.php:394
+Stack trace:
+#0 /home/bbrokers/audemo/crm/framework/web/auth/CAccessControlFilter.php(180): CWebUser->loginRequired()
+#1 /home/bbrokers/audemo/crm/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(X2WebUser), 'You are not aut...')
+#2 /home/bbrokers/audemo/crm/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#3 /home/bbrokers/audemo/crm/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /home/bbrokers/audemo/crm/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /home/bbrokers/audemo/crm/protected/controllers/x2base.php(1106): CFilterChain->run()
+#7 /home/bbrokers/audemo/crm/framework/web/filters/CInlineFilter.php(58): x2base->filterSetPortlets(Object(CFilterChain))
+#8 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/bbrokers/audemo/crm/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#11 /home/bbrokers/audemo/crm/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#13 /home/bbrokers/audemo/crm/framework/web/CController.php(291): CFilterChain->run()
+#14 /home/bbrokers/audemo/crm/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(282): CController->run('getEvents')
+#16 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(141): CWebApplication->runController('profile/getEven...')
+#17 /home/bbrokers/audemo/crm/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#18 /home/bbrokers/audemo/crm/index.php(40): CApplication->run()
+#19 {main}
+REQUEST_URI=/crm/index.php/profile/getEvents?lastEventId=14&lastTimestamp=1473276933&profileId=18&myProfileId=18
+HTTP_REFERER=http://audemo.businessbrokerscrm.com/crm/index.php/profile/18
+---
+2016/09/08 06:20:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "contacts/id/index".' in /home/bbrokers/audemo/crm/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(141): CWebApplication->runController('contacts/id/ind...')
+#1 /home/bbrokers/audemo/crm/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /home/bbrokers/audemo/crm/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/crm/index.php/contacts/id/index
+HTTP_REFERER=http://audemo.businessbrokerscrm.com/crm/index.php/site/login
+---
+2016/09/08 06:20:23 [error] [php] Undefined variable: inlineEdit (/home/bbrokers/audemo/crm/protected/components/views/_detailView.php:261)
+Stack trace:
+#0 /home/bbrokers/audemo/crm/framework/web/CController.php(869): SellerController->renderFile()
+#1 /home/bbrokers/audemo/crm/protected/modules/seller/views/seller/view.php(109): SellerController->renderPartial()
+#2 /home/bbrokers/audemo/crm/framework/web/CBaseController.php(126): require()
+#3 /home/bbrokers/audemo/crm/framework/web/CBaseController.php(95): SellerController->renderInternal()
+#4 /home/bbrokers/audemo/crm/framework/web/CController.php(869): SellerController->renderFile()
+#5 /home/bbrokers/audemo/crm/protected/controllers/x2base.php(1264): SellerController->renderPartial()
+#6 /home/bbrokers/audemo/crm/protected/controllers/x2base.php(263): SellerController->render()
+#7 /home/bbrokers/audemo/crm/protected/modules/seller/controllers/SellerController.php(75): SellerController->view()
+#8 unknown(0): SellerController->actionView()
+#9 /home/bbrokers/audemo/crm/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs()
+#10 /home/bbrokers/audemo/crm/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#11 /home/bbrokers/audemo/crm/framework/web/CController.php(308): CInlineAction->runWithParams()
+#12 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(133): SellerController->runAction()
+#13 /home/bbrokers/audemo/crm/protected/controllers/x2base.php(1106): CFilterChain->run()
+#14 /home/bbrokers/audemo/crm/framework/web/filters/CInlineFilter.php(58): SellerController->filterSetPortlets()
+#15 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#16 /home/bbrokers/audemo/crm/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#17 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): FileUploadsFilter->filter()
+#18 /home/bbrokers/audemo/crm/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#19 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): X2AjaxHandlerFilter->filter()
+#20 /home/bbrokers/audemo/crm/framework/web/CController.php(291): CFilterChain->run()
+#21 /home/bbrokers/audemo/crm/framework/web/CController.php(265): SellerController->runActionWithFilters()
+#22 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(282): SellerController->run()
+#23 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(141): X2WebApplication->runController()
+#24 /home/bbrokers/audemo/crm/framework/base/CApplication.php(184): X2WebApplication->processRequest()
+#25 /home/bbrokers/audemo/crm/index.php(40): X2WebApplication->run()
+REQUEST_URI=/crm/index.php/seller/78
+2016/09/08 06:20:47 [error] [php] Undefined variable: inlineEdit (/home/bbrokers/audemo/crm/protected/components/views/_detailView.php:261)
+Stack trace:
+#0 /home/bbrokers/audemo/crm/framework/web/CController.php(869): SellerController->renderFile()
+#1 /home/bbrokers/audemo/crm/protected/modules/seller/views/seller/view.php(109): SellerController->renderPartial()
+#2 /home/bbrokers/audemo/crm/framework/web/CBaseController.php(126): require()
+#3 /home/bbrokers/audemo/crm/framework/web/CBaseController.php(95): SellerController->renderInternal()
+#4 /home/bbrokers/audemo/crm/framework/web/CController.php(869): SellerController->renderFile()
+#5 /home/bbrokers/audemo/crm/protected/controllers/x2base.php(1264): SellerController->renderPartial()
+#6 /home/bbrokers/audemo/crm/protected/controllers/x2base.php(263): SellerController->render()
+#7 /home/bbrokers/audemo/crm/protected/modules/seller/controllers/SellerController.php(75): SellerController->view()
+#8 unknown(0): SellerController->actionView()
+#9 /home/bbrokers/audemo/crm/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs()
+#10 /home/bbrokers/audemo/crm/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#11 /home/bbrokers/audemo/crm/framework/web/CController.php(308): CInlineAction->runWithParams()
+#12 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(133): SellerController->runAction()
+#13 /home/bbrokers/audemo/crm/protected/controllers/x2base.php(1106): CFilterChain->run()
+#14 /home/bbrokers/audemo/crm/framework/web/filters/CInlineFilter.php(58): SellerController->filterSetPortlets()
+#15 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#16 /home/bbrokers/audemo/crm/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#17 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): FileUploadsFilter->filter()
+#18 /home/bbrokers/audemo/crm/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#19 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): X2AjaxHandlerFilter->filter()
+#20 /home/bbrokers/audemo/crm/framework/web/CController.php(291): CFilterChain->run()
+#21 /home/bbrokers/audemo/crm/framework/web/CController.php(265): SellerController->runActionWithFilters()
+#22 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(282): SellerController->run()
+#23 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(141): X2WebApplication->runController()
+#24 /home/bbrokers/audemo/crm/framework/base/CApplication.php(184): X2WebApplication->processRequest()
+#25 /home/bbrokers/audemo/crm/index.php(40): X2WebApplication->run()
+REQUEST_URI=/crm/index.php/seller/78
+2016/09/09 13:56:17 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Login Required' in /home/bbrokers/audemo/crm/framework/web/auth/CWebUser.php:394
+Stack trace:
+#0 /home/bbrokers/audemo/crm/framework/web/auth/CAccessControlFilter.php(180): CWebUser->loginRequired()
+#1 /home/bbrokers/audemo/crm/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(X2WebUser), 'You are not aut...')
+#2 /home/bbrokers/audemo/crm/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#3 /home/bbrokers/audemo/crm/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /home/bbrokers/audemo/crm/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /home/bbrokers/audemo/crm/protected/controllers/x2base.php(1106): CFilterChain->run()
+#7 /home/bbrokers/audemo/crm/framework/web/filters/CInlineFilter.php(58): x2base->filterSetPortlets(Object(CFilterChain))
+#8 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/bbrokers/audemo/crm/protected/controllers/x2base.php(1106): CFilterChain->run()
+#10 /home/bbrokers/audemo/crm/framework/web/filters/CInlineFilter.php(58): x2base->filterSetPortlets(Object(CFilterChain))
+#11 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 /home/bbrokers/audemo/crm/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#14 /home/bbrokers/audemo/crm/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#15 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#16 /home/bbrokers/audemo/crm/framework/web/CController.php(291): CFilterChain->run()
+#17 /home/bbrokers/audemo/crm/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(282): CController->run('ajaxSave')
+#19 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(141): CWebApplication->runController('site/ajaxSave')
+#20 /home/bbrokers/audemo/crm/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#21 /home/bbrokers/audemo/crm/index.php(40): CApplication->run()
+#22 {main}
+REQUEST_URI=/crm/index.php/site/ajaxSave
+HTTP_REFERER=http://audemo.businessbrokerscrm.com/crm/index.php/brokers/15
+---
+2016/09/12 09:15:36 [error] [exception.CDbException] SQLSTATE[HY000] [2006] MySQL server has gone away
+2016/09/12 09:15:36 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in /home/bbrokers/audemo/crm/framework/db/CDbConnection.php:405
+Stack trace:
+#0 /home/bbrokers/audemo/crm/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /home/bbrokers/audemo/crm/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /home/bbrokers/audemo/crm/framework/base/CModule.php(394): CDbConnection->init()
+#3 /home/bbrokers/audemo/crm/framework/base/CApplication.php(458): CModule->getComponent('db')
+#4 /home/bbrokers/audemo/crm/framework/db/ar/CActiveRecord.php(637): CApplication->getDb()
+#5 /home/bbrokers/audemo/crm/framework/db/ar/CActiveRecord.php(1433): CActiveRecord->getDbConnection()
+#6 /home/bbrokers/audemo/crm/framework/db/ar/CActiveRecord.php(1522): CActiveRecord->getTableAlias(true)
+#7 /home/bbrokers/audemo/crm/custom/protected/components/ApplicationConfigBehavior.php(975): CActiveRecord->findByAttributes(Array)
+#8 /home/bbrokers/audemo/crm/custom/protected/components/ApplicationConfigBehavior.php(302): ApplicationConfigBehavior->importDirectories()
+#9 /home/bbrokers/audemo/crm/framework/base/CComponent.php(561): ApplicationConfigBehavior->beginRequest(Object(CEvent))
+#10 /home/bbrokers/audemo/crm/framework/base/CApplication.php(211): CComponent->raiseEvent('onBeginRequest', Object(CEvent))
+#11 /home/bbrokers/audemo/crm/framework/base/CApplication.php(182): CApplication->onBeginRequest(Object(CEvent))
+#12 /home/bbrokers/audemo/crm/index.php(40): CApplication->run()
+#13 {main}
+REQUEST_URI=/crm/index.php/clistings/update/id/212
+HTTP_REFERER=http://audemo.businessbrokerscrm.com/crm/index.php/clistings/212
+---
+2016/09/12 09:15:36 [error] [exception.CDbException] SQLSTATE[HY000] [2002] Connection refused
+2016/09/13 20:20:09 [error] [php] Trying to get property of non-object (/home/bbrokers/audemo/crm/protected/modules/marketing/models/Fingerprint.php:169)
+Stack trace:
+#0 /home/bbrokers/audemo/crm/protected/components/X2GridView/X2DataColumn.php(51): X2DataColumn->evaluateExpression()
+#1 /home/bbrokers/audemo/crm/protected/components/X2GridView/X2DataColumn.php(86): X2DataColumn->renderDataCellContent()
+#2 /home/bbrokers/audemo/crm/framework/zii/widgets/grid/CGridView.php(642): X2DataColumn->renderDataCell()
+#3 /home/bbrokers/audemo/crm/framework/zii/widgets/grid/CGridView.php(626): X2GridView->renderDataCell()
+#4 /home/bbrokers/audemo/crm/framework/zii/widgets/grid/CGridView.php(582): X2GridView->renderTableRow()
+#5 /home/bbrokers/audemo/crm/protected/components/X2GridView/X2GridViewBase.php(689): X2GridView->renderTableBody()
+#6 /home/bbrokers/audemo/crm/framework/zii/widgets/CBaseListView.php(181): X2GridView->renderItems()
+#7 unknown(0): X2GridView->renderSection()
+#8 /home/bbrokers/audemo/crm/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback()
+#9 /home/bbrokers/audemo/crm/protected/components/X2GridView/X2GridViewBase.php(573): X2GridView->renderContent()
+#10 /home/bbrokers/audemo/crm/protected/controllers/x2base.php(1355): X2GridView->run()
+#11 /home/bbrokers/audemo/crm/protected/modules/marketing/views/marketing/fingerprintIndex.php(101): MarketingController->widget()
+#12 /home/bbrokers/audemo/crm/framework/web/CBaseController.php(126): require()
+#13 /home/bbrokers/audemo/crm/framework/web/CBaseController.php(95): MarketingController->renderInternal()
+#14 /home/bbrokers/audemo/crm/framework/web/CController.php(869): MarketingController->renderFile()
+#15 /home/bbrokers/audemo/crm/protected/controllers/x2base.php(1264): MarketingController->renderPartial()
+#16 /home/bbrokers/audemo/crm/protected/modules/marketing/controllers/MarketingController.php(131): MarketingController->render()
+#17 /home/bbrokers/audemo/crm/framework/web/actions/CInlineAction.php(49): MarketingController->actionFingerprintIndex()
+#18 /home/bbrokers/audemo/crm/framework/web/CController.php(308): CInlineAction->runWithParams()
+#19 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(133): MarketingController->runAction()
+#20 /home/bbrokers/audemo/crm/protected/controllers/x2base.php(1106): CFilterChain->run()
+#21 /home/bbrokers/audemo/crm/framework/web/filters/CInlineFilter.php(58): MarketingController->filterSetPortlets()
+#22 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#23 /home/bbrokers/audemo/crm/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#24 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): FileUploadsFilter->filter()
+#25 /home/bbrokers/audemo/crm/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#26 /home/bbrokers/audemo/crm/framework/web/filters/CFilterChain.php(130): X2AjaxHandlerFilter->filter()
+#27 /home/bbrokers/audemo/crm/framework/web/CController.php(291): CFilterChain->run()
+#28 /home/bbrokers/audemo/crm/framework/web/CController.php(265): MarketingController->runActionWithFilters()
+#29 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(282): MarketingController->run()
+#30 /home/bbrokers/audemo/crm/framework/web/CWebApplication.php(141): X2WebApplication->runController()
+#31 /home/bbrokers/audemo/crm/framework/base/CApplication.php(184): X2WebApplication->processRequest()
+#32 /home/bbrokers/audemo/crm/index.php(40): X2WebApplication->run()
+REQUEST_URI=/crm/index.php/marketing/fingerprintIndex

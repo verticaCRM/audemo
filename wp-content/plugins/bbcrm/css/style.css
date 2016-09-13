@@ -1,0 +1,76 @@
+/*
+Theme Name: BBCRM Integration
+Author: BusinessBrokersCRM
+Version: 1.0
+Author URI: 
+Theme URI:
+Description:
+License: ''
+License URI: ''
+Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, custom-header, custom-menu, editor-style, featured-images, rtl-language-support, sticky-post, translation-ready, microformats
+Text Domain: wp_realtor
+template: realtor
+*/
+
+@import url('wp_properties.css');
+
+.blog {padding:0;background-color:initial;}
+.blog .sticky {padding:0 !important;margin:0;background-color:#fff !important}
+.blog.row.m0.single_post , .contentRowPad{padding:0}
+
+#wp-submit{color:#333333}
+
+header:before { background: rgba(255,255,255,0);}
+header nav .ownmenu {min-height:80px;max-height:85px}
+header .logo {margin:0;padding:0}
+.logo img {max-width:110px;max-height:110px}
+
+.sub-banner .overlay {padding-top:220px;}
+.sub-banner h1 {margin-bottom:220px;}
+
+.breadcrumb {background-color:#1E8BCB !important; }
+.sub-banner .breadcrumb {display:block !important;}
+
+h4{color:#1E8BCB;}
+.top-bar {background-color:;}
+.top-bar .left-bar-side p{color:#efefef;line-height:initial}
+.top-bar ul li a {color:#ffffff; display:inline-block !important;}
+header nav > ul > li:hover {background:none}
+header nav li.active a {color:#1E8BCB;display:inline-block !important;}
+header nav li:hover a {color:#1E8BCB;}
+header nav li {margin-top:8px;display:inline-block !important;}
+
+header nav > ul > li.active, header nav > ul > li:hover {
+    background:none!important;
+}
+
+#logindiv {display:none}
+
+.login-submit{color:#333333}
+.all-properties, .home_featured, .wpp_row_view{
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+#form1 label{width:160px!important;display:inline-block}
+
+
+ul.menu {text-align:center}
+ul.menu li {display:inline-block;font-size:1.2em;padding:16px;}
+ul.menu li a {color:#fff;}
+
+.formerr {font-weight:700;color:#9a0000;padding:2px;background-color:#f9efef}
+.brokerprofilebutton{background-color:#1E8BCB;padding:4px;border:0;color:#fff}
+.portfoliobutton{background-color:#1E8BCB;padding:7px;margin:0;line-height:initial;font-size:13px;border:0;color:#fff}
+
+ul.left-bar-side {
+    line-height: 10px;
+    display: inline-flex;
+    list-style-type: none;
+font-size:14px;
+float:right !important;
+}
+
+#breadCrumbs {
+text-transform:uppercase;
+}

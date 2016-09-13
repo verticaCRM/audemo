@@ -1,0 +1,3173 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+	<!DOCTYPE propertyList SYSTEM "http://reaxml.realestate.com.au/propertyList.dtd">
+		<propertyList date="2016-09-08-09:36:55" username="xmlrest@absbusinesssales.com.au" password="2AYrQFKG">
+
+	<business modTime="2016-03-31-12:46:03" status="current">
+
+			<agentID>abs-sc</agentID>
+			<uniqueID>absb-sbus574</uniqueID>
+			
+			<exclusivity value="exclusive"/>
+			<commercialListingType value="sale"/>
+			
+			
+			<underOffer value="no"/>
+			
+	<listingAgent id="1">
+			<name>Marilyn Barnes</name>
+			<telephone type="BH">07 5479 0055</telephone>
+			<telephone type="mobile">0458 418 110</telephone>
+			<email>marilyn@abssunshinecoast.com.au</email>
+			<twitterURL></twitterURL><facebookURL></facebookURL><linkedInURL></linkedInURL>
+			
+	</listingAgent>
+	
+	<listingAgent id="2"></listingAgent>
+	
+			
+			<franchise value="no"></franchise>
+			
+			
+			<price>145000</price>
+			<priceView>$145,000 WIWO</priceView>
+			
+		<address streetview="yes" display="no">
+			<longitude>153.0894391</longitude>
+			<latitude>-26.6518402</latitude>
+			<subNumber></subNumber>
+			<streetNumber> </streetNumber>
+			<street>AMO012</street>
+				<suburb>Maroochydore</suburb>
+			<state>qld</state>
+			<postcode>4558</postcode>
+			<country>AUS</country>
+		</address>
+			
+			<businessCategory id="1">
+				<name>Professional</name>
+					<businessSubCategory>
+						<name>Security</name>
+					</businessSubCategory>
+			</businessCategory>
+			
+			<businessCategory id="2">
+				<name>Retail</name>
+					<businessSubCategory>
+						<name>Homeware/Hardware</name>
+					</businessSubCategory>
+			</businessCategory>
+			
+			<businessCategory id="3">
+				<name>Franchise</name>
+					<businessSubCategory>
+						<name>Franchise</name>
+					</businessSubCategory>
+			</businessCategory>
+			
+			<headline>Security &amp; Surveillance System Franchise - AMO012</headline>
+			<description>* 2015 Turnover $207,367
+* Franchise Available
+* All offers considered
+* All stock included in price!
+* Established franchise with good support
+* Large territory with limited direct competition
+* No need for technical expertise, owner will train you
+* 5 day week
+* Opportunity for growth
+* Supplies both residential &amp; commercial markets
+
+Call Broker:  Marilyn Barnes 0458 418 110
+
+Ref# AMO012
+
+ABS-Sunshine Coast Office 07 5479 0055  
+www.abssunshinecoast.com.au  
+
+
+</description>
+			
+		<buildingDetails>
+			<area unit="squareMeter">0</area>
+			<energyRating></energyRating>
+		</buildingDetails>
+	
+			
+				<externalLink href="" />
+				<externalLink href="" />
+			
+		<images>
+						<img id="m" modTime="2013-03-27-01:58:11" url="http://au-cdn.brolga.com.au/e9cf36e59d89437066873b-e.jpg" format="jpg" />
+						<img id="a" modTime="2013-03-27-01:58:11" url="http://au-cdn.brolga.com.au/94de3871d29027247a9b9b-e.jpg" format="jpg" />
+						<img id="b" modTime="2013-03-27-01:58:11" url="http://au-cdn.brolga.com.au/88b40ab6996fea89fc04f3-e.jpg" format="jpg" />
+						<img id="c" modTime="2013-03-27-01:58:11" url="http://au-cdn.brolga.com.au/207be61ceb644f29e763f5-e.jpg" format="jpg" />
+			<img id="d"/>
+			<img id="e"/>
+			<img id="f"/>
+			<img id="g"/>
+			<img id="h"/>
+			<img id="i"/>
+			<img id="j"/>
+			<img id="k"/>
+			<img id="l"/>
+			<img id="n"/>
+			<img id="o"/>
+			<img id="p"/>
+			<img id="q"/>
+			<img id="r"/>
+			<img id="s"/>
+			<img id="t"/>
+			<img id="u"/>
+			<img id="v"/>
+			<img id="w"/>
+			<img id="x"/>
+			<img id="y"/>
+			<img id="z"/>
+			<img id="aa"/>
+			<img id="ab"/>
+			<img id="ac"/>
+			<img id="ad"/>
+			<img id="ae"/>
+			<img id="af"/>
+			<img id="ag"/>
+			<img id="ah"/>
+			<img id="ai"/>
+		</images>
+		<objects>
+			<floorplan id="1"/>
+			<floorplan id="2"/>
+		</objects>
+			
+			
+			
+			<miniweb>
+ <uri id="1">http://brolga.com.au/1992</uri>
+ </miniweb>
+	
+	</business>
+
+	
+	<business modTime="2016-03-31-12:38:04" status="current">
+
+			<agentID>abs-sc</agentID>
+			<uniqueID>absb-sbus824</uniqueID>
+			
+			<exclusivity value="exclusive"/>
+			<commercialListingType value="sale"/>
+			
+			
+			<underOffer value="no"/>
+			
+	<listingAgent id="1">
+			<name>Marilyn Barnes</name>
+			<telephone type="BH">07 5479 0055</telephone>
+			<telephone type="mobile">0458 418 110</telephone>
+			<email>marilyn@abssunshinecoast.com.au</email>
+			<twitterURL></twitterURL><facebookURL></facebookURL><linkedInURL></linkedInURL>
+			
+	</listingAgent>
+	
+	<listingAgent id="2"></listingAgent>
+	
+			
+			<franchise value="no"></franchise>
+			
+			
+			<price>295000</price>
+			<priceView>$295,000 + SAV</priceView>
+			
+		<address streetview="yes" display="no">
+			<longitude>153.0894391</longitude>
+			<latitude>-26.6518402</latitude>
+			<subNumber></subNumber>
+			<streetNumber> </streetNumber>
+			<street>AMH136</street>
+				<suburb>Maroochydore</suburb>
+			<state>qld</state>
+			<postcode>4558</postcode>
+			<country>AUS</country>
+		</address>
+			
+			<businessCategory id="1">
+				<name>Home/Garden</name>
+					<businessSubCategory>
+						<name>Home Based</name>
+					</businessSubCategory>
+			</businessCategory>
+			
+			<businessCategory id="2">
+				<name>Import/Export/Whole</name>
+					<businessSubCategory>
+						<name>Import</name>
+					</businessSubCategory>
+			</businessCategory>
+			
+			<headline>Home Based Import Distribution Business - AMH136	</headline>
+			<description>* 2015 Turnover $715,279
+* Net Profit of over $200,000!
+* This is an import  distribution &amp; supply business of portable offices &amp; accommodation
+* Anyone can operate this business; you do not have to be a registered builder, plumber or electrician to run the business. This is a sales driven position with focus on identifying your market, introducing product awareness, and supplying a quality product in a timely manner.
+* Portables are either sold assembled or as flat packs. 
+* Portable purpose built for dwellings such as granny flats, weekenders, &amp; on-site units for caravan parks etc, many portables are sold as site offices, Workshops, etc.
+* Stock holdings are not necessary as goods are sold prior to orders placed. By the time the shipment has been cleared by customs the money is in the bank!
+* Currently run as a home based business  
+
+Call Broker: Marilyn Barnes 0458 418 110
+
+Ref# AMH136 
+
+ABS-Sunshine Coast Office 07 5479 0055 
+www.abssunshinecoast.com.au
+</description>
+			
+		<buildingDetails>
+			<area unit="squareMeter">0</area>
+			<energyRating></energyRating>
+		</buildingDetails>
+	
+			
+				<externalLink href="" />
+				<externalLink href="" />
+			
+		<images>
+						<img id="m" modTime="2015-03-25-01:49:11" url="http://au-cdn.brolga.com.au/c4ec64ed68b5adb98535ab-e.jpg" format="jpg" />
+						<img id="a" modTime="2015-03-25-01:49:11" url="http://au-cdn.brolga.com.au/d4df0e694c9e70211c7cc6-e.jpg" format="jpg" />
+						<img id="b" modTime="2015-03-25-01:49:11" url="http://au-cdn.brolga.com.au/6836725d290e89d9b6695f-e.jpg" format="jpg" />
+						<img id="c" modTime="2015-03-25-01:49:11" url="http://au-cdn.brolga.com.au/0375d8d8a7aa62dc20c4ce-e.jpg" format="jpg" />
+			<img id="d"/>
+			<img id="e"/>
+			<img id="f"/>
+			<img id="g"/>
+			<img id="h"/>
+			<img id="i"/>
+			<img id="j"/>
+			<img id="k"/>
+			<img id="l"/>
+			<img id="n"/>
+			<img id="o"/>
+			<img id="p"/>
+			<img id="q"/>
+			<img id="r"/>
+			<img id="s"/>
+			<img id="t"/>
+			<img id="u"/>
+			<img id="v"/>
+			<img id="w"/>
+			<img id="x"/>
+			<img id="y"/>
+			<img id="z"/>
+			<img id="aa"/>
+			<img id="ab"/>
+			<img id="ac"/>
+			<img id="ad"/>
+			<img id="ae"/>
+			<img id="af"/>
+			<img id="ag"/>
+			<img id="ah"/>
+			<img id="ai"/>
+		</images>
+		<objects>
+			<floorplan id="1"/>
+			<floorplan id="2"/>
+		</objects>
+			
+			
+			
+			<miniweb>
+ <uri id="1">http://brolga.com.au/5798</uri>
+ </miniweb>
+	
+	</business>
+
+	
+	<business modTime="2016-01-23-08:20:55" status="current">
+
+			<agentID>abs-sc</agentID>
+			<uniqueID>absb-sbus936</uniqueID>
+			
+			<exclusivity value="exclusive"/>
+			<commercialListingType value="sale"/>
+			
+			
+			<underOffer value="no"/>
+			
+	<listingAgent id="1">
+			<name>Marilyn Barnes</name>
+			<telephone type="BH">07 5479 0055</telephone>
+			<telephone type="mobile">0458 418 110</telephone>
+			<email>marilyn@abssunshinecoast.com.au</email>
+			<twitterURL></twitterURL><facebookURL></facebookURL><linkedInURL></linkedInURL>
+			
+	</listingAgent>
+	
+	<listingAgent id="2"></listingAgent>
+	
+			
+			<franchise value="no"></franchise>
+			
+			
+			<price>16500000</price>
+			<priceView>$1,650,000 WIWO</priceView>
+			
+		<address streetview="yes" display="no">
+			<longitude>152.9888197</longitude>
+			<latitude>-27.3022219</latitude>
+			<subNumber></subNumber>
+			<streetNumber></streetNumber>
+			<street>AMN159</street>
+				<suburb>Brisbane</suburb>
+			<state>qld</state>
+			<postcode>4000</postcode>
+			<country>AUS</country>
+		</address>
+			
+			<businessCategory id="1">
+				<name>Home/Garden</name>
+					<businessSubCategory>
+						<name>Home Based</name>
+					</businessSubCategory>
+			</businessCategory>
+			
+			<businessCategory id="2">
+				<name>Transport/Distribution</name>
+					<businessSubCategory>
+						<name>Road</name>
+					</businessSubCategory>
+			</businessCategory>
+			
+			<headline>Iconic Furniture Removals - AMN159</headline>
+			<description>A unique opportunity exists in the furniture removals &amp; storage industry, with a Turnover of $2.5m+ located on the outskirts of Brisbane. Offering services of full pre packing, local, country &amp; interstate deliveries, there is no doubt this is an opportunity not to be missed.
+
+What you are getting:
+* The business would ideally suit a husband &amp; wife team or an individual who would enjoy the casual lifestyle of this niche industry that is more relaxed than general freight. Alternatively, this is now a business that can definitely run under management if required
+* A very highly regarded business name &amp; reputation second to none with high recommendations that keep generating business
+* All plant &amp; equipment is unencumbered, nothing on lease
+* Included in the asking price is a well maintained fleet comprising of 12 trucks &amp; 3 trailers. Also included are all the trolleys, packing &amp; racks, plus the goodwill. As this is a well established transport removals business, the current owner is willing to stay on for a flexible handover period to ensure a smooth transition in the change of ownership
+
+This business boasts being the biggest removals on Brisbane's Northside with an extensive repeat client base &amp; offers a secure well-established foothold in the Brisbane market. With its highly trained staff &amp; well maintained fleet of trucks, the business offers clients a comprehensive commercial and residential removalist solution. There is no doubt this is a unique opportunity not to be missed.
+
+Call Broker: Marilyn Barnes 0458 418 110
+
+ABS-Sunshine Coast Office 07 5479 0055 
+www.abssunshinecoast.com.au
+
+Ref# AMN159
+
+</description>
+			
+		<buildingDetails>
+			<area unit="squareMeter">0</area>
+			<energyRating></energyRating>
+		</buildingDetails>
+	
+			
+				<externalLink href="" />
+				<externalLink href="" />
+			
+		<images>
+						<img id="m" modTime="2014-08-27-01:49:13" url="http://au-cdn.brolga.com.au/1083893a36fcc764aace68-e.jpg" format="jpg" />
+						<img id="a" modTime="2014-08-27-01:49:13" url="http://au-cdn.brolga.com.au/c30ba5e4e34a860c132a5c-e.jpg" format="jpg" />
+						<img id="b" modTime="2014-08-27-01:49:13" url="http://au-cdn.brolga.com.au/f877dc3006b839b539a131-e.jpg" format="jpg" />
+						<img id="c" modTime="2014-08-27-01:49:13" url="http://au-cdn.brolga.com.au/a3b043db5beb1dd4c95b10-e.jpg" format="jpg" />
+			<img id="d"/>
+			<img id="e"/>
+			<img id="f"/>
+			<img id="g"/>
+			<img id="h"/>
+			<img id="i"/>
+			<img id="j"/>
+			<img id="k"/>
+			<img id="l"/>
+			<img id="n"/>
+			<img id="o"/>
+			<img id="p"/>
+			<img id="q"/>
+			<img id="r"/>
+			<img id="s"/>
+			<img id="t"/>
+			<img id="u"/>
+			<img id="v"/>
+			<img id="w"/>
+			<img id="x"/>
+			<img id="y"/>
+			<img id="z"/>
+			<img id="aa"/>
+			<img id="ab"/>
+			<img id="ac"/>
+			<img id="ad"/>
+			<img id="ae"/>
+			<img id="af"/>
+			<img id="ag"/>
+			<img id="ah"/>
+			<img id="ai"/>
+		</images>
+		<objects>
+			<floorplan id="1"/>
+			<floorplan id="2"/>
+		</objects>
+			
+			
+			
+			<miniweb>
+ <uri id="1">http://brolga.com.au/12348</uri>
+ </miniweb>
+	
+	</business>
+
+	
+	<business modTime="2016-07-05-14:30:01" status="current">
+
+			<agentID>abs-sc</agentID>
+			<uniqueID>absb-sbus984</uniqueID>
+			
+			<exclusivity value="exclusive"/>
+			<commercialListingType value="sale"/>
+			
+			
+			<underOffer value="yes"/>
+			
+	<listingAgent id="1">
+			<name>Gary Barnes</name>
+			<telephone type="BH"></telephone>
+			<telephone type="mobile">0488 711 521</telephone>
+			<email>gary@abssunshinecoast.com.au</email>
+			<twitterURL></twitterURL><facebookURL></facebookURL><linkedInURL></linkedInURL>
+			
+	</listingAgent>
+	
+	<listingAgent id="2"></listingAgent>
+	
+			
+			<franchise value="no"></franchise>
+			
+			
+			<price>120000</price>
+			<priceView>$120,000 + SAV</priceView>
+			
+		<address streetview="yes" display="no">
+			<longitude>152.9593597</longitude>
+			<latitude>-26.6293532</latitude>
+			<subNumber></subNumber>
+			<streetNumber></streetNumber>
+			<street>AGG160</street>
+				<suburb>Maroochydore</suburb>
+			<state>qld</state>
+			<postcode>4558</postcode>
+			<country>AUS</country>
+		</address>
+			
+			<businessCategory id="1">
+				<name>Transport/Distribution</name>
+					<businessSubCategory>
+						<name>Truck</name>
+					</businessSubCategory>
+			</businessCategory>
+			
+			<businessCategory id="2">
+				<name>Home/Garden</name>
+					<businessSubCategory>
+						<name>Home Based</name>
+					</businessSubCategory>
+			</businessCategory>
+			
+			<headline>Bread Distribution Run Nambour Area - AGG160</headline>
+			<description>* 2014 Turnover $461,927
+* Fairly low risk as product range is always in demand
+* Longstanding &amp; loyal customer base which is growing
+* 2015 Turnover $465,725
+* Ample opportunity to expand
+* Easy to operate
+* Great lifestyle finishing before lunch every day
+* Home based 
+* Above all, a good income!!   
+
+Wonderful well established, safe &amp; secure bread distribution run, offering a long list of great features. It includes: an exclusive distribution area with great back-up &amp; support from the bakery, with low overheads.
+
+The business is easily run by a single owner operator with a simple ordering system with most customers having standing orders in place.  All administration (eg invoicing etc) is done by the bakery.  The depot is located in Kunda Park, very close to the start of the distribution area.  The business has no wastage with an attractive returns policy with the bakery &amp; the bakery is very pro active in marketing their range of products to attract new customers.   This fantastic business is very easily run as a single owner/operator looking to be their own boss &amp; have an enjoyable lifestyle.  The work is not demanding &amp; there is plenty of friendly customer interaction each day.
+
+Call Broker: Gary Barnes 0488 711 521
+
+ABS-Sunshine Coast Office 07 5479 0055 
+www.abssunshinecoast.com.au
+
+Ref# AGG160
+</description>
+			
+		<buildingDetails>
+			<area unit="squareMeter">0</area>
+			<energyRating></energyRating>
+		</buildingDetails>
+	
+			
+				<externalLink href="" />
+				<externalLink href="" />
+			
+		<images>
+						<img id="m" modTime="2014-10-20-01:59:10" url="http://au-cdn.brolga.com.au/d2da1e032d6dea0e4a70f5-e.jpg" format="jpg" />
+						<img id="a" modTime="2014-10-20-01:59:10" url="http://au-cdn.brolga.com.au/9e03df924b346cf28a63e3-e.jpg" format="jpg" />
+						<img id="b" modTime="2014-10-20-01:59:10" url="http://au-cdn.brolga.com.au/b9617a040c0677193b6347-e.jpg" format="jpg" />
+						<img id="c" modTime="2014-10-20-01:59:10" url="http://au-cdn.brolga.com.au/08eeb3fc7214bcf40f1369-e.jpg" format="jpg" />
+			<img id="d"/>
+			<img id="e"/>
+			<img id="f"/>
+			<img id="g"/>
+			<img id="h"/>
+			<img id="i"/>
+			<img id="j"/>
+			<img id="k"/>
+			<img id="l"/>
+			<img id="n"/>
+			<img id="o"/>
+			<img id="p"/>
+			<img id="q"/>
+			<img id="r"/>
+			<img id="s"/>
+			<img id="t"/>
+			<img id="u"/>
+			<img id="v"/>
+			<img id="w"/>
+			<img id="x"/>
+			<img id="y"/>
+			<img id="z"/>
+			<img id="aa"/>
+			<img id="ab"/>
+			<img id="ac"/>
+			<img id="ad"/>
+			<img id="ae"/>
+			<img id="af"/>
+			<img id="ag"/>
+			<img id="ah"/>
+			<img id="ai"/>
+		</images>
+		<objects>
+			<floorplan id="1"/>
+			<floorplan id="2"/>
+		</objects>
+			
+			
+			
+			<miniweb>
+ <uri id="1">http://brolga.com.au/14127</uri>
+ </miniweb>
+	
+	</business>
+
+	
+	<business modTime="2016-01-23-08:21:52" status="current">
+
+			<agentID>abs-sc</agentID>
+			<uniqueID>absb-sbus992</uniqueID>
+			
+			<exclusivity value="exclusive"/>
+			<commercialListingType value="sale"/>
+			
+			
+			<underOffer value="no"/>
+			
+	<listingAgent id="1">
+			<name>Marilyn Barnes</name>
+			<telephone type="BH">07 5479 0055</telephone>
+			<telephone type="mobile">0458 418 110</telephone>
+			<email>marilyn@abssunshinecoast.com.au</email>
+			<twitterURL></twitterURL><facebookURL></facebookURL><linkedInURL></linkedInURL>
+			
+	</listingAgent>
+	
+	<listingAgent id="2"></listingAgent>
+	
+			
+			<franchise value="no"></franchise>
+			
+			
+			<price>695000</price>
+			<priceView>$695,000 + sav</priceView>
+			
+		<address streetview="yes" display="no">
+			<longitude>153.0894391</longitude>
+			<latitude>-26.6518402</latitude>
+			<subNumber></subNumber>
+			<streetNumber></streetNumber>
+			<street>AMN170</street>
+				<suburb>Maroochydore</suburb>
+			<state>qld</state>
+			<postcode>4558</postcode>
+			<country>AUS</country>
+		</address>
+			
+			<businessCategory id="1">
+				<name>Automotive</name>
+					<businessSubCategory>
+						<name>Panel Beating</name>
+					</businessSubCategory>
+			</businessCategory>
+			
+			<headline>State Of The Art Smash Repairer - AMN170</headline>
+			<description>* 2015 Turnover $1,612,460
+* Recognised recommended repairer &amp;  sign holder for a large insurance group
+* The business has a proven history of sustained, high level profit, backed with quality financials. 
+* Long-established &amp; prestigious smash repairer
+* Commercial, domestic &amp; insurance rectification experts
+* Unlimited opportunity for growth
+* Can be run under management
+* This recommended insurance repairer boasts state-of-the-art equipment, &amp; a high level of staff expertise that - even on a state-wide basis - few can rival.
+* Well-positioned in a major regional centre, the business draws work from areas throughout Queensland.
+
+Recognised recommended repairer &amp; sign holder for a large insurance group. On offer is an excellent opportunity to invest in one of the most prestigious, long-established &amp; respected automotive repair companies on the Sunshine Coast.
+
+This quality automotive smash repairer is truly a business offering substantial, fail-safe returns in an essential service industryan excellent opportunity to invest in one of the most prestigious, long-established &amp;  respected automotive repair companies on the Sunshine Coast.
+
+Well-positioned this smash repair workshopa recommended insurance repairerhas earned an unsurpassed reputation throughout the trade &amp; general business community over many years. 
+
+First established over three decades ago, this business owes its longevity to the provision of a high standard of service, quality finish, competitive pricing &amp; customer satisfaction. 
+
+For those wishing to enter the industry as a new player, or who may wish to expand their current business interests in the field, or those who simply want to be involved in a lucrative, essential service, this is a rare opportunity to obtain that gilt-edged investment, making it worthy of very serious consideration.
+
+Call Broker: Marilyn Barnes 0458 418 110
+
+ABS-Sunshine Coast Office 07 5479 0055 
+www.abssunshinecoast.com.au
+
+Ref# AMN170 
+ 
+</description>
+			
+		<buildingDetails>
+			<area unit="squareMeter">0</area>
+			<energyRating></energyRating>
+		</buildingDetails>
+	
+			
+				<externalLink href="" />
+				<externalLink href="" />
+			
+		<images>
+						<img id="m" modTime="2014-10-28-01:26:12" url="http://au-cdn.brolga.com.au/197e48c377357abcd35a59-e.jpg" format="jpg" />
+						<img id="a" modTime="2014-10-28-01:26:12" url="http://au-cdn.brolga.com.au/b76c8e1c70ad6571404660-e.jpg" format="jpg" />
+						<img id="b" modTime="2014-10-28-01:26:12" url="http://au-cdn.brolga.com.au/0a2525d70b0a8e496c3697-e.jpg" format="jpg" />
+						<img id="c" modTime="2014-10-28-01:26:12" url="http://au-cdn.brolga.com.au/39e3b616add78efbe6e6a2-e.jpg" format="jpg" />
+			<img id="d"/>
+			<img id="e"/>
+			<img id="f"/>
+			<img id="g"/>
+			<img id="h"/>
+			<img id="i"/>
+			<img id="j"/>
+			<img id="k"/>
+			<img id="l"/>
+			<img id="n"/>
+			<img id="o"/>
+			<img id="p"/>
+			<img id="q"/>
+			<img id="r"/>
+			<img id="s"/>
+			<img id="t"/>
+			<img id="u"/>
+			<img id="v"/>
+			<img id="w"/>
+			<img id="x"/>
+			<img id="y"/>
+			<img id="z"/>
+			<img id="aa"/>
+			<img id="ab"/>
+			<img id="ac"/>
+			<img id="ad"/>
+			<img id="ae"/>
+			<img id="af"/>
+			<img id="ag"/>
+			<img id="ah"/>
+			<img id="ai"/>
+		</images>
+		<objects>
+			<floorplan id="1"/>
+			<floorplan id="2"/>
+		</objects>
+			
+			
+			
+			<miniweb>
+ <uri id="1">http://brolga.com.au/14401</uri>
+ </miniweb>
+	
+	</business>
+
+	
+	<business modTime="2016-01-23-08:22:01" status="current">
+
+			<agentID>abs-sc</agentID>
+			<uniqueID>absb-sbus1016</uniqueID>
+			
+			<exclusivity value="exclusive"/>
+			<commercialListingType value="sale"/>
+			
+			
+			<underOffer value="no"/>
+			
+	<listingAgent id="1">
+			<name>Gary Barnes</name>
+			<telephone type="BH"></telephone>
+			<telephone type="mobile">0488 711 521</telephone>
+			<email>gary@abssunshinecoast.com.au</email>
+			<twitterURL></twitterURL><facebookURL></facebookURL><linkedInURL></linkedInURL>
+			
+	</listingAgent>
+	
+	<listingAgent id="2"></listingAgent>
+	
+			
+			<franchise value="no"></franchise>
+			
+			
+			<price>40000</price>
+			<priceView>$40,000 + SAV</priceView>
+			
+		<address streetview="yes" display="no">
+			<longitude>153.0894391</longitude>
+			<latitude>-26.6518402</latitude>
+			<subNumber></subNumber>
+			<streetNumber></streetNumber>
+			<street>AGC140</street>
+				<suburb>Maroochydore</suburb>
+			<state>qld</state>
+			<postcode>4558</postcode>
+			<country>AUS</country>
+		</address>
+			
+			<businessCategory id="1">
+				<name>Home/Garden</name>
+					<businessSubCategory>
+						<name>Home Based</name>
+					</businessSubCategory>
+			</businessCategory>
+			
+			<businessCategory id="2">
+				<name>Services</name>
+					<businessSubCategory>
+						<name>Mobile Services</name>
+					</businessSubCategory>
+			</businessCategory>
+			
+			<headline>Antenna Supply &amp; Installation - AGC140</headline>
+			<description>* 2015 Turnover $96,536
+* Supplier &amp; installer of quality TV antenna components &amp; accessories 
+* Maintenance &amp; repair of antennas &amp; associated products 
+* Home based 
+* Independent supplier meaning far more cost competitive price structure 
+* Trade supplier data base in place 
+* Established trade &amp; commercial client data base 
+* Preferred supplier for many commercial clients such as real estate, body corporate, local builders 
+* Purpose fitted-out &amp; sign written Toyota Hi-Ace van with all tools &amp; equipment included 
+
+Mobile business, home based with low overheads. This is a very easy to learn and operate antenna installation business, established for over 25 years, offering a stable income and excellent scope for future growth
+
+Call Broker: Gary Barnes 0488 711 521
+
+ABS-Sunshine Coast Office 07 5479 0055 
+www.abssunshinecoast.com.au
+
+Ref# AGC140</description>
+			
+		<buildingDetails>
+			<area unit="squareMeter">0</area>
+			<energyRating></energyRating>
+		</buildingDetails>
+	
+			
+				<externalLink href="" />
+				<externalLink href="" />
+			
+		<images>
+						<img id="m" modTime="2014-12-02-01:35:12" url="http://au-cdn.brolga.com.au/f997591f1d90fadf238be6-e.jpg" format="jpg" />
+						<img id="a" modTime="2014-12-02-01:35:12" url="http://au-cdn.brolga.com.au/61ea170dc5161b8f907b44-e.jpg" format="jpg" />
+						<img id="b" modTime="2014-12-02-01:35:12" url="http://au-cdn.brolga.com.au/e72371ecf70aecb714404c-e.jpg" format="jpg" />
+						<img id="c" modTime="2014-12-02-01:35:12" url="http://au-cdn.brolga.com.au/a160a9790e58591e02d4be-e.jpg" format="jpg" />
+			<img id="d"/>
+			<img id="e"/>
+			<img id="f"/>
+			<img id="g"/>
+			<img id="h"/>
+			<img id="i"/>
+			<img id="j"/>
+			<img id="k"/>
+			<img id="l"/>
+			<img id="n"/>
+			<img id="o"/>
+			<img id="p"/>
+			<img id="q"/>
+			<img id="r"/>
+			<img id="s"/>
+			<img id="t"/>
+			<img id="u"/>
+			<img id="v"/>
+			<img id="w"/>
+			<img id="x"/>
+			<img id="y"/>
+			<img id="z"/>
+			<img id="aa"/>
+			<img id="ab"/>
+			<img id="ac"/>
+			<img id="ad"/>
+			<img id="ae"/>
+			<img id="af"/>
+			<img id="ag"/>
+			<img id="ah"/>
+			<img id="ai"/>
+		</images>
+		<objects>
+			<floorplan id="1"/>
+			<floorplan id="2"/>
+		</objects>
+			
+			
+			
+			<miniweb>
+ <uri id="1">http://brolga.com.au/15708</uri>
+ </miniweb>
+	
+	</business>
+
+	
+	<business modTime="2016-01-23-08:22:22" status="current">
+
+			<agentID>abs-sc</agentID>
+			<uniqueID>absb-sbus1101</uniqueID>
+			
+			<exclusivity value="exclusive"/>
+			<commercialListingType value="sale"/>
+			
+			
+			<underOffer value="no"/>
+			
+	<listingAgent id="1">
+			<name>Creina Holland</name>
+			<telephone type="BH">07 5479 0055</telephone>
+			<telephone type="mobile">0416 255 368</telephone>
+			<email>creina@abssunshinecoast.com.au</email>
+			<twitterURL></twitterURL><facebookURL></facebookURL><linkedInURL></linkedInURL>
+			
+	</listingAgent>
+	
+	<listingAgent id="2"></listingAgent>
+	
+			
+			<franchise value="no"></franchise>
+			
+			
+			<price>650000</price>
+			<priceView>$650,000 + SAV</priceView>
+			
+		<address streetview="yes" display="no">
+			<longitude>153.0894391</longitude>
+			<latitude>-26.6518402</latitude>
+			<subNumber></subNumber>
+			<streetNumber></streetNumber>
+			<street>ACM188</street>
+				<suburb>Maroochydore</suburb>
+			<state>qld</state>
+			<postcode>4558</postcode>
+			<country>AUS</country>
+		</address>
+			
+			<businessCategory id="1">
+				<name>Food/Hospitality</name>
+					<businessSubCategory>
+						<name>Bakery</name>
+					</businessSubCategory>
+			</businessCategory>
+			
+			<businessCategory id="2">
+				<name>Food/Hospitality</name>
+					<businessSubCategory>
+						<name>Cafe/Coffee Shop</name>
+					</businessSubCategory>
+			</businessCategory>
+			
+			<headline>Brilliant Patisserie &amp; Bakery - ACM188</headline>
+			<description>* 2014 Turnover $929,683    
+* Solid, profitable business
+* Enjoy excellent cash flow from day one
+* Long established, with a great reputation &amp; little competition
+* Grow the business more for even greater profits
+* Wonderful cafe atmosphere with outdoor seating at both locations
+* Suitable for international buyers
+  
+This Patisserie &amp; Bakery business with two flourishing outlets is being offered for sale for the first time. The first site was established in 1991 and the second site with a purpose built commercial kitchen was developed in 2012 to service the successful growth in the business. Each site predominantly retails pies, cakes, bread and coffee. Each has cafe facilities, with a great ambience. They are located in two picturesque hinterland towns on Queensland's beautiful Sunshine Coast.
+
+The two sites work extremely well together. One situated in a tourist destination and the other in more of a village for local people, so they balance each other and provides a steady year round income.
+
+Currently operated by a husband and wife team, one a Baker and the other doing Customer Service Management. They are assisted by experienced and qualified staff.
+
+This business is perfect for a Baker who wants to be their own boss and enjoy a great income and a fantastic lifestyle, in a beautiful location. It works well with two owner operators and also has the scope for additional family members to work in the business too.
+
+Call Broker: Creina Holland 0416 255 368
+
+Ref# ACM188 
+
+ABS-Sunshine Coast Office 07 5479 0055 
+www.abssunshinecoast.com.au
+
+
+</description>
+			
+		<buildingDetails>
+			<area unit="squareMeter">0</area>
+			<energyRating></energyRating>
+		</buildingDetails>
+	
+			
+				<externalLink href="" />
+				<externalLink href="" />
+			
+		<images>
+						<img id="m" modTime="2015-09-03-01:50:13" url="http://au-cdn.brolga.com.au/92fde56a2c65ea7be450cf-e.jpg" format="jpg" />
+						<img id="a" modTime="2015-09-03-01:50:13" url="http://au-cdn.brolga.com.au/a02c4fff6a416c5b4ff637-e.jpg" format="jpg" />
+						<img id="b" modTime="2015-09-03-01:50:13" url="http://au-cdn.brolga.com.au/6a800d414f8b0911d96ee5-e.jpg" format="jpg" />
+						<img id="c" modTime="2015-09-03-01:50:13" url="http://au-cdn.brolga.com.au/db1d043f24736fbdaf80d9-e.jpg" format="jpg" />
+			<img id="d"/>
+			<img id="e"/>
+			<img id="f"/>
+			<img id="g"/>
+			<img id="h"/>
+			<img id="i"/>
+			<img id="j"/>
+			<img id="k"/>
+			<img id="l"/>
+			<img id="n"/>
+			<img id="o"/>
+			<img id="p"/>
+			<img id="q"/>
+			<img id="r"/>
+			<img id="s"/>
+			<img id="t"/>
+			<img id="u"/>
+			<img id="v"/>
+			<img id="w"/>
+			<img id="x"/>
+			<img id="y"/>
+			<img id="z"/>
+			<img id="aa"/>
+			<img id="ab"/>
+			<img id="ac"/>
+			<img id="ad"/>
+			<img id="ae"/>
+			<img id="af"/>
+			<img id="ag"/>
+			<img id="ah"/>
+			<img id="ai"/>
+		</images>
+		<objects>
+			<floorplan id="1"/>
+			<floorplan id="2"/>
+		</objects>
+			
+			
+			
+			<miniweb>
+ <uri id="1">http://brolga.com.au/20267</uri>
+ </miniweb>
+	
+	</business>
+
+	
+	<business modTime="2016-01-23-08:22:35" status="current">
+
+			<agentID>abs-sc</agentID>
+			<uniqueID>absb-sbus1140</uniqueID>
+			
+			<exclusivity value="exclusive"/>
+			<commercialListingType value="sale"/>
+			
+			
+			<underOffer value="no"/>
+			
+	<listingAgent id="1">
+			<name>Gary Barnes</name>
+			<telephone type="BH"></telephone>
+			<telephone type="mobile">0488 711 521</telephone>
+			<email>gary@abssunshinecoast.com.au</email>
+			<twitterURL></twitterURL><facebookURL></facebookURL><linkedInURL></linkedInURL>
+			
+	</listingAgent>
+	
+	<listingAgent id="2"></listingAgent>
+	
+			
+			<franchise value="no"></franchise>
+			
+			
+			<price>52000</price>
+			<priceView>$52,000 WIWO</priceView>
+			
+		<address streetview="yes" display="no">
+			<longitude></longitude>
+			<latitude></latitude>
+			<subNumber></subNumber>
+			<streetNumber></streetNumber>
+			<street>AGG200</street>
+				<suburb>Brisbane</suburb>
+			<state>qld</state>
+			<postcode>4000</postcode>
+			<country>AUS</country>
+		</address>
+			
+			<businessCategory id="1">
+				<name>Home/Garden</name>
+					<businessSubCategory>
+						<name>Home Based</name>
+					</businessSubCategory>
+			</businessCategory>
+			
+			<businessCategory id="2">
+				<name>Transport/Distribution</name>
+					<businessSubCategory>
+						<name>Road</name>
+					</businessSubCategory>
+			</businessCategory>
+			
+			<headline>Bread Distribution Run Mansfield Area  AGG200</headline>
+			<description>* Fairly low risk as product range is always in demand
+* Longstanding &amp; loyal customer base which is growing
+* Ample opportunity to expand
+* Easy to operate
+* Great lifestyle finishing by 9.00 am every day
+* Above all, a good income!
+* The Bakery will support business by providing $20,000 loan payable over a three year period at a flat interest rate of 8% p.a.
+ 
+Wonderful well established, safe &amp; secure bread distribution run, offering a long list of great features. It includes: an exclusive distribution area with great back-up &amp; support from the Bakery, with low overheads.
+
+The business is easily run by a single owner operator with a simple ordering system with most customers having standing orders in place. All administration (eg: invoicing etc) is done by the Bakery. 
+
+The business has no wastage with an attractive returns policy with the Bakery &amp; the Bakery is very pro active in marketing their range of products to attract new customers. This fantastic business is very easily run as a single owner/operator looking to be their own boss &amp; have an enjoyable lifestyle. The work is not demanding &amp; there is plenty of friendly customer interaction each day.
+
+Call Broker: Gary Barnes 0488 711 521
+
+ABS-Sunshine Coast Office 07 5479 0055 
+www.abssunshinecoast.com.au
+
+Ref# AGG200
+</description>
+			
+		<buildingDetails>
+			<area unit="squareMeter">0</area>
+			<energyRating></energyRating>
+		</buildingDetails>
+	
+			
+				<externalLink href="" />
+				<externalLink href="" />
+			
+		<images>
+						<img id="m" modTime="2015-05-18-01:26:13" url="http://au-cdn.brolga.com.au/db8bf9fe0224227d6b1a05-e.jpg" format="jpg" />
+						<img id="a" modTime="2015-05-18-01:26:13" url="http://au-cdn.brolga.com.au/be7c1fdb6c1e1bb0ce2cd3-e.jpg" format="jpg" />
+						<img id="b" modTime="2015-05-18-01:26:13" url="http://au-cdn.brolga.com.au/2cf8291440198cc8a43734-e.jpg" format="jpg" />
+						<img id="c" modTime="2015-05-18-01:26:13" url="http://au-cdn.brolga.com.au/2bef8d9dabbbe630634cda-e.jpg" format="jpg" />
+			<img id="d"/>
+			<img id="e"/>
+			<img id="f"/>
+			<img id="g"/>
+			<img id="h"/>
+			<img id="i"/>
+			<img id="j"/>
+			<img id="k"/>
+			<img id="l"/>
+			<img id="n"/>
+			<img id="o"/>
+			<img id="p"/>
+			<img id="q"/>
+			<img id="r"/>
+			<img id="s"/>
+			<img id="t"/>
+			<img id="u"/>
+			<img id="v"/>
+			<img id="w"/>
+			<img id="x"/>
+			<img id="y"/>
+			<img id="z"/>
+			<img id="aa"/>
+			<img id="ab"/>
+			<img id="ac"/>
+			<img id="ad"/>
+			<img id="ae"/>
+			<img id="af"/>
+			<img id="ag"/>
+			<img id="ah"/>
+			<img id="ai"/>
+		</images>
+		<objects>
+			<floorplan id="1"/>
+			<floorplan id="2"/>
+		</objects>
+			
+			
+			
+			<miniweb>
+ <uri id="1">http://brolga.com.au/22085</uri>
+ </miniweb>
+	
+	</business>
+
+	
+	<business modTime="2016-01-23-08:22:35" status="current">
+
+			<agentID>abs-sc</agentID>
+			<uniqueID>absb-sbus1141</uniqueID>
+			
+			<exclusivity value="exclusive"/>
+			<commercialListingType value="sale"/>
+			
+			
+			<underOffer value="no"/>
+			
+	<listingAgent id="1">
+			<name>Gary Barnes</name>
+			<telephone type="BH"></telephone>
+			<telephone type="mobile">0488 711 521</telephone>
+			<email>gary@abssunshinecoast.com.au</email>
+			<twitterURL></twitterURL><facebookURL></facebookURL><linkedInURL></linkedInURL>
+			
+	</listingAgent>
+	
+	<listingAgent id="2"></listingAgent>
+	
+			
+			<franchise value="no"></franchise>
+			
+			
+			<price>52000</price>
+			<priceView>$52,000 WIWO</priceView>
+			
+		<address streetview="yes" display="no">
+			<longitude>153.2670055</longitude>
+			<latitude>-27.526928</latitude>
+			<subNumber></subNumber>
+			<streetNumber></streetNumber>
+			<street>AGG201</street>
+				<suburb>Brisbane</suburb>
+			<state>qld</state>
+			<postcode>4000</postcode>
+			<country>AUS</country>
+		</address>
+			
+			<businessCategory id="1">
+				<name>Transport/Distribution</name>
+					<businessSubCategory>
+						<name>Road</name>
+					</businessSubCategory>
+			</businessCategory>
+			
+			<headline>Bread Distribution Run Cleveland Area  AGG201</headline>
+			<description>* Easy to operate
+* Great lifestyle finishing by 9.00 am every day
+* Above all, a good income!
+* Fairly low risk as product range is always in demand
+* Longstanding &amp; loyal customer base which is growing
+* Ample opportunity to expand
+* The Bakery will support business by providing $20,000 loan payable over a three year period at a flat interest rate of 8% p.a.
+
+The business is easily run by a single owner operator with a simple ordering system with most customers having standing orders in place. All administration (eg: invoicing etc) is done by the Bakery.
+
+The business has no wastage with an attractive returns policy with the Bakery &amp; the Bakery is very pro active in marketing their range of products to attract new customers. This fantastic business is very easily run as a single owner/operator looking to be their own boss &amp; have an enjoyable lifestyle. The work is not demanding &amp; there is plenty of friendly customer interaction each day.
+
+Call Broker: Gary Barnes 0488 711 521
+
+ABS-Sunshine Coast Office 07 5479 0055 
+www.abssunshinecoast.com.au
+
+Ref# AGG201
+</description>
+			
+		<buildingDetails>
+			<area unit="squareMeter">0</area>
+			<energyRating></energyRating>
+		</buildingDetails>
+	
+			
+				<externalLink href="" />
+				<externalLink href="" />
+			
+		<images>
+						<img id="m" modTime="2015-05-18-01:31:13" url="http://au-cdn.brolga.com.au/a60059ddffdfdffd9748b9-e.jpg" format="jpg" />
+						<img id="a" modTime="2015-05-18-01:31:13" url="http://au-cdn.brolga.com.au/135f9bb4f4dd770a117dd6-e.jpg" format="jpg" />
+						<img id="b" modTime="2015-05-18-01:31:13" url="http://au-cdn.brolga.com.au/099049d87a0b8b904a4810-e.jpg" format="jpg" />
+						<img id="c" modTime="2015-05-18-01:31:13" url="http://au-cdn.brolga.com.au/4dfead64e3eb52e0f72f92-e.jpg" format="jpg" />
+			<img id="d"/>
+			<img id="e"/>
+			<img id="f"/>
+			<img id="g"/>
+			<img id="h"/>
+			<img id="i"/>
+			<img id="j"/>
+			<img id="k"/>
+			<img id="l"/>
+			<img id="n"/>
+			<img id="o"/>
+			<img id="p"/>
+			<img id="q"/>
+			<img id="r"/>
+			<img id="s"/>
+			<img id="t"/>
+			<img id="u"/>
+			<img id="v"/>
+			<img id="w"/>
+			<img id="x"/>
+			<img id="y"/>
+			<img id="z"/>
+			<img id="aa"/>
+			<img id="ab"/>
+			<img id="ac"/>
+			<img id="ad"/>
+			<img id="ae"/>
+			<img id="af"/>
+			<img id="ag"/>
+			<img id="ah"/>
+			<img id="ai"/>
+		</images>
+		<objects>
+			<floorplan id="1"/>
+			<floorplan id="2"/>
+		</objects>
+			
+			
+			
+			<miniweb>
+ <uri id="1">http://brolga.com.au/22086</uri>
+ </miniweb>
+	
+	</business>
+
+	
+	<business modTime="2016-01-23-08:22:46" status="current">
+
+			<agentID>abs-sc</agentID>
+			<uniqueID>absb-sbus1184</uniqueID>
+			
+			<exclusivity value="exclusive"/>
+			<commercialListingType value="sale"/>
+			
+			
+			<underOffer value="no"/>
+			
+	<listingAgent id="1">
+			<name>Brett Williams</name>
+			<telephone type="BH">07 5479 0055</telephone>
+			<telephone type="mobile">0414 548 216</telephone>
+			<email>brett@abssunshinecoast.com.au</email>
+			<twitterURL></twitterURL><facebookURL></facebookURL><linkedInURL></linkedInURL>
+			
+	</listingAgent>
+	
+	<listingAgent id="2"></listingAgent>
+	
+			
+			<franchise value="no"></franchise>
+			
+			
+			<price>99000</price>
+			<priceView>$99,000 + SAV</priceView>
+			
+		<address streetview="yes" display="no">
+			<longitude>153.0894391</longitude>
+			<latitude>-26.6518402</latitude>
+			<subNumber></subNumber>
+			<streetNumber></streetNumber>
+			<street>ABH206</street>
+				<suburb>Maroochydore</suburb>
+			<state>qld</state>
+			<postcode>4558</postcode>
+			<country>AUS</country>
+		</address>
+			
+			<businessCategory id="1">
+				<name>Retail</name>
+					<businessSubCategory>
+						<name>Homeware/Hardware</name>
+					</businessSubCategory>
+			</businessCategory>
+			
+			<headline>Building &amp; Renovation Supply Centre - ABH206</headline>
+			<description>* 2015 Turnover $252,792
+* Extensive product range
+* Great showroom display
+* Definite opportunity for growth
+* Ability to add further products &amp; services
+* Long term established business
+* Centrally located with great access
+* Close to other trade related services
+
+This business is a long established local family owned business. It has been in operation for 20 years providing a huge range of products and services to new and renovated homes and units across the Sunshine Coast and surrounding areas, even selling products further afield. Centrally located  with well-known quality affordable products and great personal service this business is ideal in the Building Services market supplying products across a wide customer base including Builders, Handyman Services and the DIY market.
+
+Call Broker: Brett Williams   0414 548 216       
+
+Ref# ABH206 
+ 
+ABS-Sunshine Coast Office 07 5479 0055 
+www.abssunshinecoast.com.au
+</description>
+			
+		<buildingDetails>
+			<area unit="squareMeter">0</area>
+			<energyRating></energyRating>
+		</buildingDetails>
+	
+			
+				<externalLink href="" />
+				<externalLink href="" />
+			
+		<images>
+						<img id="m" modTime="2015-06-22-01:39:14" url="http://au-cdn.brolga.com.au/015a282031a75b49edaff1-e.jpg" format="jpg" />
+						<img id="a" modTime="2015-06-22-01:39:14" url="http://au-cdn.brolga.com.au/6ae9e6aa27f5e412f32171-e.jpg" format="jpg" />
+						<img id="b" modTime="2015-06-22-01:40:14" url="http://au-cdn.brolga.com.au/8c9b66733809532dccfc34-e.jpg" format="jpg" />
+						<img id="c" modTime="2015-06-22-01:40:14" url="http://au-cdn.brolga.com.au/6df8359add3b6022f31f3f-e.jpg" format="jpg" />
+			<img id="d"/>
+			<img id="e"/>
+			<img id="f"/>
+			<img id="g"/>
+			<img id="h"/>
+			<img id="i"/>
+			<img id="j"/>
+			<img id="k"/>
+			<img id="l"/>
+			<img id="n"/>
+			<img id="o"/>
+			<img id="p"/>
+			<img id="q"/>
+			<img id="r"/>
+			<img id="s"/>
+			<img id="t"/>
+			<img id="u"/>
+			<img id="v"/>
+			<img id="w"/>
+			<img id="x"/>
+			<img id="y"/>
+			<img id="z"/>
+			<img id="aa"/>
+			<img id="ab"/>
+			<img id="ac"/>
+			<img id="ad"/>
+			<img id="ae"/>
+			<img id="af"/>
+			<img id="ag"/>
+			<img id="ah"/>
+			<img id="ai"/>
+		</images>
+		<objects>
+			<floorplan id="1"/>
+			<floorplan id="2"/>
+		</objects>
+			
+			
+			
+			<miniweb>
+ <uri id="1">http://brolga.com.au/23447</uri>
+ </miniweb>
+	
+	</business>
+
+	
+	<business modTime="2016-01-23-08:22:47" status="current">
+
+			<agentID>abs-sc</agentID>
+			<uniqueID>absb-sbus1188</uniqueID>
+			
+			<exclusivity value="exclusive"/>
+			<commercialListingType value="sale"/>
+			
+			
+			<underOffer value="no"/>
+			
+	<listingAgent id="1">
+			<name>Marilyn Barnes</name>
+			<telephone type="BH">07 5479 0055</telephone>
+			<telephone type="mobile">0458 418 110</telephone>
+			<email>marilyn@abssunshinecoast.com.au</email>
+			<twitterURL></twitterURL><facebookURL></facebookURL><linkedInURL></linkedInURL>
+			
+	</listingAgent>
+	
+	<listingAgent id="2"></listingAgent>
+	
+			
+			<franchise value="no"></franchise>
+			
+			
+			<price>120000</price>
+			<priceView>$120,000 + SAV</priceView>
+			
+		<address streetview="yes" display="no">
+			<longitude>153.1244868</longitude>
+			<latitude>-26.8042574</latitude>
+			<subNumber></subNumber>
+			<streetNumber></streetNumber>
+			<street>AML208</street>
+				<suburb>Caloundra</suburb>
+			<state>qld</state>
+			<postcode>4551</postcode>
+			<country>AUS</country>
+		</address>
+			
+			<businessCategory id="1">
+				<name>Retail</name>
+					<businessSubCategory>
+						<name>Clothing/Accessories</name>
+					</businessSubCategory>
+			</businessCategory>
+			
+			<headline>Ladies Fashion &amp; Accessories - AML208</headline>
+			<description>Attractive income to one working owner 2015 Turnover $247,591, low rent, long lease, main street frontage and great sought after fashion labels! Located in one of the Sunshine Coasts popular tourist spots. Great Mother &amp; Daughter business or Sole Trader, heaps of scope  just waiting for you!
+
+In a very short period of time the owner has transcended this business to become a popular fashion boutique. The focus has been on creating a shop carrying sought out labels, the boutique is filled with colourful fashions from suppliers such as:
+
+* Ruby Yaya
+* Threads
+* Drift
+* Clarity
+* Calypso
+* Orientique
+* Stephanali
+* Ombak
+
+Also on offer is a range of fashion accessories:
+* Scarves
+* Handbags (Pratten)
+* Hats
+* Jewellery 
+
+This delightful little shop trades 6 ½ days a week and offers the owner an attractive income, with very reasonable rent. Predominantly women aged from 35 years and up, but a lot of the fashions also appeal to the younger set as well. 
+
+Call Broker:  Marilyn Barnes 0458 418 110
+
+ABS-Sunshine Coast Office 07 5479 0055 
+www.abssunshinecoast.com.au
+
+Ref# AML208 
+</description>
+			
+		<buildingDetails>
+			<area unit="squareMeter">0</area>
+			<energyRating></energyRating>
+		</buildingDetails>
+	
+			
+				<externalLink href="" />
+				<externalLink href="" />
+			
+		<images>
+						<img id="m" modTime="2015-06-30-01:53:09" url="http://au-cdn.brolga.com.au/a2dff2df6986e01f25e74b-e.jpg" format="jpg" />
+						<img id="a" modTime="2015-06-30-01:53:09" url="http://au-cdn.brolga.com.au/2186deaa0e819e053b1789-e.jpg" format="jpg" />
+						<img id="b" modTime="2015-06-30-01:53:09" url="http://au-cdn.brolga.com.au/1fc913fd3d832da207b918-e.jpg" format="jpg" />
+						<img id="c" modTime="2015-06-30-01:53:09" url="http://au-cdn.brolga.com.au/9c2190e645102dcce072fb-e.jpg" format="jpg" />
+			<img id="d"/>
+			<img id="e"/>
+			<img id="f"/>
+			<img id="g"/>
+			<img id="h"/>
+			<img id="i"/>
+			<img id="j"/>
+			<img id="k"/>
+			<img id="l"/>
+			<img id="n"/>
+			<img id="o"/>
+			<img id="p"/>
+			<img id="q"/>
+			<img id="r"/>
+			<img id="s"/>
+			<img id="t"/>
+			<img id="u"/>
+			<img id="v"/>
+			<img id="w"/>
+			<img id="x"/>
+			<img id="y"/>
+			<img id="z"/>
+			<img id="aa"/>
+			<img id="ab"/>
+			<img id="ac"/>
+			<img id="ad"/>
+			<img id="ae"/>
+			<img id="af"/>
+			<img id="ag"/>
+			<img id="ah"/>
+			<img id="ai"/>
+		</images>
+		<objects>
+			<floorplan id="1"/>
+			<floorplan id="2"/>
+		</objects>
+			
+			
+			
+			<miniweb>
+ <uri id="1">http://brolga.com.au/23681</uri>
+ </miniweb>
+	
+	</business>
+
+	
+	<business modTime="2016-01-23-08:22:49" status="current">
+
+			<agentID>abs-sc</agentID>
+			<uniqueID>absb-sbus1194</uniqueID>
+			
+			<exclusivity value="exclusive"/>
+			<commercialListingType value="sale"/>
+			
+			
+			<underOffer value="no"/>
+			
+	<listingAgent id="1">
+			<name>Gary Barnes</name>
+			<telephone type="BH"></telephone>
+			<telephone type="mobile">0488 711 521</telephone>
+			<email>gary@abssunshinecoast.com.au</email>
+			<twitterURL></twitterURL><facebookURL></facebookURL><linkedInURL></linkedInURL>
+			
+	</listingAgent>
+	
+	<listingAgent id="2"></listingAgent>
+	
+			
+			<franchise value="no"></franchise>
+			
+			
+			<price>120000</price>
+			<priceView>$120,000 WIWO</priceView>
+			
+		<address streetview="yes" display="no">
+			<longitude>142.7027956</longitude>
+			<latitude>-20.9175738</latitude>
+			<subNumber></subNumber>
+			<streetNumber></streetNumber>
+			<street>AGG189</street>
+				<suburb>Brisbane</suburb>
+			<state>qld</state>
+			<postcode>4000</postcode>
+			<country>AUS</country>
+		</address>
+			
+			<businessCategory id="1">
+				<name>Home/Garden</name>
+					<businessSubCategory>
+						<name>Home Based</name>
+					</businessSubCategory>
+			</businessCategory>
+			
+			<businessCategory id="2">
+				<name>Transport/Distribution</name>
+					<businessSubCategory>
+						<name>Road</name>
+					</businessSubCategory>
+			</businessCategory>
+			
+			<headline>Bread Distribution Run  North Lakes  AGG189</headline>
+			<description>* 2015 Turnover $440,814
+* Fairly low risk as product range is always in demand
+* Longstanding &amp; loyal customer base which is growing
+* Ample opportunity to expand
+* Covers Virginia to North Lakes
+* Great lifestyle finishing before 9am every day
+* Run incorporates 14 supermarkets, 53 other customers 3 taverns
+* Above all, a good income!!   
+
+Wonderful well established, safe &amp; secure bread distribution run, offering a long list of great features. It includes: an exclusive distribution area with great back-up &amp; support from the bakery, with low overheads.
+
+The business is easily run by a single owner operator with a simple ordering system with most customers having standing orders in place.  All administration (eg invoicing etc) is done by the bakery.  The depot is located in Virginia a very close to the start of the distribution area.  The business has no wastage with an attractive returns policy with the bakery &amp; the bakery is very pro active in marketing their range of products to attract new customers.   This fantastic business is very easily run as a single owner/operator looking to be their own boss &amp; have an enjoyable lifestyle.  The work is not demanding &amp; there is plenty of friendly customer interaction each day.
+
+Call Broker: Gary Barnes 0488 711 521
+
+ABS-Sunshine Coast Office 07 5479 0055 
+www.abssunshinecoast.com.au
+
+Ref# AGG189 
+</description>
+			
+		<buildingDetails>
+			<area unit="squareMeter">0</area>
+			<energyRating></energyRating>
+		</buildingDetails>
+	
+			
+				<externalLink href="" />
+				<externalLink href="" />
+			
+		<images>
+						<img id="m" modTime="2015-07-10-01:39:10" url="http://au-cdn.brolga.com.au/9dc7eb531fbf444e3fb948-e.jpg" format="jpg" />
+						<img id="a" modTime="2015-07-10-01:39:10" url="http://au-cdn.brolga.com.au/399b677bec7f16857a12ff-e.jpg" format="jpg" />
+						<img id="b" modTime="2015-07-10-01:39:10" url="http://au-cdn.brolga.com.au/612cea642cae175caac80c-e.jpg" format="jpg" />
+						<img id="c" modTime="2015-07-10-01:39:10" url="http://au-cdn.brolga.com.au/455018753dbf746a9c5c98-e.jpg" format="jpg" />
+			<img id="d"/>
+			<img id="e"/>
+			<img id="f"/>
+			<img id="g"/>
+			<img id="h"/>
+			<img id="i"/>
+			<img id="j"/>
+			<img id="k"/>
+			<img id="l"/>
+			<img id="n"/>
+			<img id="o"/>
+			<img id="p"/>
+			<img id="q"/>
+			<img id="r"/>
+			<img id="s"/>
+			<img id="t"/>
+			<img id="u"/>
+			<img id="v"/>
+			<img id="w"/>
+			<img id="x"/>
+			<img id="y"/>
+			<img id="z"/>
+			<img id="aa"/>
+			<img id="ab"/>
+			<img id="ac"/>
+			<img id="ad"/>
+			<img id="ae"/>
+			<img id="af"/>
+			<img id="ag"/>
+			<img id="ah"/>
+			<img id="ai"/>
+		</images>
+		<objects>
+			<floorplan id="1"/>
+			<floorplan id="2"/>
+		</objects>
+			
+			
+			
+			<miniweb>
+ <uri id="1">http://brolga.com.au/24081</uri>
+ </miniweb>
+	
+	</business>
+
+	
+	<business modTime="2016-01-23-08:22:51" status="current">
+
+			<agentID>abs-sc</agentID>
+			<uniqueID>absb-sbus1198</uniqueID>
+			
+			<exclusivity value="exclusive"/>
+			<commercialListingType value="sale"/>
+			
+			
+			<underOffer value="no"/>
+			
+	<listingAgent id="1">
+			<name>Brett Williams</name>
+			<telephone type="BH">07 5479 0055</telephone>
+			<telephone type="mobile">0414 548 216</telephone>
+			<email>brett@abssunshinecoast.com.au</email>
+			<twitterURL></twitterURL><facebookURL></facebookURL><linkedInURL></linkedInURL>
+			
+	</listingAgent>
+	
+	<listingAgent id="2"></listingAgent>
+	
+			
+			<franchise value="no"></franchise>
+			
+			
+			<price>295000</price>
+			<priceView>$295,000 WIWO</priceView>
+			
+		<address streetview="yes" display="no">
+			<longitude>153.0894391</longitude>
+			<latitude>-26.6518402</latitude>
+			<subNumber></subNumber>
+			<streetNumber></streetNumber>
+			<street>ABC211</street>
+				<suburb>Maroochydore</suburb>
+			<state>qld</state>
+			<postcode>4558</postcode>
+			<country>AUS</country>
+		</address>
+			
+			<businessCategory id="1">
+				<name>Home/Garden</name>
+					<businessSubCategory>
+						<name>Home Based</name>
+					</businessSubCategory>
+			</businessCategory>
+			
+			<businessCategory id="2">
+				<name>Services</name>
+					<businessSubCategory>
+						<name>Communication</name>
+					</businessSubCategory>
+			</businessCategory>
+			
+			<headline>Communications Network UHF/VHF - ABC211</headline>
+			<description>* 2014 Turnover $116,971
+* Established 1988
+* Long term strong clientele
+* Minimal competition
+* Exclusive sites
+* Plenty of Room for growth
+* Quality plant and equipment
+* Large range of communications equipment available
+
+This Communications Network was first established on the Sunshine Coast Qld, in 1988. With solid long term clientele. This business has got it all covered with three of its own repeater sites spanning Communications from Caboolture to Gympie.
+
+This business has a great reputation across the coast for providing the right solution in communications for each and every client, they work through the requirements and install the right equipment for the job utilising their wide range of available communication systems and products
+
+Call Broker: Brett Williams 0414 548 216
+
+ABS-Sunshine Coast Office 07 5479 0055 
+www.abssunshinecoast.com.au
+
+Ref# ABC211 
+</description>
+			
+		<buildingDetails>
+			<area unit="squareMeter">0</area>
+			<energyRating></energyRating>
+		</buildingDetails>
+	
+			
+				<externalLink href="" />
+				<externalLink href="" />
+			
+		<images>
+						<img id="m" modTime="2015-07-20-01:11:14" url="http://au-cdn.brolga.com.au/580b92818c6370b0d001bc-e.jpg" format="jpg" />
+						<img id="a" modTime="2015-07-20-01:11:14" url="http://au-cdn.brolga.com.au/c4fdc707093ca76aa2269c-e.jpg" format="jpg" />
+						<img id="b" modTime="2015-07-20-01:11:14" url="http://au-cdn.brolga.com.au/59eb12d54e32bbddccf168-e.jpg" format="jpg" />
+						<img id="c" modTime="2015-07-20-01:11:14" url="http://au-cdn.brolga.com.au/41c490730941d7f8b77c91-e.jpg" format="jpg" />
+			<img id="d"/>
+			<img id="e"/>
+			<img id="f"/>
+			<img id="g"/>
+			<img id="h"/>
+			<img id="i"/>
+			<img id="j"/>
+			<img id="k"/>
+			<img id="l"/>
+			<img id="n"/>
+			<img id="o"/>
+			<img id="p"/>
+			<img id="q"/>
+			<img id="r"/>
+			<img id="s"/>
+			<img id="t"/>
+			<img id="u"/>
+			<img id="v"/>
+			<img id="w"/>
+			<img id="x"/>
+			<img id="y"/>
+			<img id="z"/>
+			<img id="aa"/>
+			<img id="ab"/>
+			<img id="ac"/>
+			<img id="ad"/>
+			<img id="ae"/>
+			<img id="af"/>
+			<img id="ag"/>
+			<img id="ah"/>
+			<img id="ai"/>
+		</images>
+		<objects>
+			<floorplan id="1"/>
+			<floorplan id="2"/>
+		</objects>
+			
+			
+			
+			<miniweb>
+ <uri id="1">http://brolga.com.au/24374</uri>
+ </miniweb>
+	
+	</business>
+
+	
+	<business modTime="2016-01-23-08:22:53" status="current">
+
+			<agentID>abs-sc</agentID>
+			<uniqueID>absb-sbus1204</uniqueID>
+			
+			<exclusivity value="exclusive"/>
+			<commercialListingType value="sale"/>
+			
+			
+			<underOffer value="no"/>
+			
+	<listingAgent id="1">
+			<name>Brett Williams</name>
+			<telephone type="BH">07 5479 0055</telephone>
+			<telephone type="mobile">0414 548 216</telephone>
+			<email>brett@abssunshinecoast.com.au</email>
+			<twitterURL></twitterURL><facebookURL></facebookURL><linkedInURL></linkedInURL>
+			
+	</listingAgent>
+	
+	<listingAgent id="2"></listingAgent>
+	
+			
+			<franchise value="no"></franchise>
+			
+			
+			<price>540000</price>
+			<priceView>$540,000 + SAV</priceView>
+			
+		<address streetview="yes" display="no">
+			<longitude>151.9539874</longitude>
+			<latitude>-27.56433</latitude>
+			<subNumber></subNumber>
+			<streetNumber></streetNumber>
+			<street>ABC207</street>
+				<suburb>Toowoomba</suburb>
+			<state>qld</state>
+			<postcode>4350</postcode>
+			<country>AUS</country>
+		</address>
+			
+			<businessCategory id="1">
+				<name>Retail</name>
+					<businessSubCategory>
+						<name>Homeware/Hardware</name>
+					</businessSubCategory>
+			</businessCategory>
+			
+			<headline>Flooring &amp; Window Coverings - ABC207</headline>
+			<description>* 2015 turnover $2,293,735
+* Very well established with long term great client base
+* Purchasing power of large buying group
+* Membership not a Franchise
+* Domestic &amp; commercial Sales
+* Great showroom &amp; offices with large separate warehouse
+* Centrally located
+* Exclusive licence agreement for window coverings
+* Huge range of products to suit all clients
+
+Long term established Flooring and Window furnishings business. Member of a large national buying group, not a franchise, in a great central location with separate warehouse and an exclusive license agreement in place for their window coverings as well as a large range of exclusive flooring products. This business has stood the test of time and everything is in place for a new owner to maintain future earnings.
+
+Call Broker: Brett Williams 0414 548 216
+
+Ref# ABC207
+
+ABS-Sunshine Coast Office 07 5479 0055
+
+www.abssunshinecoast.com.au
+
+</description>
+			
+		<buildingDetails>
+			<area unit="squareMeter">0</area>
+			<energyRating></energyRating>
+		</buildingDetails>
+	
+			
+				<externalLink href="" />
+				<externalLink href="" />
+			
+		<images>
+						<img id="m" modTime="2015-07-31-01:57:13" url="http://au-cdn.brolga.com.au/f5a6a4b1e53a818a777c99-e.jpg" format="jpg" />
+						<img id="a" modTime="2015-07-31-01:57:13" url="http://au-cdn.brolga.com.au/6c4187f830cf2addee6791-e.jpg" format="jpg" />
+						<img id="b" modTime="2015-07-31-01:57:13" url="http://au-cdn.brolga.com.au/5406b20cc8012c7f03a39d-e.jpg" format="jpg" />
+						<img id="c" modTime="2015-07-31-01:57:13" url="http://au-cdn.brolga.com.au/d293b702e16134390072ce-e.jpg" format="jpg" />
+			<img id="d"/>
+			<img id="e"/>
+			<img id="f"/>
+			<img id="g"/>
+			<img id="h"/>
+			<img id="i"/>
+			<img id="j"/>
+			<img id="k"/>
+			<img id="l"/>
+			<img id="n"/>
+			<img id="o"/>
+			<img id="p"/>
+			<img id="q"/>
+			<img id="r"/>
+			<img id="s"/>
+			<img id="t"/>
+			<img id="u"/>
+			<img id="v"/>
+			<img id="w"/>
+			<img id="x"/>
+			<img id="y"/>
+			<img id="z"/>
+			<img id="aa"/>
+			<img id="ab"/>
+			<img id="ac"/>
+			<img id="ad"/>
+			<img id="ae"/>
+			<img id="af"/>
+			<img id="ag"/>
+			<img id="ah"/>
+			<img id="ai"/>
+		</images>
+		<objects>
+			<floorplan id="1"/>
+			<floorplan id="2"/>
+		</objects>
+			
+			
+			
+			<miniweb>
+ <uri id="1">http://brolga.com.au/24872</uri>
+ </miniweb>
+	
+	</business>
+
+	
+	<business modTime="2016-01-23-08:22:54" status="current">
+
+			<agentID>abs-sc</agentID>
+			<uniqueID>absb-sbus1206</uniqueID>
+			
+			<exclusivity value="exclusive"/>
+			<commercialListingType value="sale"/>
+			
+			
+			<underOffer value="no"/>
+			
+	<listingAgent id="1">
+			<name>Brett Williams</name>
+			<telephone type="BH">07 5479 0055</telephone>
+			<telephone type="mobile">0414 548 216</telephone>
+			<email>brett@abssunshinecoast.com.au</email>
+			<twitterURL></twitterURL><facebookURL></facebookURL><linkedInURL></linkedInURL>
+			
+	</listingAgent>
+	
+	<listingAgent id="2"></listingAgent>
+	
+			
+			<franchise value="no"></franchise>
+			
+			
+			<price>298000</price>
+			<priceView>$298,000 + SAV</priceView>
+			
+		<address streetview="yes" display="no">
+			<longitude>146.8178707</longitude>
+			<latitude>-19.2576268</latitude>
+			<subNumber></subNumber>
+			<streetNumber></streetNumber>
+			<street>ABD217</street>
+				<suburb>Townsville City</suburb>
+			<state>qld</state>
+			<postcode>4810</postcode>
+			<country>AUS</country>
+		</address>
+			
+			<businessCategory id="1">
+				<name>Industrial/Manufacturing</name>
+					<businessSubCategory>
+						<name>Building and Construction</name>
+					</businessSubCategory>
+			</businessCategory>
+			
+			<businessCategory id="2">
+				<name>Retail</name>
+					<businessSubCategory>
+						<name>Homeware/Hardware</name>
+					</businessSubCategory>
+			</businessCategory>
+			
+			<headline>Building/Renovation Centre - ABD217</headline>
+			<description>* 2015 Turnover $691,623
+* Long term established business
+* Extensive product range
+* Great showroom display
+* Opportunity to expand
+* Well respected business
+* Plenty of easy access parking
+* Little competition as two competitors have ceased operation in the last 12 months
+
+This business is a long established local family owned business. It has been in operation for 22 years providing a huge range of products and services to new and renovated homes and units across the local Townsville and surrounding areas, even selling products further afield. Well located  with well-known quality affordable products and great personal service this business is ideal in the Building Services market supplying products across a wide customer base including Builders, Handyman Services and the DIY market.
+
+Call Broker: Brett Williams   0414 548 216  
+
+Ref# ABD217     
+ 
+ABS-Sunshine Coast Office 07 5479 0055 
+www.abssunshinecoast.com.au
+</description>
+			
+		<buildingDetails>
+			<area unit="squareMeter">0</area>
+			<energyRating></energyRating>
+		</buildingDetails>
+	
+			
+				<externalLink href="" />
+				<externalLink href="" />
+			
+		<images>
+						<img id="m" modTime="2015-08-13-01:20:13" url="http://au-cdn.brolga.com.au/37bc81351f6a36f196a689-e.jpg" format="jpg" />
+						<img id="a" modTime="2015-08-13-01:20:13" url="http://au-cdn.brolga.com.au/974a2f684fca7a61284569-e.jpg" format="jpg" />
+						<img id="b" modTime="2015-08-13-01:20:13" url="http://au-cdn.brolga.com.au/f64493fdd18156dc1a3ada-e.jpg" format="jpg" />
+						<img id="c" modTime="2015-08-13-01:20:13" url="http://au-cdn.brolga.com.au/dc4ca69c38b04619fe9804-e.jpg" format="jpg" />
+			<img id="d"/>
+			<img id="e"/>
+			<img id="f"/>
+			<img id="g"/>
+			<img id="h"/>
+			<img id="i"/>
+			<img id="j"/>
+			<img id="k"/>
+			<img id="l"/>
+			<img id="n"/>
+			<img id="o"/>
+			<img id="p"/>
+			<img id="q"/>
+			<img id="r"/>
+			<img id="s"/>
+			<img id="t"/>
+			<img id="u"/>
+			<img id="v"/>
+			<img id="w"/>
+			<img id="x"/>
+			<img id="y"/>
+			<img id="z"/>
+			<img id="aa"/>
+			<img id="ab"/>
+			<img id="ac"/>
+			<img id="ad"/>
+			<img id="ae"/>
+			<img id="af"/>
+			<img id="ag"/>
+			<img id="ah"/>
+			<img id="ai"/>
+		</images>
+		<objects>
+			<floorplan id="1"/>
+			<floorplan id="2"/>
+		</objects>
+			
+			
+			
+			<miniweb>
+ <uri id="1">http://brolga.com.au/25270</uri>
+ </miniweb>
+	
+	</business>
+
+	
+	<business modTime="2016-01-23-08:23:30" status="current">
+
+			<agentID>abs-sc</agentID>
+			<uniqueID>absb-sbus1286</uniqueID>
+			
+			<exclusivity value="exclusive"/>
+			<commercialListingType value="sale"/>
+			
+			
+			<underOffer value="no"/>
+			
+	<listingAgent id="1">
+			<name>Peter Tones</name>
+			<telephone type="BH">07 5479 0055</telephone>
+			<telephone type="mobile">0428 986 644</telephone>
+			<email>peter@abssunshinecoast.com.au</email>
+			<twitterURL></twitterURL><facebookURL></facebookURL><linkedInURL></linkedInURL>
+			
+	</listingAgent>
+	
+	<listingAgent id="2"></listingAgent>
+	
+			
+			<franchise value="no"></franchise>
+			
+			
+			<price>690000</price>
+			<priceView>$690,000 WIWO</priceView>
+			
+		<address streetview="yes" display="no">
+			<longitude>152.9516891</longitude>
+			<latitude>-27.0834686</latitude>
+			<subNumber></subNumber>
+			<streetNumber></streetNumber>
+			<street>APB228</street>
+				<suburb>Caboolture</suburb>
+			<state>qld</state>
+			<postcode>4510</postcode>
+			<country>AUS</country>
+		</address>
+			
+			<businessCategory id="1">
+				<name>Automotive</name>
+					<businessSubCategory>
+						<name>Panel Beating</name>
+					</businessSubCategory>
+			</businessCategory>
+			
+			<headline>Quality Smash Repairers - APB228</headline>
+			<description>* 2015 Turnover $2,035,003
+* State of the art purpose built premises.
+* Up to date collision repair technology &amp; equipment.
+* Latest technology in office management and quoting programs.
+* Secured vehicle holding facilities for 40  50 motor vehicles.
+* Fully monitored work shop.
+* Under cover customer parking &amp; quoting bays.
+* Large spare parts storage area.
+* Spacious air-conditioned customer lounge &amp; reception.
+* Private management offices.
+* Established since 1992.
+* Staffed with highly trained technicians.
+* EPA &amp; council approved paint mixing &amp; paint storage room.
+* Services offered include: Smash Repairs, Panel Beating, Spray Painting, Car Detailing, Plastic Welding, Paint less Dint Repairs, Window Tinting &amp; On Site Quoting.
+* This quality smash repairer has earned a reputation for being an industry leader in quality repairs &amp; service.
+
+This is opportunity to step into a well-established &amp; successfully operating smash repair business with plenty of room to expand &amp; take advantage of the population growth, predicted for South East Queensland.  Highly respected smash repairs in a major regional centre, carrying recommended repairer signage for some of the largest insurance companies in the country. Showing continual growth &amp; solid financial returns. The owners have set up this collision repairs business with pride &amp; passion for an organised, well maintained &amp; professional operation. 
+
+Call Broker:  Peter Tones 0428 986 644
+ABS-Sunshine Coast Office 07 5479 0055 
+
+www.abssunshinecoast.com.au
+
+Ref# APB228 
+</description>
+			
+		<buildingDetails>
+			<area unit="squareMeter">0</area>
+			<energyRating></energyRating>
+		</buildingDetails>
+	
+			
+				<externalLink href="" />
+				<externalLink href="" />
+			
+		<images>
+						<img id="m" modTime="2015-12-10-01:40:21" url="http://au-cdn.brolga.com.au/6cf580dfba54fa45197d94-e.jpg" format="jpg" />
+						<img id="a" modTime="2015-12-10-01:40:21" url="http://au-cdn.brolga.com.au/f8e693074e8b2471844c54-e.jpg" format="jpg" />
+						<img id="b" modTime="2015-12-10-01:40:21" url="http://au-cdn.brolga.com.au/dbfdc4a4c1540061452335-e.jpg" format="jpg" />
+						<img id="c" modTime="2015-12-10-01:40:21" url="http://au-cdn.brolga.com.au/735a11b49cc2cbde89f62f-e.jpg" format="jpg" />
+			<img id="d"/>
+			<img id="e"/>
+			<img id="f"/>
+			<img id="g"/>
+			<img id="h"/>
+			<img id="i"/>
+			<img id="j"/>
+			<img id="k"/>
+			<img id="l"/>
+			<img id="n"/>
+			<img id="o"/>
+			<img id="p"/>
+			<img id="q"/>
+			<img id="r"/>
+			<img id="s"/>
+			<img id="t"/>
+			<img id="u"/>
+			<img id="v"/>
+			<img id="w"/>
+			<img id="x"/>
+			<img id="y"/>
+			<img id="z"/>
+			<img id="aa"/>
+			<img id="ab"/>
+			<img id="ac"/>
+			<img id="ad"/>
+			<img id="ae"/>
+			<img id="af"/>
+			<img id="ag"/>
+			<img id="ah"/>
+			<img id="ai"/>
+		</images>
+		<objects>
+			<floorplan id="1"/>
+			<floorplan id="2"/>
+		</objects>
+			
+			
+			
+			<miniweb>
+ <uri id="1">http://brolga.com.au/29013</uri>
+ </miniweb>
+	
+	</business>
+
+	
+	<business modTime="2016-08-05-11:22:02" status="current">
+
+			<agentID>abs-sc</agentID>
+			<uniqueID>absb-sbus1312</uniqueID>
+			
+			<exclusivity value="exclusive"/>
+			<commercialListingType value="sale"/>
+			
+			
+			<underOffer value="no"/>
+			
+	<listingAgent id="1">
+			<name>Marilyn Barnes</name>
+			<telephone type="BH">07 5479 0055</telephone>
+			<telephone type="mobile">0458 418 110</telephone>
+			<email>marilyn@abssunshinecoast.com.au</email>
+			<twitterURL></twitterURL><facebookURL></facebookURL><linkedInURL></linkedInURL>
+			
+	</listingAgent>
+	
+	<listingAgent id="2"></listingAgent>
+	
+			
+			<franchise value="no"></franchise>
+			
+			
+			<price>180000</price>
+			<priceView>$180,000 + SAV</priceView>
+			
+		<address streetview="yes" display="no">
+			<longitude>153.0894391</longitude>
+			<latitude>-26.6518402</latitude>
+			<subNumber></subNumber>
+			<streetNumber></streetNumber>
+			<street>AGJ230</street>
+				<suburb>Maroochydore</suburb>
+			<state>qld</state>
+			<postcode>4558</postcode>
+			<country>AUS</country>
+		</address>
+			
+			<businessCategory id="1">
+				<name>Food/Hospitality</name>
+					<businessSubCategory>
+						<name>Cafe/Coffee Shop</name>
+					</businessSubCategory>
+			</businessCategory>
+			
+			<headline>Buy 1 Café or The Two!</headline>
+			<description>*  BEST location in town
+*  5 ½ days a week
+*  Modern, near new fit out
+*  The lease agreement covers a liquor licence that the current owners have not taken up...this is   added value allowing diners the enjoyment of a glass of wine with lunch, or to open Friday, Saturday nights!
+*  Perfect husband &amp; wife business 
+*  Simple, easy menu
+*  Increasing popularity every week
+*  Strategically positioned to attract the large number of local businesses &amp; shoppers
+
+Both businesses trade 5½ days a week and are well positioned with major banks, supermarket and post offices in very close vicinity.  The businesses both do very busy morning teas, afternoon teas and lunch trade for shoppers as well as for the many business people working in the area, serving delicious coffee and gourmet style light meals. 
+Rarely does an opportunity such as this comes along. Here is the chance to secure not one but two popular coffee shops in the heart of Nambour's CBD. 
+
+HOWEVER…The opportunity remains that you can purchase either Café if that is your preference!
+
+The business trades very consistently and is not dependent on the tourist trade. Cafe # 1offers a comprehensive menu to cover breakfast and lunch choices including traditional breakfast fare and lunchtime sandwiches, burgers, salads, pizza, and pasta.  The menu is easy to prepare. An array of tempting cakes attracts the many morning and afternoon tea patrons. The repeat business from a regular customer base that lives and/or works in the area is huge and is largely due to great food &amp; coffee and friendly service.
+
+Café #1 is more your traditional cafe coffee shop, with its wonderfully relaxed ambiance, offering seating inside and out, and is simply the best in town!!!
+
+Café # 2 has been modeled on an upmarket theme of the latest trend in coffee to go. The decor is up to the minute modern, and customers can either dine in, or grab and go, coffees, drinks and easy snacks. 
+
+Call Broker:  Marilyn Barnes 0458 418 110
+
+ABS-Sunshine Coast Office 07 5479 0055 
+www.abssunshinecoast.com.au
+
+Ref# AMJ230
+ 
+</description>
+			
+		<buildingDetails>
+			<area unit="squareMeter">0</area>
+			<energyRating></energyRating>
+		</buildingDetails>
+	
+			
+				<externalLink href="" />
+				<externalLink href="" />
+			
+		<images>
+						<img id="m" modTime="2016-08-05-01:09:11" url="http://au-cdn.brolga.com.au/a6b9bd53058845e80f298c-e.jpg" format="jpg" />
+						<img id="a" modTime="2016-08-05-01:09:11" url="http://au-cdn.brolga.com.au/2545f1e8665d37f6f6e849-e.jpg" format="jpg" />
+						<img id="b" modTime="2016-08-05-01:09:11" url="http://au-cdn.brolga.com.au/44f6a1d495c7d9f3fb650b-e.jpg" format="jpg" />
+						<img id="c" modTime="2016-08-05-01:09:11" url="http://au-cdn.brolga.com.au/4ce8113d3937dbc4d40815-e.jpg" format="jpg" />
+			<img id="d"/>
+			<img id="e"/>
+			<img id="f"/>
+			<img id="g"/>
+			<img id="h"/>
+			<img id="i"/>
+			<img id="j"/>
+			<img id="k"/>
+			<img id="l"/>
+			<img id="n"/>
+			<img id="o"/>
+			<img id="p"/>
+			<img id="q"/>
+			<img id="r"/>
+			<img id="s"/>
+			<img id="t"/>
+			<img id="u"/>
+			<img id="v"/>
+			<img id="w"/>
+			<img id="x"/>
+			<img id="y"/>
+			<img id="z"/>
+			<img id="aa"/>
+			<img id="ab"/>
+			<img id="ac"/>
+			<img id="ad"/>
+			<img id="ae"/>
+			<img id="af"/>
+			<img id="ag"/>
+			<img id="ah"/>
+			<img id="ai"/>
+		</images>
+		<objects>
+			<floorplan id="1"/>
+			<floorplan id="2"/>
+		</objects>
+			
+			
+			
+			<miniweb>
+ <uri id="1">http://brolga.com.au/30634</uri>
+ </miniweb>
+	
+	</business>
+
+	
+	<business modTime="2016-02-18-10:22:11" status="current">
+
+			<agentID>abs-sc</agentID>
+			<uniqueID>absb-sbus1320</uniqueID>
+			
+			<exclusivity value="exclusive"/>
+			<commercialListingType value="sale"/>
+			
+			
+			<underOffer value="no"/>
+			
+	<listingAgent id="1">
+			<name>Brett Williams</name>
+			<telephone type="BH">07 5479 0055</telephone>
+			<telephone type="mobile">0414 548 216</telephone>
+			<email>brett@abssunshinecoast.com.au</email>
+			<twitterURL></twitterURL><facebookURL></facebookURL><linkedInURL></linkedInURL>
+			
+	</listingAgent>
+	
+	<listingAgent id="2"></listingAgent>
+	
+			
+			<franchise value="no"></franchise>
+			
+			
+			<price>125000</price>
+			<priceView>$125,000 + Stock</priceView>
+			
+		<address streetview="yes" display="no">
+			<longitude>153.0894391</longitude>
+			<latitude>-26.6518402</latitude>
+			<subNumber></subNumber>
+			<streetNumber></streetNumber>
+			<street>ABD237</street>
+				<suburb>Maroochydore</suburb>
+			<state>qld</state>
+			<postcode>4558</postcode>
+			<country>AUS</country>
+		</address>
+			
+			<businessCategory id="1">
+				<name>Industrial/Manufacturing</name>
+					<businessSubCategory>
+						<name>Manufacturing/Engineering</name>
+					</businessSubCategory>
+			</businessCategory>
+			
+			<headline>Carpet &amp; Rug Overlocking - ABD237</headline>
+			<description>* 2015 Turnover $100,340
+* Long term established with consistent clientele
+* Quality Machinery &amp; Equipment to maintain a professional job
+* Minimal Competition
+* Income from day one
+* Growth Potential
+* Full training
+* Lifestyle
+
+This Business has been operational on the Sunshine Coast for 14 years, providing a fantastic service to the Carpet stores and the general public. Their services include carpet overlocking from smaller door / car mats through to large rug sizes and individually shaped pieces. The demand for their services comes across the board from the marine / boating industry, automotive / delivery vans, caravan and camping, through to the holiday &amp; rental market as well the commercial sector and customers own homes.
+ 
+This business is perfect for those looking for a great work / life balance. Allowing you to enjoy all that the beautiful Sunshine Coast has to offer while maintaining a steady solid income, with the benefits of being your own boss!
+
+Call Broker:  Brett Williams  0414 548 216
+
+ABS-Sunshine Coast Office 07 5479 0055 
+www.abssunshinecoast.com.au
+
+Ref:  ABD237</description>
+			
+		<buildingDetails>
+			<area unit="squareMeter">0</area>
+			<energyRating></energyRating>
+		</buildingDetails>
+	
+			
+				<externalLink href="" />
+				<externalLink href="" />
+			
+		<images>
+						<img id="m" modTime="2016-02-18-01:49:09" url="http://au-cdn.brolga.com.au/04ec4e6b0f28818099303f-e.jpg" format="jpg" />
+						<img id="a" modTime="2016-02-18-01:49:09" url="http://au-cdn.brolga.com.au/26a514f0b4712411c47200-e.jpg" format="jpg" />
+						<img id="b" modTime="2016-02-18-01:49:09" url="http://au-cdn.brolga.com.au/edbcc6e833660295b089eb-e.jpg" format="jpg" />
+						<img id="c" modTime="2016-02-18-01:49:09" url="http://au-cdn.brolga.com.au/00e4803f6b0dff23b905aa-e.jpg" format="jpg" />
+			<img id="d"/>
+			<img id="e"/>
+			<img id="f"/>
+			<img id="g"/>
+			<img id="h"/>
+			<img id="i"/>
+			<img id="j"/>
+			<img id="k"/>
+			<img id="l"/>
+			<img id="n"/>
+			<img id="o"/>
+			<img id="p"/>
+			<img id="q"/>
+			<img id="r"/>
+			<img id="s"/>
+			<img id="t"/>
+			<img id="u"/>
+			<img id="v"/>
+			<img id="w"/>
+			<img id="x"/>
+			<img id="y"/>
+			<img id="z"/>
+			<img id="aa"/>
+			<img id="ab"/>
+			<img id="ac"/>
+			<img id="ad"/>
+			<img id="ae"/>
+			<img id="af"/>
+			<img id="ag"/>
+			<img id="ah"/>
+			<img id="ai"/>
+		</images>
+		<objects>
+			<floorplan id="1"/>
+			<floorplan id="2"/>
+		</objects>
+			
+			
+			
+			<miniweb>
+ <uri id="1">http://brolga.com.au/31207</uri>
+ </miniweb>
+	
+	</business>
+
+	
+	<business modTime="2016-06-15-09:22:02" status="current">
+
+			<agentID>abs-sc</agentID>
+			<uniqueID>absb-sbus1373</uniqueID>
+			
+			<exclusivity value="exclusive"/>
+			<commercialListingType value="sale"/>
+			
+			
+			<underOffer value="no"/>
+			
+	<listingAgent id="1">
+			<name>Peter Tones</name>
+			<telephone type="BH">07 5479 0055</telephone>
+			<telephone type="mobile">0428 986 644</telephone>
+			<email>peter@abssunshinecoast.com.au</email>
+			<twitterURL></twitterURL><facebookURL></facebookURL><linkedInURL></linkedInURL>
+			
+	</listingAgent>
+	
+	<listingAgent id="2"></listingAgent>
+	
+			
+			<franchise value="no"></franchise>
+			
+			
+			<price>185000</price>
+			<priceView>$185,000 + SAV</priceView>
+			
+		<address streetview="yes" display="no">
+			<longitude>152.9467377</longitude>
+			<latitude>-27.0718936</latitude>
+			<subNumber></subNumber>
+			<streetNumber></streetNumber>
+			<street>Industry</street>
+				<suburb>Caboolture</suburb>
+			<state>qld</state>
+			<postcode>4510</postcode>
+			<country>AUS</country>
+		</address>
+			
+			<businessCategory id="1">
+				<name>Services</name>
+					<businessSubCategory>
+						<name>Print/Photo</name>
+					</businessSubCategory>
+			</businessCategory>
+			
+			<businessCategory id="2">
+				<name>Industrial/Manufacturing</name>
+					<businessSubCategory>
+						<name>Paper/Printing</name>
+					</businessSubCategory>
+			</businessCategory>
+			
+			<headline>Printing and Signage - APS240</headline>
+			<description>* 2015 Turnover $ 142,262
+* General Printing
+* Carbonless Docket Books
+* Business Cards
+* Posters
+* Note pads
+* General Signage
+* Banners
+* Core Flutes
+* Vehicle Graphics &amp; Wraps
+* Stickers
+* Shop Fronts
+
+Established in 1997 this successful and solid Printing and Signage business is servicing an area from the Sunshine Coast in the north to the Gold Coast in the South, covering the greater part of South East Queensland and is a prime position to take advantage of population growth predicted for the region.
+
+With state of the art equipment this well structured business offers the investor solid and reliable returns while still allowing for growth potential.
+
+Large Customer Base and repeat business around 85-90% proving customer satisfaction.
+Established over 19 years
+High Standard of Service
+Quality of workmanship
+Competitive Pricing
+
+Call Broker:  Peter Tones 0428 986 644    
+
+Ref# APS240
+
+ABS-Sunshine Coast Office 07 5479 0055     
+
+www.abssunshinecoast.com.au</description>
+			
+		<buildingDetails>
+			<area unit="squareMeter">0</area>
+			<energyRating></energyRating>
+		</buildingDetails>
+	
+			
+				<externalLink href="" />
+				<externalLink href="" />
+			
+		<images>
+						<img id="m" modTime="2016-04-27-01:58:11" url="http://au-cdn.brolga.com.au/d4075dd13c61a46083d516-e.jpg" format="jpg" />
+						<img id="a" modTime="2016-04-27-01:58:11" url="http://au-cdn.brolga.com.au/00c9af678717f05f287849-e.jpg" format="jpg" />
+						<img id="b" modTime="2016-04-27-01:58:11" url="http://au-cdn.brolga.com.au/920edde37344943f176a48-e.jpg" format="jpg" />
+						<img id="c" modTime="2016-04-27-01:58:11" url="http://au-cdn.brolga.com.au/c421fc8667435735f771fc-e.jpg" format="jpg" />
+			<img id="d"/>
+			<img id="e"/>
+			<img id="f"/>
+			<img id="g"/>
+			<img id="h"/>
+			<img id="i"/>
+			<img id="j"/>
+			<img id="k"/>
+			<img id="l"/>
+			<img id="n"/>
+			<img id="o"/>
+			<img id="p"/>
+			<img id="q"/>
+			<img id="r"/>
+			<img id="s"/>
+			<img id="t"/>
+			<img id="u"/>
+			<img id="v"/>
+			<img id="w"/>
+			<img id="x"/>
+			<img id="y"/>
+			<img id="z"/>
+			<img id="aa"/>
+			<img id="ab"/>
+			<img id="ac"/>
+			<img id="ad"/>
+			<img id="ae"/>
+			<img id="af"/>
+			<img id="ag"/>
+			<img id="ah"/>
+			<img id="ai"/>
+		</images>
+		<objects>
+			<floorplan id="1"/>
+			<floorplan id="2"/>
+		</objects>
+			
+			
+			
+			<miniweb>
+ <uri id="1">http://brolga.com.au/33310</uri>
+ </miniweb>
+	
+	</business>
+
+	
+	<business modTime="2016-05-03-12:14:07" status="current">
+
+			<agentID>abs-sc</agentID>
+			<uniqueID>absb-sbus1375</uniqueID>
+			
+			<exclusivity value="exclusive"/>
+			<commercialListingType value="sale"/>
+			
+			
+			<underOffer value="no"/>
+			
+	<listingAgent id="1">
+			<name>Peter Tones</name>
+			<telephone type="BH">07 5479 0055</telephone>
+			<telephone type="mobile">0428 986 644</telephone>
+			<email>peter@abssunshinecoast.com.au</email>
+			<twitterURL></twitterURL><facebookURL></facebookURL><linkedInURL></linkedInURL>
+			
+	</listingAgent>
+	
+	<listingAgent id="2"></listingAgent>
+	
+			
+			<franchise value="no"></franchise>
+			
+			
+			<price>225000</price>
+			<priceView>$225,000 + SAV</priceView>
+			
+		<address streetview="yes" display="no">
+			<longitude>153.0894391</longitude>
+			<latitude>-26.6518402</latitude>
+			<subNumber></subNumber>
+			<streetNumber></streetNumber>
+			<street>APB241</street>
+				<suburb>Maroochydore</suburb>
+			<state>qld</state>
+			<postcode>4558</postcode>
+			<country>AUS</country>
+		</address>
+			
+			<businessCategory id="1">
+				<name>Services</name>
+					<businessSubCategory>
+						<name>Car/Bus/Truck</name>
+					</businessSubCategory>
+			</businessCategory>
+			
+			<businessCategory id="2">
+				<name>Automotive</name>
+					<businessSubCategory>
+						<name>Accessories/Parts</name>
+					</businessSubCategory>
+			</businessCategory>
+			
+			<businessCategory id="3">
+				<name>Automotive</name>
+					<businessSubCategory>
+						<name>Mechanical Repair</name>
+					</businessSubCategory>
+			</businessCategory>
+			
+			<headline>Mechanical - APB241</headline>
+			<description>*  2015 Turnover $467,967
+*  Established over 27 years
+*  Busy Main Road Frontage
+*  High Population Growth Area
+*  Expansive Well Equipped Work Shop
+*  Large Reception Area
+*  Large Parts Storage Area
+*  Large Local Client Base
+*  Vehicle Parking for 25 plus Cars
+
+This is an iconic business operating in a major regional centre in South East Queensland. Established in 1989 by the current owner, this Solid Based Business is well supported by the local population and people of the surrounding districts. With a large well equipped work shop this business caters for all aspects of Mechanical Repairs including the more specialised fields of Exhausts and Radiator Repairs.
+
+With 5 motor vehicle hoists and a large storage area for parts this expansive work shop allows for a constant flow of work while also allowing for future growth potential, and ideally situated to take advantage of the future population growth expected for the region.
+
+Call Broker: Peter Tones: 0428 986 644
+
+Ref# APB241 
+
+ABS-Sunshine Coast Office: 07 5479 0055 
+www.abssunshinecoast.com.au
+</description>
+			
+		<buildingDetails>
+			<area unit="squareMeter">0</area>
+			<energyRating></energyRating>
+		</buildingDetails>
+	
+			
+				<externalLink href="" />
+				<externalLink href="" />
+			
+		<images>
+						<img id="m" modTime="2016-05-03-01:06:12" url="http://au-cdn.brolga.com.au/4ca28dfc3b87cb837ffdd2-e.jpg" format="jpg" />
+						<img id="a" modTime="2016-05-03-01:06:12" url="http://au-cdn.brolga.com.au/be3f4e24b7fbf79f64163d-e.jpg" format="jpg" />
+						<img id="b" modTime="2016-05-03-01:06:12" url="http://au-cdn.brolga.com.au/114bea0f8f61ecc4ab6d95-e.jpg" format="jpg" />
+						<img id="c" modTime="2016-05-03-01:06:12" url="http://au-cdn.brolga.com.au/82c45358db9ab3c0b8c098-e.jpg" format="jpg" />
+			<img id="d"/>
+			<img id="e"/>
+			<img id="f"/>
+			<img id="g"/>
+			<img id="h"/>
+			<img id="i"/>
+			<img id="j"/>
+			<img id="k"/>
+			<img id="l"/>
+			<img id="n"/>
+			<img id="o"/>
+			<img id="p"/>
+			<img id="q"/>
+			<img id="r"/>
+			<img id="s"/>
+			<img id="t"/>
+			<img id="u"/>
+			<img id="v"/>
+			<img id="w"/>
+			<img id="x"/>
+			<img id="y"/>
+			<img id="z"/>
+			<img id="aa"/>
+			<img id="ab"/>
+			<img id="ac"/>
+			<img id="ad"/>
+			<img id="ae"/>
+			<img id="af"/>
+			<img id="ag"/>
+			<img id="ah"/>
+			<img id="ai"/>
+		</images>
+		<objects>
+			<floorplan id="1"/>
+			<floorplan id="2"/>
+		</objects>
+			
+			
+			
+			<miniweb>
+ <uri id="1">http://brolga.com.au/33429</uri>
+ </miniweb>
+	
+	</business>
+
+	
+	<business modTime="2016-05-26-13:14:01" status="current">
+
+			<agentID>abs-sc</agentID>
+			<uniqueID>absb-sbus1394</uniqueID>
+			
+			<exclusivity value="exclusive"/>
+			<commercialListingType value="sale"/>
+			
+			
+			<underOffer value="no"/>
+			
+	<listingAgent id="1">
+			<name>Creina Holland</name>
+			<telephone type="BH">07 5479 0055</telephone>
+			<telephone type="mobile">0416 255 368</telephone>
+			<email>creina@abssunshinecoast.com.au</email>
+			<twitterURL></twitterURL><facebookURL></facebookURL><linkedInURL></linkedInURL>
+			
+	</listingAgent>
+	
+	<listingAgent id="2"></listingAgent>
+	
+			
+			<franchise value="no"></franchise>
+			
+			
+			<price>119500</price>
+			<priceView>$119,500 WIWO</priceView>
+			
+		<address streetview="yes" display="no">
+			<longitude>153.0894391</longitude>
+			<latitude>-26.6518402</latitude>
+			<subNumber></subNumber>
+			<streetNumber></streetNumber>
+			<street>ACJ242</street>
+				<suburb>Maroochydore</suburb>
+			<state>qld</state>
+			<postcode>4558</postcode>
+			<country>AUS</country>
+		</address>
+			
+			<businessCategory id="1">
+				<name>Services</name>
+					<businessSubCategory>
+						<name>Cleaning</name>
+					</businessSubCategory>
+			</businessCategory>
+			
+			<headline>Commercial Cleaning Business - ACJ242</headline>
+			<description>*  2016 Turnover $130,389 (10 Months)
+*  Growing business with large new client that significantly increasing income this financial year.
+*  All Plant &amp; Equipment required including work Van included in sale.
+*  No Qualifications needed and operational training will be provided.
+*  Suit owner operators for maximum income.
+
+This is an impressive, long established Commercial Cleaning business with a stable income. 
+Operating from a home base ensures that the overheads are very low. It is not a Franchise business so your earnings are all your own, which is why this type of business is very sought after.  
+So if you would like to be your own boss with an easy to operate home based business on the beautiful Sunshine Coast that provides you with lifestyle, flexibility and a regular reliable income from week one, then this could well be the perfect business for you. 
+
+Call Broker:  Creina Holland 0416 255 368
+
+ABS-Sunshine Coast Office 07 5479 0055 
+
+www.abssunshinecoast.com.au
+
+Ref# ACJ242</description>
+			
+		<buildingDetails>
+			<area unit="squareMeter">0</area>
+			<energyRating></energyRating>
+		</buildingDetails>
+	
+			
+				<externalLink href="" />
+				<externalLink href="" />
+			
+		<images>
+						<img id="m" modTime="2016-05-26-01:02:13" url="http://au-cdn.brolga.com.au/b4cd9d49f5191ed223879c-e.jpg" format="jpg" />
+						<img id="a" modTime="2016-05-26-01:02:13" url="http://au-cdn.brolga.com.au/3264dd23efe1af5eaf0707-e.jpg" format="jpg" />
+						<img id="b" modTime="2016-05-26-01:02:13" url="http://au-cdn.brolga.com.au/931555db7c25ea961199a9-e.jpg" format="jpg" />
+						<img id="c" modTime="2016-05-26-01:02:13" url="http://au-cdn.brolga.com.au/ce8d852b6f1f6abacb0ce1-e.jpg" format="jpg" />
+			<img id="d"/>
+			<img id="e"/>
+			<img id="f"/>
+			<img id="g"/>
+			<img id="h"/>
+			<img id="i"/>
+			<img id="j"/>
+			<img id="k"/>
+			<img id="l"/>
+			<img id="n"/>
+			<img id="o"/>
+			<img id="p"/>
+			<img id="q"/>
+			<img id="r"/>
+			<img id="s"/>
+			<img id="t"/>
+			<img id="u"/>
+			<img id="v"/>
+			<img id="w"/>
+			<img id="x"/>
+			<img id="y"/>
+			<img id="z"/>
+			<img id="aa"/>
+			<img id="ab"/>
+			<img id="ac"/>
+			<img id="ad"/>
+			<img id="ae"/>
+			<img id="af"/>
+			<img id="ag"/>
+			<img id="ah"/>
+			<img id="ai"/>
+		</images>
+		<objects>
+			<floorplan id="1"/>
+			<floorplan id="2"/>
+		</objects>
+			
+			
+			
+			<miniweb>
+ <uri id="1">http://brolga.com.au/34231</uri>
+ </miniweb>
+	
+	</business>
+
+	
+	<business modTime="2016-06-10-18:30:03" status="current">
+
+			<agentID>abs-sc</agentID>
+			<uniqueID>absb-sbus1409</uniqueID>
+			
+			<exclusivity value="exclusive"/>
+			<commercialListingType value="sale"/>
+			
+			
+			<underOffer value="no"/>
+			
+	<listingAgent id="1">
+			<name>Peter Tones</name>
+			<telephone type="BH">07 5479 0055</telephone>
+			<telephone type="mobile">0428 986 644</telephone>
+			<email>peter@abssunshinecoast.com.au</email>
+			<twitterURL></twitterURL><facebookURL></facebookURL><linkedInURL></linkedInURL>
+			
+	</listingAgent>
+	
+	<listingAgent id="2"></listingAgent>
+	
+			
+			<franchise value="no"></franchise>
+			
+			
+			<price>195000</price>
+			<priceView>$195,000 WIWO</priceView>
+			
+		<address streetview="yes" display="no">
+			<longitude>153.0918365</longitude>
+			<latitude>-26.6559759</latitude>
+			<subNumber></subNumber>
+			<streetNumber></streetNumber>
+			<street>APP243</street>
+				<suburb>Maroochydore</suburb>
+			<state>qld</state>
+			<postcode>4558</postcode>
+			<country>AUS</country>
+		</address>
+			
+			<businessCategory id="1">
+				<name>Services</name>
+					<businessSubCategory>
+						<name>Repair</name>
+					</businessSubCategory>
+			</businessCategory>
+			
+			<businessCategory id="2">
+				<name>Automotive</name>
+					<businessSubCategory>
+						<name>Mechanical Repair</name>
+					</businessSubCategory>
+			</businessCategory>
+			
+			<businessCategory id="3">
+				<name>Automotive</name>
+					<businessSubCategory>
+						<name>Panel Beating</name>
+					</businessSubCategory>
+			</businessCategory>
+			
+			<headline>Smash Repairs</headline>
+			<description>The sale of this uncomplicated, long established and well-appointed and equipped Automotive Smash Repair Shop is an opportunity for a young Panel beater or Spray Painter or first time Panel Shop owner to enter the industry at a low cost, low risk investment.
+This hinterland based business offers a full range of body and paint repairs
+   
+Bullet points:
+*  Insurance Work
+*  Private Work
+*  General Repairs
+*  Rust Repairs
+*  Rust Proofing
+*  Customizing &amp; Restorations
+*  Welding
+*  Plastic Welding
+*  On Site Quoting
+*  Large Local Client Base
+*  Established Over 16 years
+*  High Population Growth Area
+*  No Opposition in Town
+
+This long established, well equipped and well maintained Smash Repair Business also carries EPA approval and the computers are fitted with all the necessary Quoting and Accounting software, leaving basically nothing left to add, apart from the new owner's expertise and enthusiasm. 
+Call today for more information on this solid business opportunity.
+
+Please visit www.abssunshinecoast.com.au for further information or Call Broker: Peter Tones 0428 986 644 and quote Reference No APP243
+
+ABS-Sunshine Coast Office 07 5479 0055 
+www.abssunshinecoast.com.au
+
+Ref# APP243 
+ 
+</description>
+			
+		<buildingDetails>
+			<area unit="squareMeter">0</area>
+			<energyRating></energyRating>
+		</buildingDetails>
+	
+			
+				<externalLink href="" />
+				<externalLink href="" />
+			
+		<images>
+						<img id="m" modTime="2016-06-10-01:33:17" url="http://au-cdn.brolga.com.au/331381e371036119088b9a-e.jpg" format="jpg" />
+						<img id="a" modTime="2016-06-10-01:33:17" url="http://au-cdn.brolga.com.au/74568a9b330d9aed3956c6-e.jpg" format="jpg" />
+						<img id="b" modTime="2016-06-10-01:33:17" url="http://au-cdn.brolga.com.au/1486debda49c251ef37111-e.jpg" format="jpg" />
+						<img id="c" modTime="2016-06-10-01:33:17" url="http://au-cdn.brolga.com.au/c020754e4f451b96f4bd02-e.jpg" format="jpg" />
+			<img id="d"/>
+			<img id="e"/>
+			<img id="f"/>
+			<img id="g"/>
+			<img id="h"/>
+			<img id="i"/>
+			<img id="j"/>
+			<img id="k"/>
+			<img id="l"/>
+			<img id="n"/>
+			<img id="o"/>
+			<img id="p"/>
+			<img id="q"/>
+			<img id="r"/>
+			<img id="s"/>
+			<img id="t"/>
+			<img id="u"/>
+			<img id="v"/>
+			<img id="w"/>
+			<img id="x"/>
+			<img id="y"/>
+			<img id="z"/>
+			<img id="aa"/>
+			<img id="ab"/>
+			<img id="ac"/>
+			<img id="ad"/>
+			<img id="ae"/>
+			<img id="af"/>
+			<img id="ag"/>
+			<img id="ah"/>
+			<img id="ai"/>
+		</images>
+		<objects>
+			<floorplan id="1"/>
+			<floorplan id="2"/>
+		</objects>
+			
+			
+			
+			<miniweb>
+ <uri id="1">http://brolga.com.au/34752</uri>
+ </miniweb>
+	
+	</business>
+
+	
+	<business modTime="2016-06-13-10:07:02" status="current">
+
+			<agentID>abs-sc</agentID>
+			<uniqueID>absb-sbus1410</uniqueID>
+			
+			<exclusivity value="exclusive"/>
+			<commercialListingType value="sale"/>
+			
+			
+			<underOffer value="no"/>
+			
+	<listingAgent id="1">
+			<name>Peter Tones</name>
+			<telephone type="BH">07 5479 0055</telephone>
+			<telephone type="mobile">0428 986 644</telephone>
+			<email>peter@abssunshinecoast.com.au</email>
+			<twitterURL></twitterURL><facebookURL></facebookURL><linkedInURL></linkedInURL>
+			
+	</listingAgent>
+	
+	<listingAgent id="2"></listingAgent>
+	
+			
+			<franchise value="no"></franchise>
+			
+			
+			<price>320000</price>
+			<priceView>$320,000 WIWO</priceView>
+			
+		<address streetview="yes" display="no">
+			<longitude>153.0918365</longitude>
+			<latitude>-26.6559759</latitude>
+			<subNumber></subNumber>
+			<streetNumber></streetNumber>
+			<street>APD244</street>
+				<suburb>Maroochydore</suburb>
+			<state>qld</state>
+			<postcode>4558</postcode>
+			<country>AUS</country>
+		</address>
+			
+			<businessCategory id="1">
+				<name>Services</name>
+					<businessSubCategory>
+						<name>Repair</name>
+					</businessSubCategory>
+			</businessCategory>
+			
+			<businessCategory id="2">
+				<name>Automotive</name>
+					<businessSubCategory>
+						<name>Mechanical Repair</name>
+					</businessSubCategory>
+			</businessCategory>
+			
+			<businessCategory id="3">
+				<name>Automotive</name>
+					<businessSubCategory>
+						<name>Panel Beating</name>
+					</businessSubCategory>
+			</businessCategory>
+			
+			<headline>Paintless Dent Repairs</headline>
+			<description>Specialising in Paintless Dent Repairs on Motor Vehicles with hail damage or minor dents,
+this business was established by the current owners in 1999 and opened in 2002 on the Sunshine Coast.  It has experienced constant growth, not only from hail storms and bad weather conditions but from ever increasing demands for this style of dent repairs. Insurance companies and motor vehicle dealers have recognised the savings to them, created by this type of repair method. 
+
+This business has a long established client base and provides its services to some of the largest and most prestigious motor vehicle dealers and panel shops on the sunshine coast as well as private customers. 
+
+*  Established since 1999 and opened in 2002 on the Sunshine Coast
+*  Fully equipped vehicle for the mobile operations 
+*  Centrally located work shop 
+*  Large client base on the Sunshine Coast
+*  Insurance company recommendations 
+*  Motor Vehicle Dealer recommendations 
+*  Strong profit margins and room for expansion
+*  Paintless dent repairs (PDR)
+*  Hail damage repairs
+*  Minor dents &amp; dings
+*  Shopping trolley dents
+*  Insurance &amp; private work
+*  Environment-friendly
+*  Paintless dent repairs
+*  Experienced professional service
+*  Maintains original condition of vehicle
+*  Cost effective car dents &amp; hail repairs
+
+ If you would like further information, please submit an online "Confidentiality Agreement" or Call Broker:  Peter Tones 0428 986 644
+
+ABS-Sunshine Coast Office 07 5479 0055 
+www.abssunshinecoast.com.au
+
+Ref# APD244 
+
+
+</description>
+			
+		<buildingDetails>
+			<area unit="squareMeter">0</area>
+			<energyRating></energyRating>
+		</buildingDetails>
+	
+			
+				<externalLink href="" />
+				<externalLink href="" />
+			
+		<images>
+						<img id="m" modTime="2016-06-10-01:05:18" url="http://au-cdn.brolga.com.au/6096ee2f67104eaeed5cb8-e.jpg" format="jpg" />
+						<img id="a" modTime="2016-06-10-01:05:18" url="http://au-cdn.brolga.com.au/9a439e3de680a1e3737f7f-e.jpg" format="jpg" />
+						<img id="b" modTime="2016-06-10-01:05:18" url="http://au-cdn.brolga.com.au/422b4ce87bbf679852463e-e.jpg" format="jpg" />
+						<img id="c" modTime="2016-06-10-01:05:18" url="http://au-cdn.brolga.com.au/f1ccdc0b6607baeb626a85-e.jpg" format="jpg" />
+			<img id="d"/>
+			<img id="e"/>
+			<img id="f"/>
+			<img id="g"/>
+			<img id="h"/>
+			<img id="i"/>
+			<img id="j"/>
+			<img id="k"/>
+			<img id="l"/>
+			<img id="n"/>
+			<img id="o"/>
+			<img id="p"/>
+			<img id="q"/>
+			<img id="r"/>
+			<img id="s"/>
+			<img id="t"/>
+			<img id="u"/>
+			<img id="v"/>
+			<img id="w"/>
+			<img id="x"/>
+			<img id="y"/>
+			<img id="z"/>
+			<img id="aa"/>
+			<img id="ab"/>
+			<img id="ac"/>
+			<img id="ad"/>
+			<img id="ae"/>
+			<img id="af"/>
+			<img id="ag"/>
+			<img id="ah"/>
+			<img id="ai"/>
+		</images>
+		<objects>
+			<floorplan id="1"/>
+			<floorplan id="2"/>
+		</objects>
+			
+			
+			
+			<miniweb>
+ <uri id="1">http://brolga.com.au/34758</uri>
+ </miniweb>
+	
+	</business>
+
+	
+</propertyList>
