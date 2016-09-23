@@ -78,7 +78,7 @@ if(isset($_REQUEST["c_listing_region_c"]) && !empty($_REQUEST["c_listing_region_
 
 // Define function for applying filters
 
-function filter_listings_obj($obj) {
+function filter_listings_obj_old($obj) {
 
 	global $_REQUEST, $keyword, $real_est_categories, $minimum_investment, $maximum_investment, $listing_regions, $minimum_rent, $maximum_rent;
 

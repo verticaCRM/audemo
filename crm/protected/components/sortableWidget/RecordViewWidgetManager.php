@@ -137,6 +137,8 @@ class RecordViewWidgetManager extends TwoColumnSortableWidgetManager {
                 'QuotesWidget',
                 'InlineBuyersPortfolioWidget',
                 'InlineListingBuyersWidget',
+                'InlineListingMapsWidget',
+                'InlineBuyerMapsWidget',
             ))) ||
             $modelType === 'Actions' && $name !== 'InlineTagsWidget' ||
             $modelType !== 'Campaign' && $name === 'CampaignChartWidget' ||
@@ -147,49 +149,68 @@ class RecordViewWidgetManager extends TwoColumnSortableWidgetManager {
                      'InlineBuyersPortfolioWidget',
                      'InlineListingBuyersWidget',
                     'InlineListingDetailsWidget',
+                    'InlineListingMapsWidget',
+                    'InlineBuyerMapsWidget',
             ))) ||
             ($modelType == 'Opportunity' && in_array ($name, array (
                     'EmailsWidget',
                      'InlineBuyersPortfolioWidget',
                      'InlineListingBuyersWidget',
                     'InlineListingDetailsWidget',
+                    'InlineListingMapsWidget',
+                    'InlineBuyerMapsWidget',
+                    
             ))) ||
             ($modelType == 'Portfolio' && in_array ($name, array (
                     'InlineBuyersPortfolioWidget',
                     'ImageGalleryWidget',
                     'InlineListingBuyersWidget',
                     'InlineListingDetailsWidget',
+                    'InlineListingMapsWidget',
+                    'InlineBuyerMapsWidget',
             ))) ||
             ($modelType == 'Clistings' && in_array ($name, array (
-                    'InlineBuyersPortfolioWidget'
+                    'InlineBuyersPortfolioWidget',
+                    'InlineBuyerMapsWidget',
             ))) ||
             ($modelType == 'Accounts' && in_array ($name, array (
                     'InlineListingBuyersWidget',
                     'InlineListingDetailsWidget',
+                    'InlineBuyerMapsWidget',
+
             ))) ||
             ($modelType == 'Contacts' && in_array ($name, array (
                     'InlineListingBuyersWidget',
                     'InlineListingDetailsWidget',
+                    'InlineListingMapsWidget',
             ))) ||
             ($modelType == 'X2Leads' && in_array ($name, array (
                     'InlineBuyersPortfolioWidget',
                     'InlineListingBuyersWidget',
                     'InlineListingDetailsWidget',
+                    'InlineListingMapsWidget',
+                    'InlineBuyerMapsWidget',
             ))) ||
             ($modelType == 'Groups' && in_array ($name, array (
                     'InlineBuyersPortfolioWidget',
                     'InlineListingBuyersWidget',
                     'InlineListingDetailsWidget',
+                    'InlineListingMapsWidget',
+                    'InlineBuyerMapsWidget',
             ))) ||
             ($modelType == 'Seller' && in_array ($name, array (
                     'InlineBuyersPortfolioWidget',
                     'InlineListingBuyersWidget',
                     'InlineListingDetailsWidget',
+                    'InlineBuyerMapsWidget',
+                    'InlineListingMapsWidget',
             ))) ||
             ($modelType == 'Brokers' && in_array ($name, array (
                     'InlineBuyersPortfolioWidget',
                     'InlineListingBuyersWidget',
                     'InlineListingDetailsWidget',
+                    'InlineListingMapsWidget',
+                    'InlineBuyerMapsWidget',
             ))) ||
             ($modelType == 'Campaign' && in_array ($name, array (
                     'WorkflowStageDetailsWidget',
@@ -199,6 +220,8 @@ class RecordViewWidgetManager extends TwoColumnSortableWidgetManager {
                     'InlineBuyersPortfolioWidget',
                     'InlineListingBuyersWidget',
                     'InlineListingDetailsWidget',
+                    'InlineListingMapsWidget',
+                    'InlineBuyerMapsWidget',
             ))) ||
             ($modelType === 'Product' && in_array ($name, array (
                     'WorkflowStageDetailsWidget',
@@ -207,6 +230,8 @@ class RecordViewWidgetManager extends TwoColumnSortableWidgetManager {
                     'InlineBuyersPortfolioWidget',
                     'InlineListingBuyersWidget',
                     'InlineListingDetailsWidget',
+                    'InlineListingMapsWidget',
+                    'InlineBuyerMapsWidget',
             )))) {
 
             return true;

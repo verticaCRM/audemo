@@ -88,7 +88,7 @@ if(isset($_POST["add_to_portfolio"]) || isset($_POST['action']) && $_POST["actio
 	}
 }
 //////////////////
-//print_r($listing);
+//print_r($listing); 
 
 		$status =$listing->c_sales_stage;
 		$listing_id =$listing->id;

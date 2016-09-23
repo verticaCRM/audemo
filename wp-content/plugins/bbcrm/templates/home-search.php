@@ -1,3 +1,13 @@
+<?php
+	if ($a['sold'])
+	{
+		$sold_bussiness = true;
+	}
+	else
+	{
+		$sold_bussiness = false;
+	}
+?>
 <h3 class="theme-background" style="display:none; color:#ccc;margin:0;margin-top:10px;width:40%"><?php _e($a['title'],'bbcrm');?></h3>
 
 <div id="pagewidget-<?php echo str_replace(' ','_',$a['title']);?>" class="searchbox theme-color-border">
@@ -59,12 +69,25 @@ foreach ($buscats->options as $k=>$v)
 		{
 			if( strpos( $dec_v->c_businesscategories, '"'.$v.'"' ) !== false )
 			{
-				$i_listings++;
+				if ($sold_bussiness)
+				{
+					if( $dec_v->c_sales_stage == 'Sold' )
+					{
+						$i_listings++;
+					}
+				}
+				else
+				{
+					$i_listings++;
+				}
+				
 			}
+			
 
 		}
 		echo "<label> <input type='checkbox' name='c_businesscategories[]' class='search_checkbox' value='$v'/> $k (<span class='child_cat_listings'>".$i_listings."</span>)</label>";
 	}	
+
 
 	$i++;
 }
@@ -75,7 +98,7 @@ echo '</div>';
 
 	</div>
 </div>
-
+<div><input type="hidden" name="sold_bussiness" value="<?php echo $sold_bussiness;?>"/></div>
 <div class="form_group">
 	<label class="theme-color" for="downpayment"><?php _e("Minimum Investment:",'bbcrm')?></label><br>
 	<select name="c_minimum_investment_c" id="minimum_investment">

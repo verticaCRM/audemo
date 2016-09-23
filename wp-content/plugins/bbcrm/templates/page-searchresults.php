@@ -17,6 +17,7 @@ foreach($_REQUEST as $k=>$v){
 // echo '<pre>'; print_r($_REQUEST); echo '</pre>';
 
 
+
 // Grab our filters
 
 $get_params = '_partial=1&_escape=0&c_is_real_estate=0';
@@ -114,8 +115,9 @@ if(isset($_REQUEST["c_listing_downpayment_c"]) && !empty($_REQUEST["c_listing_do
 
 
 // Define function for applying filters
+//function filter_listings_obj($obj) => was moved into audemo/wp-content/plugins/bbcrm/bbcrm.php
 
-function filter_listings_obj($obj) {
+function filter_listings_obj_old($obj) {
 
 	global $_REQUEST, $askingprice_params, $ownerscashflow_params, $listing_downpayment_params, $keyword, $minimum_investment, $maximum_investment, $adjusted_net_profit, $brokers, $businesscategories, $franchise;
 
