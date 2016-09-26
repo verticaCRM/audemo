@@ -603,7 +603,7 @@ if($brokerimg->fileName){
 			<div class="panel panel-default">
 				<div style="background-color: #fff !important;" class="panel-heading">
 					<h3 class="panel-title">
-						Your Business Broker
+						<?php if(is_user_logged_in()){ echo 'Your Business Broker'; } else { echo 'Listing Broker'; } ?>
 					</h3>
 				</div>
 			<div class="panel-body">
