@@ -46,39 +46,39 @@ if(is_user_logged_in() ){
 	$json = x2apicall(array('_class'=>'Contacts/by:email='.urlencode($userdata->user_email).".json"));
 	$buyer =json_decode($json);
 
-$isuserregistered = ($buyer->c_buyer_status=="Registered")?true:false;
+	$isuserregistered = ($buyer->c_buyer_status=="Registered")?true:false;
 	$json = x2apicall(array('_class'=>'Brokers/by:nameId='.urlencode($buyer->c_broker).".json"));
 	$buyerbroker =json_decode($json);	
 
-if(isset($_POST["add_to_portfolio"]) || isset($_POST['action']) && $_POST["action"]=="add_to_portfolio"){
-
-	$json = x2apicall(array('_class'=>'Portfolio/by:c_listing_id='.$listing->id.";c_buyer=".urlencode($buyer->nameId).".json"));
-	$prevlisting =json_decode($json);	
-
-	if(!$prevlisting->status || $prevlisting->status=="404"){
-	$data = array(
-		'name'	=>	'Portfolio listing for '.$listing->name,
-		'c_listing'	=>	$listing->name,
-		'c_listing_id'	=>	$listing->id,
-		'c_buyer'	=>	$buyer->nameId,
-		'c_buyer_id'	=>	$buyer->id,
-		'c_release_status'	=>	'Added',
-		'assignedTo'	=>	$buyerbroker->assignedTo,
-	);
-
-	$json = x2apipost( array('_class'=>'Portfolio/','_data'=>$data ) );
-	$portfoliolisting =json_decode($json[1]);
-
-	$json = x2apicall(array('_class'=>'Portfolio/'.$portfoliolisting->id.'.json'));
-	$portfoliorelationships =json_decode($json);
+	if(isset($_POST["add_to_portfolio"]) || isset($_POST['action']) && $_POST["action"]=="add_to_portfolio"){
 	
-	$json = x2apicall( array('_class'=>'Portfolio/'.$portfoliorelationships->id."/relationships?secondType=Contacts" ) );
-	$rel = json_decode($json);
-
-	$json = x2apipost( array('_method'=>'PUT','_class'=>'Portfolio/'.$portfoliolisting->id.'/relationships/'.$rel[0]->id.'.json','_data'=>$data ) );
-
+		$json = x2apicall(array('_class'=>'Portfolio/by:c_listing_id='.$listing->id.";c_buyer=".urlencode($buyer->nameId).".json"));
+		$prevlisting =json_decode($json);	
+	
+		if(!$prevlisting->status || $prevlisting->status=="404"){
+		$data = array(
+			'name'	=>	'Portfolio listing for '.$listing->name,
+			'c_listing'	=>	$listing->name,
+			'c_listing_id'	=>	$listing->id,
+			'c_buyer'	=>	$buyer->nameId,
+			'c_buyer_id'	=>	$buyer->id,
+			'c_release_status'	=>	'Added',
+			'assignedTo'	=>	$buyerbroker->assignedTo,
+		);
+	
+		$json = x2apipost( array('_class'=>'Portfolio/','_data'=>$data ) );
+		$portfoliolisting =json_decode($json[1]);
+	
+		$json = x2apicall(array('_class'=>'Portfolio/'.$portfoliolisting->id.'.json'));
+		$portfoliorelationships =json_decode($json);
+		
+		$json = x2apicall( array('_class'=>'Portfolio/'.$portfoliorelationships->id."/relationships?secondType=Contacts" ) );
+		$rel = json_decode($json);
+	
+		$json = x2apipost( array('_method'=>'PUT','_class'=>'Portfolio/'.$portfoliolisting->id.'/relationships/'.$rel[0]->id.'.json','_data'=>$data ) );
+	
+		}
 	}
-}
 //Is this listing in the user's portfolio?	
 	$json = x2apicall(array('_class'=>'Portfolio/by:c_listing_id='.$listing->id.';c_buyer='.urlencode($buyer->nameId).'.json'));
 	
@@ -157,7 +157,7 @@ echo '<div class="portfoliostatus added">&#10003; ' .	__("This propery is in you
 	<div class="">
 	           
 	  <div class="pull-left" style="display:inline; width:60%;">
-			    <div class="al-title property-title entry-title "> <?php echo $cssclass;?><?php echo $generic_name; ?></div>	
+			    <div class="al-title property-title entry-title "><?php echo $cssclass;?><?php echo $generic_name; ?></div>	
 			<br><div class="al-price property_detail"><label><?php _e("", 'bbcrm');?></label><?php echo $currency_symbol." ".$amount;?> + SAV</div>
 			<br><div class="al-cat property_detail"><label><?php _e("", 'bbcrm');?></label><?php echo $categories; ?></div>
 		</div>	
@@ -192,7 +192,7 @@ if(is_user_logged_in() && !$inportfolio){
 <?php
 global $wpdb;
 $results = $wpdb->get_results( 'SELECT gp.* FROM x2_gallery_photo gp RIGHT JOIN x2_gallery_to_model gm ON gm.galleryId = gp.gallery_id WHERE gm.modelName="Clistings" AND gm.modelId='.$listing->id, OBJECT );
-
+//var_dump($results);
 if(!empty($results[0]->id)):
 ?>
 						<h3 class="detailheader theme-color" style="cursor:pointer;width:100%;background-color:#ddd" onclick='jQuery("#propertygallery").slideToggle()'>Gallery <div style="display:inline;float:right;font-size:.6em;margin:auto 6px;">(click to hide/view)</div></h3>
@@ -258,15 +258,16 @@ if($brokerimg->fileName){
 						<div class="property_detail"><label>Buyer Broker: </label>&nbsp;<?php echo $buyerbroker->name;?></div>
 						<div class="property_detail"><label>Cell phone: </label>&nbsp;<?php echo $buyerbroker->c_mobile;?></div>
 						<div class="property_detail"><label>Office phone: </label>&nbsp;<?php echo $buyerbroker->c_office;?></div>-->
-                         <?php if(is_user_logged_in()){ ?>
+                       
 
 						<!--<form><input type="button" id="contactbuyerbroker" class="contactbroker" data-buyerid="<?php echo $buyer->id;?>" data-listingid="<?php _e($listing->id);?>" data-portfolioid="<?php echo $portfoliolisting->id ;?>" name="contact" value="Contact Me"></form>
 <?php } ?>						
 <?php echo wp_get_attachment_image( 5575, 'full', 0, array('class'=>'contactbroker','data-buyerid'=>$buyer->id,'data-listingid'=>$listing->id,'data-portfolioid'=>$portfoliolisting->id) ); ?>	-->
 						
 						
-<div class="property_detail"><label style="border-bottom: 1px solid #b2b4b5; font-size: 25px; line-height:40px; font-weight:300; width:100% ; margin-top:36px; margin-bottom:20px;font-family: 'Roboto',Tahoma,Verdana,Segoe,sans-serif;  " >Business Description</label><BR><?php echo nl2br($description); ?></div>		
-							
+<div class="property_detail">
+	<label style="border-bottom: 1px solid #b2b4b5; font-size: 25px; line-height:40px; font-weight:300; width:100% ; margin-top:36px; margin-bottom:20px;font-family: 'Roboto',Tahoma,Verdana,Segoe,sans-serif;  " >Business Description</label><BR><?php echo nl2br($description); ?></div>		
+					<?php if(is_user_logged_in()){ ?>	
 							
 					<?php if( $inportfolio ): 
 					//print_r($listing);
@@ -573,6 +574,7 @@ if($brokerimg->fileName){
 					else: 
 						_e("In order to see more details about this listing, please contact your broker to become registered.",'bbcrm');
 					endif; ?>-->
+					<?php } ?>
 					<br clear=all><br>
 							<div class="property_detail"><label style="font-weight:100">Broker:</label> <?php echo $listingbroker->name ;?><label></label> <?php echo $listingbroker->c_mobile;?> / <?php echo $listingbroker->c_email;?></div>
 						    <div class="property_detail"><label style="font-weight:100">Head Office: 07 3368 4010</label> / <a href="mailto:reception@absbrisbane.com">reception@absbrisbane.com</a></div>
@@ -670,7 +672,7 @@ if($brokerimg->fileName){
 
 <div id="sidebar">
 					
-<?php
+	<?php if(is_user_logged_in()){ 
 	        dynamic_sidebar( "property-registered" ); 
 		}else{
 echo do_shortcode('[visitorcontact]');
@@ -683,4 +685,4 @@ echo do_shortcode('[visitorcontact]');
 </div>
 <?php
 get_footer();
-?>
+
