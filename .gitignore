@@ -1,0 +1,7 @@
+.idea
+wp-config.php
+wp-content/plugins/bbcrm/_auth.php
+wp-content/plugins/bbcrm/bbcrm.php
+crm/protected/config/X2Config.php
+crm/assets/
+crm/uploads/

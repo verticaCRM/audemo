@@ -462,3 +462,91 @@ function filter_listings_obj($obj) {
 
 }
 
+define('MAX_LISTING_PER_PAGE', 10);
+function pagination($maxPages,$p,$lpm1,$prev,$next, $max, $totalposts){
+    $adjacents = 3;
+    if($maxPages > 1)
+    {
+	   
+	    $limits_start = (int)($p - 1) * $max;
+	    if ($limits_start == 0)
+	    {
+		    $limits_start = 1;
+	    }
+	    $limits_end = $limits_start + $max - 1;
+	    if ($limits_end > $totalposts)
+	    {
+		    $limits_end = $totalposts; 
+	    }
+	     
+	    $get_query = http_build_query($_GET);
+		$get_query = preg_replace('/page_no=\d*/i', '', $get_query);
+		
+		$pagination .="<small class='hidden-phone pageClass'>Showing <strong>$limits_start</strong> - <strong>$limits_end</strong> of <strong>$totalposts</strong></small>";
+        $pagination .= "<ul class='pagination pagination-sm'>";
+        //previous button
+        if ($p > 1)
+        {
+			$pagination.= "<li><a href=\"?$get_query&page_no=$prev\"><small style='padding: 3px 0px;' class='glyphicon glyphicon-chevron-left'></small></a></li>";       
+        }
+        else
+        {
+	         //$pagination.= "<li><span class=\"disabled\"><small class='glyphicon glyphicon-chevron-left'></small></span></li>";
+        } 
+        if ($maxPages < 7 + ($adjacents * 2)){
+            for ($counter = 1; $counter <= $maxPages; $counter++){
+                if ($counter == $p)
+                $pagination.= "<li class='active'><span class=\"current\">$counter</span></li>";
+                else
+                $pagination.= "<li><a href=\"?$get_query&page_no=$counter\">$counter</a></li> ";}
+        }elseif($maxPages > 5 + ($adjacents * 2)){
+            if($p < 1 + ($adjacents * 2)){
+                for ($counter = 1; $counter < 4 + ($adjacents * 2); $counter++){
+                    if ($counter == $p)
+                    $pagination.= "<li><span class=\"current\">$counter</span></li> ";
+                    else
+                    $pagination.= "<li><a href=\"?$get_query&page_no=$counter\">$counter</a></li> ";
+                }
+                $pagination.= "<li><span>...</span></li>";
+                $pagination.= "<li><a href=\"?$get_query&page_no=$lpm1\">$lpm1</a> ";
+                $pagination.= "<li><a href=\"?$get_query&page_no=$maxPages\">$maxPages</a></li> ";
+            }
+            //in middle; hide some front and some back
+            elseif($maxPages - ($adjacents * 2) > $p && $p > ($adjacents * 2)){
+                $pagination.= "<li><a href=\"?$get_query&page_no=1\">1</a></li> ";
+                $pagination.= "<li><a href=\"?$get_query&page_no=2\">2</a></li> ";
+                $pagination.= "<li><span>...</span></li>";
+                for ($counter = $p - $adjacents; $counter <= $p + $adjacents; $counter++){
+                    if ($counter == $p)
+                    $pagination.= "<li class='active'><span class=\"current\">$counter</span></li> ";
+                    else
+                    $pagination.= "<li><a href=\"?$get_query&page_no=$counter\">$counter</a></li> ";
+                }
+                $pagination.= "<li><span>...</span></li>";
+                $pagination.= "<li><a href=\"?$get_query&page_no=$lpm1\">$lpm1</a></li> ";
+                $pagination.= "<li><a href=\"?$get_query&page_no=$maxPages\">$maxPages</a></li> ";
+            }else{
+                $pagination.= "<li><a href=\"?$get_query&page_no=1\">1</a></li> ";
+                $pagination.= "<li><a href=\"?$get_query&page_no=2\">2</a></li> ";
+                $pagination.= "<li><span>...</span></li>";
+                for ($counter = $maxPages - (2 + ($adjacents * 2)); $counter <= $maxPages; $counter++){
+                    if ($counter == $p)
+                    $pagination.= "<li class='active'><span class=\"current\">$counter</span></li> ";
+                    else
+                    $pagination.= "<li><a href=\"?$get_query&page_no=$counter\">$counter</a></li> ";
+                }
+            }
+        }
+        if ($p < $counter - 1)
+        {
+			$pagination.= "<li><a href=\"?$get_query&page_no=$next\"><small style='padding: 3px 0px;' class='glyphicon glyphicon-chevron-right'></small></a></li>";
+        }
+        else
+        {
+	       //$pagination.= "<li><span class=\"disabled\"><small class='glyphicon glyphicon-chevron-right'></small></span></li>";  
+        }
+        $pagination.= "</ul>\n";
+    }
+    return $pagination;
+}
+

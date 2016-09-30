@@ -6,7 +6,7 @@
 		
 		<div class="row ">
 
-				<div class="col-md-3 sidebar_content">
+				<div class="col-12 col-sm-4 col-lg-3 sidebar_content" style=" margin-top: 45px;">
 				
 				<div class="panel-group" id="accordion">
 						  <div class="panel panel-default">
@@ -40,7 +40,7 @@
 				
 		</div>
 
-				<div  id="business_container" class="col-md-9 searchlists_container">
+				<div  id="business_container" class="col-12 col-sm-8 col-lg-9 searchlists_container">
                        <h1 style="text-align:left; padding-top: 22px;"> <?php echo wp_title( ); ?></h1>
 	                 	<!-- <div style="margin:18px 0; color: #333;" ><strong> Published:</strong> <?php the_time('F jS, Y'); ?>  <strong>Author:</strong> <?php the_author_posts_link(); ?> <strong>Comments:</strong> <?php comments_template(); ?></div> -->
 	             	<?php if (have_posts()): while (have_posts()): the_post(); ?>

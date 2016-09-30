@@ -18,7 +18,9 @@ foreach($_REQUEST as $k=>$v){
 
 // Grab our filters
 
-$get_params = '_partial=1&_escape=0&c_is_real_estate=0';
+$sold_selection = true;
+
+$get_params = '_partial=1&_escape=0&c_is_real_estate=0&c_sales_stage=Sold';
 
 if(isset($_REQUEST["c_listing_franchise_c"]) && !empty($_REQUEST["c_listing_franchise_c"])){
 	$franch = 'c_listing_franchise_c='.$_REQUEST["c_listing_franchise_c"];
@@ -62,96 +64,154 @@ if(isset($_REQUEST["c_listing_town_c"]) && !empty($_REQUEST["c_listing_town_c"])
 */
 if(isset($_REQUEST["c_keyword_c"]) && !empty($_REQUEST["c_keyword_c"])){
 	$keyword = trim($_REQUEST["c_keyword_c"]);
+	$get_params .= '&c_keyword_c='.$keyword;
 }
 
-if(isset($_REQUEST["c_minimum_investment_c"]) && !empty($_REQUEST["c_minimum_investment_c"])){
-	$minimum_investment = $_REQUEST["c_minimum_investment_c"];
+if(isset($_REQUEST["c_minimum_investment_c"]) && !empty($_REQUEST["c_minimum_investment_c"]) && isset($_REQUEST["c_maximum_investment_c"]) && !empty($_REQUEST["c_maximum_investment_c"]) )
+{
+	$betweenParam = urlencode('between_'.$_REQUEST["c_minimum_investment_c"].'_'.$_REQUEST["c_maximum_investment_c"]);
+	$get_params .= '&c_listing_askingprice_c='.$betweenParam;
+}
+else
+{
+	if(isset($_REQUEST["c_minimum_investment_c"]) && !empty($_REQUEST["c_minimum_investment_c"]))
+	{
+		$minimum_investment = $_REQUEST["c_minimum_investment_c"];
+		$get_params .= '&c_listing_askingprice_c=<'.$minimum_investment;
+	}
+
+	if(isset($_REQUEST["c_maximum_investment_c"]) && !empty($_REQUEST["c_maximum_investment_c"]))
+	{
+		$maximum_investment = $_REQUEST["c_maximum_investment_c"];
+		$get_params .= '&c_listing_askingprice_c=>'.$maximum_investment;
+	}
 }
 
-if(isset($_REQUEST["c_maximum_investment_c"]) && !empty($_REQUEST["c_maximum_investment_c"])){
-	$maximum_investment = $_REQUEST["c_maximum_investment_c"];
-}
 
 if(isset($_REQUEST["c_adjusted_net_profit_c"]) && !empty($_REQUEST["c_adjusted_net_profit_c"])){
 	$adjusted_net_profit = explode("|",$_REQUEST["c_adjusted_net_profit_c"]);
+	//$get_params .= '&c_financial_net_profit_c=>'.$adjusted_net_profit[0];
+	//$get_params .= '&c_financial_net_profit_c=<'.$adjusted_net_profit[1];
+	$betweenParam = urlencode('between_'.$adjusted_net_profit[0].'_'.$adjusted_net_profit[1]);
+	$get_params .= '&c_financial_net_profit_c='.$betweenParam;
 }
 
-if(isset($_REQUEST["c_Broker"]) && !empty($_REQUEST["c_Broker"])){
-
+if(isset($_REQUEST["c_franchise_c"]) && !empty($_REQUEST["c_franchise_c"])){
+	$franchise = trim($_REQUEST["c_franchise_c"]);
+	$get_params .= '&c_franchise_c='.$franchise;
+}
+global $wpdb;
+if(isset($_REQUEST["c_Broker"]) && !empty($_REQUEST["c_Broker"] && $_REQUEST["c_Broker"][0] != '' )){
+	//print_r('<pre>');print_r($_REQUEST["c_Broker"]);print_r('</pre>');
 	foreach($_REQUEST["c_Broker"] as $broker) {
-		$brokers[] = $broker;		
+		$borkers_name = explode('_',$broker);
+		$results = $wpdb->get_results( "SELECT * FROM x2_users WHERE CONCAT(firstName, ' ', lastName)='".$borkers_name[0]."'", OBJECT );
+		$brokers[] = $results[0]->userAlias;	
+		//$get_params .= '&assignedTo='.$results[0]->userAlias;
+	}
+	if (count($brokers)>1)
+	{
+		$get_params .= '&assignedTo=';
+		$get_params .= ':multiple:__'.implode('__',$brokers);	
+	}
+	elseif (count($brokers) == 1)
+	{
+		$get_params .= '&assignedTo=:multiple:__'.$brokers[0];	
 	}
 }
-/**
-*/
 
-
-
-// echo '<pre>'; print_r($keyword); echo '</pre>';
-
-
-if(isset($_REQUEST["c_listing_askingprice_c"]) && !empty($_REQUEST["c_listing_askingprice_c"])){
-	$askingprice_params = explode("|",$_REQUEST["c_listing_askingprice_c"]);
+// If we have Categories
+if(isset($_REQUEST["c_businesscategories"]) && !empty($_REQUEST["c_businesscategories"]) && $_REQUEST["c_businesscategories"][0] != ''){
+	//$get_params .= '&c_businesscategories='. '%25'.urlencode($_REQUEST["c_businesscategories"]).'%25';
+	foreach($_REQUEST["c_businesscategories"] as $k=>$v)
+	{
+		$business_categories[] = urlencode(trim($v));	
+	}
+	
+	
+	if (count($business_categories)>1)
+	{
+		$get_params .= '&c_businesscategories=';
+		$get_params .= ':multiple:__'.implode('__',$business_categories);	
+	}
+	elseif (count($business_categories) == 1)
+	{
+		$get_params .= '&c_businesscategories=:multiple:__'.$$business_categories[0];	
+	}
 }
-
-if(isset($_REQUEST["c_ownerscashflow"]) && !empty($_REQUEST["c_ownerscashflow"])){
-	$ownerscashflow_params = explode("|",$_REQUEST["c_ownerscashflow"]);
-}
-
-if(isset($_REQUEST["c_listing_downpayment_c"]) && !empty($_REQUEST["c_listing_downpayment_c"])){
-	$listing_downpayment_params = explode("|",$_REQUEST["c_listing_downpayment_c"]);
-}
-
-
 
 // Define function for applying filters
 //function filter_listings_obj($obj) => was moved into audemo/wp-content/plugins/bbcrm/bbcrm.php
 
 // echo '<pre>'; print_r(filter_listings_obj($obj, $k, $v)); echo '</pre>';
 
+//echo '<pre>'; print_r(count($decoded_json)); echo '</pre>';
 
-$sold_selection = true;
+$sold_selection = false;
 
-// If we have Categories
-if(isset($_REQUEST["c_businesscategories"]) && !empty($_REQUEST["c_businesscategories"])){
 
-	foreach($_REQUEST["c_businesscategories"] as $k=>$v)
-	{
-		$business_categories = 'c_businesscategories=["'.trim($v).'"]';
-		$cat = '&'.$business_categories;
-		$json[] = x2apicall(array('_class'=>'Clistings?'.$get_params.$cat));
-	}
+$json = x2apicall(array('_class'=>'Clistings?'.$get_params));
+$decoded_json_All = json_decode($json);
 
-	foreach($json as $k=>$v)
-	{
-		$decoded_json[] = json_decode($v);
-	}
+//echo '<pre>'; print_r(count($decoded_json_All)); echo '</pre>';
 
-	// Assign Results
-	foreach($decoded_json as $k=>$v)
-	{
-		foreach($v as $kk=>$vv)
-		{
-			$results[] = $vv;	
-		}	
-	}
+$maxPerPage = MAX_LISTING_PER_PAGE;
+/*Get the current page eg index.php?pg=4*/
 
-	// Filter Results
-	$results = filter_listings_obj($results);
-
+if(isset($_GET['page_no'])){
+    $pageNo = abs(intval($_GET['page_no']));
+}else{
+    $pageNo = 1;
 }
-else
-{
-	// If we don't have Categories
-	$json = x2apicall(array('_class'=>'Clistings?'.$get_params));
-	$decoded_json = json_decode($json);
 
-	// Filter Results
-	$decoded_json = filter_listings_obj($decoded_json);
+$limit = ($pageNo - 1) * $maxPerPage;
+$prev = $pageNo - 1;
+$next = $pageNo + 1;
+$limits = (int)($pageNo - 1) * $maxPerPage;
 
-	$results = $decoded_json;
+$jsonPage = (int)($pageNo - 1);
 
+$sort_order_param = 'sortRecent';
+$order_column = '+createDate';
+	
+if(isset($_GET['sort_order'])){
+	$sort_order_param = $_GET['sort_order'];
+	if ($_GET['sort_order'] == 'sortRecent')
+	{
+		$order_column = '-createDate';
+	}
+	elseif ($_GET['sort_order'] == 'sortOldest')
+	{
+		$order_column = '+createDate';
+	}
+	elseif ($_GET['sort_order'] == 'sortPricel')
+	{
+		$order_column = '-c_listing_askingprice_c';
+	}
+	elseif ($_GET['sort_order'] == 'sortPricel')
+	{
+		$order_column = '+c_listing_askingprice_c';
+	}   
 }
+$sort_order = '&_order='.$order_column;
+
+$get_params = $get_params.'&_limit='.$maxPerPage.'&_page='.$jsonPage;
+$jsonLimit = x2apicall(array('_class'=>'Clistings?'.$get_params));
+$decoded_jsonLimit = json_decode($jsonLimit);
+
+//print_r('<pre>');print_r($get_params);print_r('</pre>');
+
+//echo '<pre>'; print_r(count($decoded_jsonLimit)); echo '</pre>';
+
+
+
+// Filter Results
+//$decoded_json = filter_listings_obj($decoded_json);
+
+$results = $decoded_jsonLimit;
+$totalposts = count($decoded_json_All);
+$maxPages = ceil(count($decoded_json_All) / $maxPerPage);
+$lpm1 = $maxPages - 1;
 
 
 
@@ -167,7 +227,7 @@ get_header();
 		<div class="container-fluid search_result">
 			<div class="row searchpage_main_content_row">
 
-				<div class="col-md-3 sidebar_content">
+				<div class="col-12 col-sm-4 col-lg-3 sidebar_content" style=" margin-top: 45px;">
 				
 				<div class="panel-group" id="accordion">
 						  <div class="panel panel-default">
@@ -204,7 +264,7 @@ get_header();
 				
 		</div>
 
-		<div id="business_container" class="col-md-9 searchlists_container">
+		<div id="business_container" class="col-12 col-sm-8 col-lg-9 searchlists_container">
 	
 					<?php
 
@@ -244,7 +304,7 @@ get_header();
 									}
 								}
 
-								$images_results = $wpdb->get_results( 'SELECT gp.* FROM x2_gallery_photo gp RIGHT JOIN x2_gallery_to_model gm ON gm.id = gp.gallery_id WHERE gm.modelName="Clistings" AND gm.modelId='.$searchlisting->id, OBJECT );
+								$images_results = $wpdb->get_results( 'SELECT gp.* FROM x2_gallery_photo gp RIGHT JOIN x2_gallery_to_model gm ON gm.galleryId = gp.gallery_id WHERE gm.modelName="Clistings" AND gm.modelId='.$searchlisting->id, OBJECT );
 
 								$img_div = '';
 								if( !empty($images_results[0]) && $images_results[0]->id > 0)
@@ -312,9 +372,33 @@ get_header();
 					// 	echo $qy;
 					// }
 					_e(" returned ",'bbcrm');
-					echo count((array)$listingids);
-					echo (count((array)$listingids)===1)?__(' result.','bbcrm'):__(' results.','bbcrm');
-					}
+					echo $totalposts;
+	echo ($totalposts===1)?__(' result.','bbcrm'):__(' results.','bbcrm');
+}
+
+if ($maxPages > 1) {
+?>
+
+<div class="clearFix row-listing col-md-12">
+							<div class="clearFix pagination-header">
+								<form class="sortForm pull-left" id="orderByForm">
+									<select id="sort_listings" name="sort" data-title="Sort By" data-header="Sort By" class="selectpicker show-menu-arrow show-tick" >
+										<option class="removeThis"></option>
+										<option value="sortRecent" <?php if ($sort_order_param == 'sortRecent') { ?>selected="selected"<?php } ?>>Most Recent</option>
+										<option value="sortOldest" <?php if ($sort_order_param == 'sortOldest') { ?>selected="selected"<?php } ?>>Oldest Listings</option>
+										<option value="sortPricel" <?php if ($sort_order_param == 'sortPricel') { ?>selected="selected"<?php } ?>>Price (Low - High)</option>
+										<option value="sortPriceh" <?php if ($sort_order_param == 'sortPriceh') { ?>selected="selected"<?php } ?>>Price (High - Low)</option>
+									</select>
+									<input name="orderType" value="sale" type="hidden">
+								</form>
+							<div class="pull-right">
+								<?php echo pagination($maxPages,$pageNo,$lpm1,$prev,$next,$maxPerPage, $totalposts); ?>
+							</div>
+						</div>
+					</div>
+					
+<?php
+}
 
 
 					echo $html;

@@ -205,11 +205,11 @@ the_content();
 		<div class="container-fluid search_result">
 			<div class="row searchpage_main_content_row">
 
-				<div class="col-md-3 sidebar_content">
+				<div class="col-12 col-sm-4 col-lg-3 sidebar_content" style=" margin-top: 45px;">
 					<?php get_sidebar('comercial'); ?>
 				</div>
 
-				<div id="business_container" class="col-md-9 searchlists_container">
+				<div id="business_container" class="col-12 col-sm-8 col-lg-9 searchlists_container">
 					<h1 style="text-align:left; padding-top: 22px;"> <?php the_title(); ?></h1>
 
 <?php
@@ -252,7 +252,7 @@ if($results_false_flag)
 			}
 
 			// Get Real Est Featured Image
-			$images_results = $wpdb->get_results( 'SELECT gp.* FROM x2_gallery_photo gp RIGHT JOIN x2_gallery_to_model gm ON gm.id = gp.gallery_id WHERE gm.modelName="Clistings" AND gm.modelId='.$searchlisting->id, OBJECT );
+			$images_results = $wpdb->get_results( 'SELECT gp.* FROM x2_gallery_photo gp RIGHT JOIN x2_gallery_to_model gm ON gm.galleryId = gp.gallery_id WHERE gm.modelName="Clistings" AND gm.modelId='.$searchlisting->id, OBJECT );
 
 			$img_div = '';
 

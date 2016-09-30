@@ -82,8 +82,6 @@ foreach ($buscats->options as $k=>$v)
 				}
 				
 			}
-			
-
 		}
 		echo "<label> <input type='checkbox' name='c_businesscategories[]' class='search_checkbox' value='$v'/> $k (<span class='child_cat_listings'>".$i_listings."</span>)</label>";
 	}	
@@ -188,7 +186,7 @@ echo '</div>';
 </div>
 
 <div class="form_group">
-	<label class="theme-color" for="broker"><?php _e("Broker/s:",'bbcrm')?></label><br><select multiple="multiple" size="4" name="c_Broker[]" id="broker" class="broker-select"></select>
+	<label class="theme-color" for="broker"><?php _e("Broker/s:",'bbcrm')?></label><br><select size="4" name="c_Broker[]" multiple="multiple" id="broker" class="broker-select"></select>
 </div>
 <?php
 

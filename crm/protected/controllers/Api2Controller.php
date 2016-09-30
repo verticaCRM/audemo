@@ -157,7 +157,7 @@ class Api2Controller extends CController {
      * @param string $_fieldName Field name
      */
     public function actionFields($_class,$_fieldName=null) {
-        $c = new CDbCriteria;
+	    $c = new CDbCriteria;
         $c->compare('modelName',$_class);
         if(!empty($_fieldName))
             $c->compare('fieldName',$_fieldName);
@@ -235,6 +235,7 @@ class Api2Controller extends CController {
         // Run extra special stuff for the Actions class
         $this->kludgesForActions();
 
+        
         switch($method) {
             case 'GET':
                 if((!empty($_id) && ctype_digit((string) $_id)) ||
@@ -245,7 +246,8 @@ class Api2Controller extends CController {
                 } else {
                     // Use case: if no model was directly accessed by ID,
                     // perform a search using the available parameters
-                    $this->responseBody = $this->getDataProvider()->getData();
+                     
+                    $this->responseBody = $this->getDataProvider()->getData();                
                 }
                 break;
             case 'PATCH':
@@ -321,7 +323,8 @@ class Api2Controller extends CController {
      *  0 to include only fully-supported models.
      */
     public function actionModels($partialSupport=1) {
-        // To obtain all models: iterate through modules
+	    
+	    // To obtain all models: iterate through modules
         $modelNames = X2Model::getModelNames();
         // Partially-supported models
         $partial = array(
@@ -482,6 +485,7 @@ class Api2Controller extends CController {
     public function actionTags($_class=null,$_id=null,$_tagName=null) {
         $method = Yii::app()->request->requestType;
 
+       
         // Get the current tag being acted upon, if applicable:
         $tag = null;
         if($_class !== null && $_id !== null && $_tagName != null){
@@ -1156,6 +1160,8 @@ class Api2Controller extends CController {
                 'dateTime' => compact('now','yesterday','tomorrow'),
             );
             $fields = $model->getFields();
+           // print_r('<pre>');print_r($searchAttributes);print_r('</pre>'); 
+           // die('HERREEE');
             foreach($fields as $field) {
                 if(isset($searchAttributes[$field->fieldName])) {
                     if(isset($codes[$field->type])) {
@@ -1168,6 +1174,8 @@ class Api2Controller extends CController {
             }
         }
 
+			//print_r('<pre>');print_r($searchAttributes);print_r('</pre>'); 
+           // die('HERREEE');
         // Search options:
         //
         // Send with parameter _partial=1 to enable partial match in searches
@@ -1191,9 +1199,28 @@ class Api2Controller extends CController {
 
         // Run comparisons:
         foreach($searchAttributes as $column => $value){
-            $criteria->compare($column,$value,$partialMatch,$operator,$escape);
+	        if (strpos($value, 'between') !== false) {
+		        $between_parameters = explode('_', $value); // value will be like: between_200_300
+			    $criteria->addBetweenCondition($column,$between_parameters[1],$between_parameters[2]);
+			}
+			elseif (strpos($value, ':multiple:') !== false) {
+				$multipleCriteria = new CDbCriteria;
+		        $multiple_parameters = explode('__', $value); // value will be like: :multiple:__adickson__ccao
+		        array_shift($multiple_parameters);
+		        foreach ($multiple_parameters as $value_item) 
+		        {
+			      $multipleCriteria->addSearchCondition($column,$value_item, true, 'OR');  
+		        }
+		        //$criteria->addInCondition($column, $multiple_parameters);
+		         $criteria->mergeWith($multipleCriteria,"AND");
+		    }
+			else
+			{
+				$criteria->compare($column,$value,$partialMatch,$operator,$escape);
+			}
+            
         }
-
+        
         // Merge extra criteria:
         if($extraCriteria instanceof CDbCriteria) {
             $criteria->mergeWith($extraCriteria,$combineOp);
@@ -1217,7 +1244,7 @@ class Api2Controller extends CController {
                         .(empty($match['asc']) ? '' : ' '.$ascMap[$match['asc']]);
             }
         }
-
+        
         // Interpret pagination from parameters:
         $pageSize = null; // Default query size
         $pageInd = 0; // Default page

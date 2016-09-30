@@ -167,7 +167,7 @@ get_header();
 		<div class="container-fluid search_result">
 			<div class="row searchpage_main_content_row">
 
-				<div class="col-md-3 sidebar_content">
+				<div class="col-12 col-sm-4 col-lg-3 sidebar_content" style=" margin-top: 45px;">
 				
 				<div class="panel-group" id="accordion">
 						  <div class="panel panel-default">
@@ -205,7 +205,7 @@ get_header();
 				
 		</div>
 
-				<div  id="business_container" class="col-md-9 searchlists_container">
+				<div  id="business_container" class="col-12 col-sm-8 col-lg-9 searchlists_container">
                        <h1 style="text-align:left; padding-top: 22px;"> <?php echo get_the_title( $ID ); ?></h1>
                         <?php the_content(); ?>
 
@@ -248,7 +248,7 @@ if(count((array)$results) > 0 && $results->status != "404"  &&  $results_false_f
 				}
 			}
 
-			$images_results = $wpdb->get_results( 'SELECT gp.* FROM x2_gallery_photo gp RIGHT JOIN x2_gallery_to_model gm ON gm.id = gp.gallery_id WHERE gm.modelName="Clistings" AND gm.modelId='.$searchlisting->id, OBJECT );
+			$images_results = $wpdb->get_results( 'SELECT gp.* FROM x2_gallery_photo gp RIGHT JOIN x2_gallery_to_model gm ON gm.galleryId = gp.gallery_id WHERE gm.modelName="Clistings" AND gm.modelId='.$searchlisting->id, OBJECT );
 
 			$img_div = '';
 			if( !empty($images_results[0]) && $images_results[0]->id > 0)

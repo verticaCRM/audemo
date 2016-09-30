@@ -36,6 +36,7 @@ $json = x2apipost( array('_method'=>'PUT','_class'=>'Clistings/'.$listing->id.'.
 
 $json = x2apicall(array('_class'=>'Brokers/by:nameId='.urlencode($listing->c_assigned_user_id).".json"));
 $listingbroker =json_decode($json);
+//var_dump($listing);
 
 if(!$listingbroker->nameId){
 $json = x2apicall(array('_class'=>'Brokers/by:nameId=House%20Broker_5.json'));
@@ -51,7 +52,7 @@ if(is_user_logged_in() ){
 	$buyerbroker =json_decode($json);	
 
 	if(isset($_POST["add_to_portfolio"]) || isset($_POST['action']) && $_POST["action"]=="add_to_portfolio"){
-	
+		
 		$json = x2apicall(array('_class'=>'Portfolio/by:c_listing_id='.$listing->id.";c_buyer=".urlencode($buyer->nameId).".json"));
 		$prevlisting =json_decode($json);	
 	
@@ -83,6 +84,7 @@ if(is_user_logged_in() ){
 	$json = x2apicall(array('_class'=>'Portfolio/by:c_listing_id='.$listing->id.';c_buyer='.urlencode($buyer->nameId).'.json'));
 	
 	$portfoliolisting =json_decode($json);	
+	
 	if($portfoliolisting->id){
 		$inportfolio=true;		
 	}
@@ -129,14 +131,14 @@ get_header();
 <div class="container-fluid">
 <section id="content" class="portfolio_group" data="property">
 	<div class="row" style="padding:12px; margin:0px">
-	<div style="min-width:300px !important; display: inline-block; clear: none; margin-top: 45px;" class="col-md-3">
+	<div style=" margin-top: 45px;" class="col-12 col-sm-4 col-lg-3">
 
 <?php get_sidebar('page'); ?>
 </div>
 
 
 
-<div style="clear:none; width:65%" class="col-md-9">
+<div  class="col-12 col-sm-8 col-lg-9">
 <h2><?php the_title(); ?></h2>
 <div id="top-horizontal-grey-div"> 
 	
@@ -159,7 +161,7 @@ echo '<div class="portfoliostatus added">&#10003; ' .	__("This propery is in you
 	  <div class="pull-left" style="display:inline; width:60%;">
 			    <div class="al-title property-title entry-title "><?php echo $cssclass;?><?php echo $generic_name; ?></div>	
 			<br><div class="al-price property_detail"><label><?php _e("", 'bbcrm');?></label><?php echo $currency_symbol." ".$amount;?> + SAV</div>
-			<br><div class="al-cat property_detail"><label><?php _e("", 'bbcrm');?></label><?php echo $categories; ?></div>
+			<?php if ($categories != '') { ?><br><div class="al-cat property_detail"><label><?php _e("", 'bbcrm');?></label><?php echo $categories; ?></div><?php } ?>
 		</div>	
 		 <div class="pull-right" style="display:inline; width:40%;">
                 <div class="al-id property_detail" id="property_listing_id" data-id="<?php echo $listing_id;?>"><label><?php _e("ID Ref:", 'bbcrm');?></label>#<?php echo preg_replace("/[^0-9,.]/","",$listing->c_name_generic_c); ?></div>
@@ -170,9 +172,9 @@ echo '<div class="portfoliostatus added">&#10003; ' .	__("This propery is in you
 if(is_user_logged_in() && !$inportfolio){
 ?>
                                                 <form method=post>
-                                                        <input type=submit style="color:#fff; font-weight:600; font-size:1.0em; background-color:#333; width:auto;text-align:center; padding:7px 8px 3px 8px; float:right; clear:right; height:auto; border-radius:4px; vertical-align:bottom; position:absolute: bottom:0; margin-bottom: 4px;" value="<?php _e('SAVE','bbcrm');?>" class=""  />
+                                                        <input type=submit style="color:#fff!important; font-weight:600; font-size:1.0em; background-color:#333; width:auto;text-align:center; padding:7px 8px 3px 8px; float:right; clear:right; height:auto; border-radius:4px; vertical-align:bottom; position:absolute: bottom:0; margin-bottom: 4px;" value="<?php _e('SAVE','bbcrm');?>" class=""   />
                                                         <input type=hidden name="action" value="add_to_portfolio" />
-                                                        <input type=hidden name="id" value="<?echo $listing->id;?>" />
+                                                        <input type=hidden name="id" value="<?php echo $listing->id;?>" />
                                                 </form>
 <?php 
 }else{
@@ -192,12 +194,13 @@ if(is_user_logged_in() && !$inportfolio){
 <?php
 global $wpdb;
 $results = $wpdb->get_results( 'SELECT gp.* FROM x2_gallery_photo gp RIGHT JOIN x2_gallery_to_model gm ON gm.galleryId = gp.gallery_id WHERE gm.modelName="Clistings" AND gm.modelId='.$listing->id, OBJECT );
+//var_dump($listing->id);
 //var_dump($results);
 if(!empty($results[0]->id)):
 ?>
 						<h3 class="detailheader theme-color" style="cursor:pointer;width:100%;background-color:#ddd" onclick='jQuery("#propertygallery").slideToggle()'>Gallery <div style="display:inline;float:right;font-size:.6em;margin:auto 6px;">(click to hide/view)</div></h3>
 						
-<div id=propertygallery style="height:460px;display:block">
+<div id=propertygallery style="height:auto;display:block">
 <?php
 foreach ($results as $image){
 //echo $image->file_name;
@@ -206,10 +209,10 @@ echo "<div style='display:inline-block;padding:4px;width:200px;height:200px;over
 }
 
 endif; ?>					
-
+</div>
 
 <div class="row" style="">
-<div class="col-md-8">
+<div class="col-12 col-sm-12 col-md-6 col-lg-7">
 <?php
 
 	$detailsheader = __("Business Details", 'bbcrm');
@@ -597,7 +600,7 @@ if($brokerimg->fileName){
     
 </div>
 
-<div class="col-md-4" style="background-color: #fff !important; margin-top:78px;">
+<div class="col-12 col-sm-12 col-md-6 col-lg-5" style="background-color: #fff !important; margin-top:25px;">
 
 
 			<div class="panel panel-default">
@@ -607,7 +610,22 @@ if($brokerimg->fileName){
 					</h3>
 				</div>
 			<div class="panel-body">
-				  <div class="pull-left" style="display:inline-block; width: 40%;" >
+					<div class="al-agent-image"><?php
+                      if($brokerimg->fileName){
+                          ?>							
+                       <img src="<?php echo "http://".$apiserver."/uploads/media/".$brokerimg->uploadedBy."/".$brokerimg->fileName;?>" height=170 align=right />
+                        <?php } ?>
+                      </div>
+				<ul class="agentData">
+					<li><h4><?php echo $listingbroker->name ;?>&nbsp;</h4></li>
+					<li>Phone: <strong><?php echo $listingbroker->c_office;?></strong></li>
+					<li>Mobile: <strong><?php echo $listingbroker->c_mobile;?></strong></li>
+					<li>Profile: <a href="/team-profile/hugo-martin,8"><strong>view profile</strong></a></li>
+					<li class="icon-links savelisting notsaved"><div class="btn btn-primary" style="color:#fff; width:auto;text-align:center; font-weight:600; font-size:.9em; background-color:#333; auto; padding:7px 8px 3px 8px; clear:right; height:auto; border-radius:4px;" > <span style="color:#fff;" class="glyphicon glyphicon-ok-circle"></span> <a style="color:#fff;" href="/registration/">SAVE / REQUEST CA</a></div></li>
+					
+			</ul>
+			
+				 <!-- <div class="pull-left" style="display:inline-block; width: 40%;" >
 					  <div class="al-agent-image"><?php
                       if($brokerimg->fileName){
                           ?>							
@@ -623,7 +641,7 @@ if($brokerimg->fileName){
 				            <div style="color:#fff; width:auto;text-align:center; font-weight:600; font-size:.9em; background-color:#333; auto; padding:7px 8px 3px 8px; clear:right; height:auto; border-radius:4px;" >
 				            <span style="color:#fff;" class="glyphicon glyphicon-ok-circle"></span> <a style="color:#fff;" href="/registration/">SAVE / REQUEST CA</a></div>
 				         </div>
-
+					-->
 
 				</div>
 			</div>

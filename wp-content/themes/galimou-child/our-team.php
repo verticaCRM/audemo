@@ -21,7 +21,7 @@ get_header();
 		<div id="business_container" class="container-fluid article-page" style="">
 		    <div class="row">
 		
-							<!--  <div class="col-md-3 sidebar_content">
+							<!--  <div class="col-12 col-sm-4 col-lg-3 sidebar_content" style=" margin-top: 45px;">
 				
 							  <div class="panel-group" id="accordion">
 										<div class="panel panel-default">
@@ -58,7 +58,7 @@ get_header();
 				
 					  </div> -->
 
-      <div  id="" class="col-md-9 searchlists_container">
+      <div  id="" class="col-12 col-sm-8 col-lg-9 searchlists_container">
 			<h1 class="article-page-head"><?php echo get_the_title();?></h1>
 					<div  id="" class="row profileDisplay">
 										  

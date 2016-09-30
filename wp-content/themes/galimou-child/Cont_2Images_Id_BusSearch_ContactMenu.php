@@ -149,7 +149,7 @@ get_header();
 		<div class="container-fluid search_result">
 			<div class="row searchpage_main_content_row">
 
-				<div class="col-md-3 sidebar_content">
+				<div class="col-12 col-sm-4 col-lg-3 sidebar_content" style=" margin-top: 45px;">
 				
 				<div class="panel-group" id="accordion">
 						  <div class="panel panel-default">
@@ -183,7 +183,7 @@ get_header();
 				
 		</div>
 
-				<div  id="business_container" class="col-md-9 searchlists_container">
+				<div  id="business_container" class="col-12 col-sm-8 col-lg-9 searchlists_container">
                        <h1 style="text-align:left; padding-top: 22px;"> <?php echo get_the_title( $ID ); ?></h1>
                         <?php the_content(); ?>
 

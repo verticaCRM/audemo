@@ -121,7 +121,7 @@ class GalleryController extends x2base {
 
         if(isset($_POST['Media'])){
 
-            $temp = TempFile::model()->findByPk($_POST['TempFileId']);
+			$temp = TempFile::model()->findByPk($_POST['TempFileId']);
 
             $userFolder = Yii::app()->user->name; // place uploaded files in a folder named with the username of the user that uploaded the file
             $userFolderPath = 'uploads/media/'.$userFolder;

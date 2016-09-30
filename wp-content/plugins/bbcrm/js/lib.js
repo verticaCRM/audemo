@@ -197,9 +197,11 @@ function do_search_sidebar() {
 		}
 	});
 
-	// Search Sidebar Checkbox Checked Incrementation Behaviour
+	// Search Sidebar Checkbox Checked Incrementation Behaviour 
 	jQuery('.search_checkbox').change(function()
 	{
+		
+			//=> was used for multiple select
 		var number = jQuery(this).closest('.sidebar_categories_base_container').find('.selected_number');
 		var number_html = parseInt(number.html());
 
@@ -211,8 +213,15 @@ function do_search_sidebar() {
 		{
 			number.html(number_html-1);
 		}
+		
+		/*if( this.checked)
+		{
+			//unselect all the options and check only this one (we need the functionality of the radio button)
+			jQuery('.child_category_container input[type=checkbox]:checked').not(this).attr('checked', false);
+		}
+		*/
 	});
-
+	
 	// Search Sidebar DO Parent Category number of listings 
 	var parent_cat = jQuery('.parent_category_title');
 
@@ -262,7 +271,8 @@ function clear_business_all_search_fields()
 {
 	clear_business_shearch_fields();
 	clear_business_shearch_by_id_input();
-	jQuery('.find_business_search_button').trigger('click');
+	//jQuery('.find_business_search_button').trigger('click');
+	window.location = window.location.pathname;
 }
 
 
@@ -576,14 +586,39 @@ jQuery(document).on('ready', function()
 		clear_business_all_search_fields();
 
 	});
-
-
+	
 	// Real Estates Sidebar Toggles
 	do_sidebar_tabs();
+	
+	jQuery('#sort_listings').on('change', function()
+	{		
+		addQSParm("sort_order", $(this).val());
+		window.location.href = myUrl;
+	});
 });
 
+var myUrl = window.location.href; 
+		
+function addQSParm(name, value) {
+    var re = new RegExp("([?&]" + name + "=)[^&]+", "");
 
+    function add(sep) {
+        myUrl += sep + name + "=" + encodeURIComponent(value);
+    }
 
+    function change() {
+        myUrl = myUrl.replace(re, "$1" + encodeURIComponent(value));
+    }
+    if (myUrl.indexOf("?") === -1) {
+        add("?");
+    } else {
+        if (re.test(myUrl)) {
+            change();
+        } else {
+            add("&");
+        }
+    }
+}
 
 
 

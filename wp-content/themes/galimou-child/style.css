@@ -48,16 +48,21 @@ text-transform:uppercase;
 .contact-description input,.contact-description textarea{
 	width: 320px;
 }
+.agentData{
+	    font-size: 90%;
+}
 
-
-
+.agentData h4{
+	    font-size: 17.5px;
+    font-weight: 700;
+}
 
 .au_submenu {
     color: black;
     background-color: #f1f1f1;
     font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
     font-size: 12px;
-    width: 1170px !important;
+   /* width: 1170px !important;*/
     margin: 0 auto;
     position: relative;
 }
@@ -344,8 +349,8 @@ h3.panel-title {
 */
 
 .sidebar_content {
-    min-width:280px !important;
-    max-width:285px;
+   /* min-width:280px !important;
+    max-width:285px;*/
     margin-top: 50px;
 }
 
