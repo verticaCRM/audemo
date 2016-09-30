@@ -43,7 +43,7 @@ if(isset($_REQUEST["id"]) && !empty($_REQUEST["id"])){
 }
 
 if(isset($_REQUEST["c_listing_region_c"]) && !empty($_REQUEST["c_listing_region_c"])){
-	$home = 'c_listing_region_c='.$_REQUEST["c_listing_region_c"];
+	$home = 'c_listing_town_c='.$_REQUEST["c_listing_region_c"];
 	$get_params .= '&'.$home;
 }
 
@@ -63,7 +63,7 @@ if(isset($_REQUEST["c_listing_town_c"]) && !empty($_REQUEST["c_listing_town_c"])
 */
 if(isset($_REQUEST["c_keyword_c"]) && !empty($_REQUEST["c_keyword_c"])){
 	$keyword = trim($_REQUEST["c_keyword_c"]);
-	$get_params .= '&c_keyword_c='.$keyword;
+	$get_params .= '&c_name_generic_c=:multiple:__'.$keyword;
 }
 
 if(isset($_REQUEST["c_minimum_investment_c"]) && !empty($_REQUEST["c_minimum_investment_c"]) && isset($_REQUEST["c_maximum_investment_c"]) && !empty($_REQUEST["c_maximum_investment_c"]) )
@@ -182,11 +182,11 @@ if(isset($_GET['sort_order'])){
 	}
 	elseif ($_GET['sort_order'] == 'sortPricel')
 	{
-		$order_column = '-c_listing_askingprice_c';
-	}
-	elseif ($_GET['sort_order'] == 'sortPricel')
-	{
 		$order_column = '+c_listing_askingprice_c';
+	}
+	elseif ($_GET['sort_order'] == 'sortPriceh')
+	{
+		$order_column = '-c_listing_askingprice_c';
 	}   
 }
 $sort_order = '&_order='.$order_column;
@@ -380,7 +380,28 @@ if ($maxPages > 1) {
 <?php
 }
 								  echo $html;
+if ($maxPages > 1) {
+?>
 
+<div class="clearFix row-listing col-md-12">
+							<div class="clearFix pagination-header">
+								<form class="sortForm pull-left" id="orderByForm">
+									<select id="sort_listings" name="sort" data-title="Sort By" data-header="Sort By" class="selectpicker show-menu-arrow show-tick" >
+										<option class="removeThis"></option>
+										<option value="sortRecent" <?php if ($sort_order_param == 'sortRecent') { ?>selected="selected"<?php } ?>>Most Recent</option>
+										<option value="sortOldest" <?php if ($sort_order_param == 'sortOldest') { ?>selected="selected"<?php } ?>>Oldest Listings</option>
+										<option value="sortPricel" <?php if ($sort_order_param == 'sortPricel') { ?>selected="selected"<?php } ?>>Price (Low - High)</option>
+										<option value="sortPriceh" <?php if ($sort_order_param == 'sortPriceh') { ?>selected="selected"<?php } ?>>Price (High - Low)</option>
+									</select>
+								</form>
+							<div class="pull-right">
+								<?php echo pagination($maxPages,$pageNo,$lpm1,$prev,$next,$maxPerPage, $totalposts); ?>
+							</div>
+						</div>
+					</div>
+					
+<?php 
+}	
 								  //get_template_part("home","search");
 								  ?>  
                    </div>
