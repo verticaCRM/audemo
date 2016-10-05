@@ -128,6 +128,8 @@ if(is_user_logged_in() ){
 		$generic_name =$listing->c_name_generic_c;
 		$description =$listing->description;
 		$region=$listing->c_listing_region_c;
+		$town=$listing->c_listing_town_c;
+		$idref=$listing->c_listing_frontend_id_c;
 		$terms=$listing->c_listing_terms_c;
 		$currency_symbol=$listing->c_currency_id;
 		$grossrevenue=number_format($listing->c_financial_grossrevenue_c);
@@ -197,10 +199,10 @@ echo '<div class="portfoliostatus added">&#10003; ' .	__("This propery is in you
 			<?php if ($categories != '') { ?><br><div class="al-cat property_detail"><label><?php _e("", 'bbcrm');?></label><?php echo $categories; ?></div><?php } ?>
 		</div>	
 		 <div class="pull-right" style="display:inline; width:40%;">
-                <div class="al-id property_detail" id="property_listing_id" data-id="<?php echo $listing_id;?>"><label><?php _e("ID Ref:", 'bbcrm');?></label>#<?php echo preg_replace("/[^0-9,.]/","",$listing->c_name_generic_c); ?></div>
-             <br><div class="al-region property_detail"><label><?php _e("Suburb:", 'bbcrm');?></label><?php echo $suberb;?></div>	
-             <br><div class="al-region property_detail"><label><?php _e("Territory:", 'bbcrm');?></label><?php echo $region;?></div>
-             <br><div class="al-status property_detail"><label><?php _e("Status:", 'bbcrm');?></label><?php echo $status; ?></div>
+			<br><div class="al-region property_detail"><label><?php _e("ID Ref:", 'bbcrm');?></label><?php echo $idref;?></div>   
+			<br><div class="al-region property_detail"><label><?php _e("Suburb:", 'bbcrm');?></label><?php echo $region;?></div>	
+			<br><div class="al-region property_detail"><label><?php _e("State:", 'bbcrm');?></label><?php echo $town;?></div>
+			<br><div class="al-status property_detail"><label><?php _e("Status:", 'bbcrm');?></label><?php echo $status; ?></div>
 <?php
 if(is_user_logged_in() && !$inportfolio){
 ?>
