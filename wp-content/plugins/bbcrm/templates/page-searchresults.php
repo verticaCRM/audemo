@@ -340,20 +340,22 @@ if(count((array)$results) > 0 && $results->status != "404"  &&  $results_false_f
 					$cats .='<a class="'.$class_cat.'" href="?c_businesscategories[]='.urlencode(stripslashes($cat)).'">'.$cat.'</a> ';
 				}
 			}
-			$images_results = $wpdb->get_results( 'SELECT gp.* FROM x2_gallery_photo gp RIGHT JOIN x2_gallery_to_model gm ON gm.id = gp.gallery_id WHERE gm.modelName="Clistings" AND gm.modelId='.$searchlisting->id, OBJECT );
+$json = x2apicall(array('_class'=>'Media/by:description=thumbnail;associationId='.$searchlisting->id.'.json'));
+$thumbnail = json_decode($json);
+$img_div = "<div class='searchlisting_featured_image'>";
+if(!$thumbnail->fileName){
+                        $img_div .= '';//<a href="/listing/'.sanitize_title($listing->c_name_generic_c).'" class="listing_link" data-id="'.$listing->id.'"><img src="'.plugin_dir_url(__DIR__).'images/noimage.png"></a>';
+                }else{
+                        $img_div .= '<a href="/listing/'.sanitize_title($listing->c_name_generic_c).'" class="listing_link" data-id="'.$listing->id.'"><img src="'.get_bloginfo('url').'/crm/uploads/media/'.$thumbnail->uploadedBy.'/'.$thumbnail->fileName.'" style="width:100%" /></a>';
 
-			// echo '<pre>'; print_r($images_results); echo '</pre>';
-			$img_div = '';
-			if( !empty($images_results[0]) && $images_results[0]->id > 0)
-			{
-				// echo '<pre>'; var_dump($images_results[0]); echo '</pre>';
-				$img_div = "<div class='searchlisting_featured_image'><img src='/crm/uploads/gallery/_".$images_results[0]->id.".jpg' /></div>" ;
-			}
+                }
+$img_div .= "</div>";
 
-			$html .= "<div class='listing_search_result searchresult'>";
-			$html .= "	<div class='row'>";
-			$html .= "		<div class='col-md-3'>";		    
-	        $html .= 			$img_div; 
+                        $html .= "<div class='listing_search_result searchresult'>";
+                        $html .= "      <div class='row'>";
+                        $html .= "              <div class='col-md-3 searchlisting_photo_box'>";
+                $html .=                        $img_div;
+
 	        $html .= "		</div>";
 			$html .= "		<div class='col-md-9 searchlisting_content_box'>";
 		//Marc - LINE BELOW USES A PLACEHOLDER:".$searchlisting->c_listing_id_c." Some functional code needs to go here in its place :) In addition to the only float on the page ( kind you used for the "more button" on home-featured php file )
@@ -369,7 +371,8 @@ if(count((array)$results) > 0 && $results->status != "404"  &&  $results_false_f
 			// }
 
 		    $html .= "			<div class='searchlisting_region'>".__("","bbcrm").$searchlisting->c_listing_region_c;
-		    $html .= "          	<span class='searchlisting_currency_id'>".__("",'bbcrm').$searchlisting->c_currency_id.number_format($searchlisting->c_listing_askingprice_c)."</span>";
+		    //$html .= "          	<span class='searchlisting_currency_id'>".__("",'bbcrm').$searchlisting->c_currency_id.number_format($searchlisting->c_listing_askingprice_c)."</span>";
+		    $html .= "          	<span class='searchlisting_currency_id'>".__("",'bbcrm').$searchlisting->c_priceView."</span>";
 		    $html .= "			</div>";
 			//$html .= "		<div>".__("Cash Flow: ",'bbcrm').$searchlisting->c_currency_id.number_format($searchlisting->c_ownerscashflow)."</div>";
 		    $html .= "			<div class='searchlisting_description'>".$searchlisting->description."</div>";
