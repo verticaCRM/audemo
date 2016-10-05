@@ -129,6 +129,25 @@ $a = shortcode_atts( array(
 add_shortcode('featuredlistings','get_featured_listings');
 
 
+function show_visitorcontact($atts){
+global $a;
+
+$a = shortcode_atts( array(
+'num'=>'4',    
+'franchise'=>0,
+    'broker'=>'',
+    'featured'=>1,
+    ), $atts );
+
+	$search = plugin_dir_path(__FILE__)."templates/sidebar-visitor.php";
+	ob_start();
+        include($search);
+        return ob_get_clean();
+
+}
+add_shortcode('visitorcontact','show_visitorcontact');
+
+
 
 function get_id_search($atts){
 global $a;

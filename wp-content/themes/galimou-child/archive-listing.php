@@ -34,15 +34,42 @@ if(empty($listing->c_listing_frontend_url)){
 $json = x2apipost( array('_method'=>'PUT','_class'=>'Clistings/'.$listing->id.'.json','_data'=>array('c_listing_frontend_url'=>'/listing/'.sanitize_title($listing->c_name_generic_c)."/") ) );
 }
 
-$json = x2apicall(array('_class'=>'Brokers/by:nameId='.urlencode($listing->c_assigned_user_id).".json"));
-$listingbroker =json_decode($json);
+if ($listing->c_assigned_user_id != '')
+{
+	$json = x2apicall(array('_class'=>'Brokers/by:nameId='.urlencode($listing->c_assigned_user_id).".json"));
+	$listingbroker =json_decode($json);
+}
+elseif ($listing->assignedTo != '')
+{
+	$results = $wpdb->get_results( "SELECT * FROM x2_users WHERE userAlias='".$listing->assignedTo."'", OBJECT );
+	$broker_nameId = $results[0]->firstName.' '.$results[0]->lastName.'_'.$results[0]->id;
+	$broker_name = $results[0]->firstName.' '.$results[0]->lastName;
+	
+	$json = x2apicall(array('_class'=>'Brokers/by:name='.urlencode($broker_name).".json"));
+	$listingbroker =json_decode($json);
+	
+	
+}
+
+
 //var_dump($listing);
 
 if(!$listingbroker->nameId){
-$json = x2apicall(array('_class'=>'Brokers/by:nameId=House%20Broker_5.json'));
-$listingbroker =json_decode($json);
+	$json = x2apicall(array('_class'=>'Brokers/by:nameId=House%20Broker_5.json'));
+	$listingbroker =json_decode($json);
 }
+if(!is_user_logged_in() ){	
+	
+	$json = x2apicall(array('_class'=>'Brokers/by:nameId='.urlencode($listingbroker->c_broker).".json"));
+	$buyerbroker =json_decode($json);	
 
+	$json = x2apicall(array('_class'=>'Media/by:fileName='.$buyerbroker->c_profilePicture.".json"));
+	$brokerimg =json_decode($json);
+	
+	//print_r('<pre>');print_r('buyerbroker');print_r('</pre>');
+	//print_r('<pre>');print_r($listing);print_r('</pre>');
+	//print_r('<pre>');print_r($brokerimg);print_r('</pre>');
+}
 if(is_user_logged_in() ){	
 	$json = x2apicall(array('_class'=>'Contacts/by:email='.urlencode($userdata->user_email).".json"));
 	$buyer =json_decode($json);
@@ -51,6 +78,9 @@ if(is_user_logged_in() ){
 	$json = x2apicall(array('_class'=>'Brokers/by:nameId='.urlencode($buyer->c_broker).".json"));
 	$buyerbroker =json_decode($json);	
 
+	$json = x2apicall(array('_class'=>'Media/by:fileName='.$buyerbroker->c_profilePicture.".json"));
+	$brokerimg =json_decode($json);
+	
 	if(isset($_POST["add_to_portfolio"]) || isset($_POST['action']) && $_POST["action"]=="add_to_portfolio"){
 		
 		$json = x2apicall(array('_class'=>'Portfolio/by:c_listing_id='.$listing->id.";c_buyer=".urlencode($buyer->nameId).".json"));
@@ -125,6 +155,8 @@ if($portfoliolisting->c_release_status== "Released"){
 }
 global $pagetitle;
 $pagetitle = "Listing: ".$listing->c_name_generic_c. " | ".get_bloginfo('name');
+
+
 
 get_header();
 ?>
@@ -602,49 +634,50 @@ if($brokerimg->fileName){
 
 <div class="col-12 col-sm-12 col-md-6 col-lg-5" style="background-color: #fff !important; margin-top:25px;">
 
-
+			<?php if ($listingbroker->name != '') { ?>
 			<div class="panel panel-default">
 				<div style="background-color: #fff !important;" class="panel-heading">
 					<h3 class="panel-title">
 						<?php if(is_user_logged_in()){ echo 'Your Business Broker'; } else { echo 'Listing Broker'; } ?>
 					</h3>
 				</div>
-			<div class="panel-body">
-					<div class="al-agent-image"><?php
-                      if($brokerimg->fileName){
-                          ?>							
-                       <img src="<?php echo "http://".$apiserver."/uploads/media/".$brokerimg->uploadedBy."/".$brokerimg->fileName;?>" height=170 align=right />
-                        <?php } ?>
-                      </div>
-				<ul class="agentData">
-					<li><h4><?php echo $listingbroker->name ;?>&nbsp;</h4></li>
-					<li>Phone: <strong><?php echo $listingbroker->c_office;?></strong></li>
-					<li>Mobile: <strong><?php echo $listingbroker->c_mobile;?></strong></li>
-					<li>Profile: <a href="/team-profile/hugo-martin,8"><strong>view profile</strong></a></li>
-					<li class="icon-links savelisting notsaved"><div class="btn btn-primary" style="color:#fff; width:auto;text-align:center; font-weight:600; font-size:.9em; background-color:#333; auto; padding:7px 8px 3px 8px; clear:right; height:auto; border-radius:4px;" > <span style="color:#fff;" class="glyphicon glyphicon-ok-circle"></span> <a style="color:#fff;" href="/registration/">SAVE / REQUEST CA</a></div></li>
-					
-			</ul>
-			
-				 <!-- <div class="pull-left" style="display:inline-block; width: 40%;" >
-					  <div class="al-agent-image"><?php
-                      if($brokerimg->fileName){
-                          ?>							
-                       <img src="<?php echo "http://".$apiserver."/uploads/media/".$brokerimg->uploadedBy."/".$brokerimg->fileName;?>" height=170 align=right />
-                        <?php } ?>
-                      </div>
-                  </div>
-                         <div class="pull-right" style="display:inline-block; width: 60%; padding-left:5px;">
-                         
-							<div style="display:inline-block; width: auto; font-weight:bold; font-size:17px;" class="property_detail"><label></label><?php echo $listingbroker->name ;?></div>
-							<div style="display:inline-block; width: auto;"class="property_detail"><label style="font-size:12px; font-weight: 200;">Phone:</label><?php echo $listingbroker->c_office;?></div>
-							<div style="display:inline-block; width: auto;"class="property_detail"><label style="font-size:12px; font-weight: 200;">Mobile:</label><?php echo $listingbroker->c_mobile;?></div>
-				            <div style="color:#fff; width:auto;text-align:center; font-weight:600; font-size:.9em; background-color:#333; auto; padding:7px 8px 3px 8px; clear:right; height:auto; border-radius:4px;" >
-				            <span style="color:#fff;" class="glyphicon glyphicon-ok-circle"></span> <a style="color:#fff;" href="/registration/">SAVE / REQUEST CA</a></div>
-				         </div>
-					-->
-
+				<div class="panel-body">
+						<div class="al-agent-image"><?php
+	                      if($brokerimg->fileName){
+	                          ?>							
+	                       <img src="<?php echo "http://".$apiserver."/uploads/media/".$brokerimg->uploadedBy."/".$brokerimg->fileName;?>" height=170 align=right />
+	                        <?php } ?>
+	                    </div>
+						<ul class="agentData">
+							<li><h4><?php echo $listingbroker->name ;?>&nbsp;</h4></li>
+							<li>Phone: <strong><?php echo $listingbroker->c_office;?></strong></li>
+							<li>Mobile: <strong><?php echo $listingbroker->c_mobile;?></strong></li>
+							<li>Profile: <a href="/team-profile/hugo-martin,8"><strong>view profile</strong></a></li>
+							<li class="icon-links savelisting notsaved"><div class="btn btn-primary" style="color:#fff; width:auto;text-align:center; font-weight:600; font-size:.9em; background-color:#333; auto; padding:7px 8px 3px 8px; clear:right; height:auto; border-radius:4px;" > <span style="color:#fff;" class="glyphicon glyphicon-ok-circle"></span> <a style="color:#fff;" href="/registration/">SAVE / REQUEST CA</a></div></li>
+							
+						</ul>
+				
+					 <!-- <div class="pull-left" style="display:inline-block; width: 40%;" >
+						  <div class="al-agent-image"><?php
+	                      if($brokerimg->fileName){
+	                          ?>							
+	                       <img src="<?php echo "http://".$apiserver."/uploads/media/".$brokerimg->uploadedBy."/".$brokerimg->fileName;?>" height=170 align=right />
+	                        <?php } ?>
+	                      </div>
+	                  </div>
+	                         <div class="pull-right" style="display:inline-block; width: 60%; padding-left:5px;">
+	                         
+								<div style="display:inline-block; width: auto; font-weight:bold; font-size:17px;" class="property_detail"><label></label><?php echo $listingbroker->name ;?></div>
+								<div style="display:inline-block; width: auto;"class="property_detail"><label style="font-size:12px; font-weight: 200;">Phone:</label><?php echo $listingbroker->c_office;?></div>
+								<div style="display:inline-block; width: auto;"class="property_detail"><label style="font-size:12px; font-weight: 200;">Mobile:</label><?php echo $listingbroker->c_mobile;?></div>
+					            <div style="color:#fff; width:auto;text-align:center; font-weight:600; font-size:.9em; background-color:#333; auto; padding:7px 8px 3px 8px; clear:right; height:auto; border-radius:4px;" >
+					            <span style="color:#fff;" class="glyphicon glyphicon-ok-circle"></span> <a style="color:#fff;" href="/registration/">SAVE / REQUEST CA</a></div>
+					         </div>
+						-->
+	
+					</div>
 				</div>
-			</div>
+				<?php } ?>
 			
 			<div class="panel panel-default">
 				<div style="background-color: #fff !important;" class="panel-heading">
@@ -688,12 +721,12 @@ if($brokerimg->fileName){
 </div>
 </div>
 
-<div id="sidebar">
+<div id="sidebar" style="padding:12px; margin:0px;" class="row">
 					
 	<?php if(is_user_logged_in()){ 
 	        dynamic_sidebar( "property-registered" ); 
 		}else{
-echo do_shortcode('[visitorcontact]');
+			echo do_shortcode('[visitorcontact]');
 			dynamic_sidebar( "property-unregistered" ); 
 		}        
         ?>
