@@ -100,7 +100,6 @@ if(isset($_REQUEST["c_franchise_c"]) && !empty($_REQUEST["c_franchise_c"])){
 }
 global $wpdb;
 if(isset($_REQUEST["c_Broker"]) && !empty($_REQUEST["c_Broker"] && $_REQUEST["c_Broker"][0] != '' )){
-	//print_r('<pre>');print_r($_REQUEST["c_Broker"]);print_r('</pre>');
 	foreach($_REQUEST["c_Broker"] as $broker) {
 		$borkers_name = explode('_',$broker);
 		$results = $wpdb->get_results( "SELECT * FROM x2_users WHERE CONCAT(firstName, ' ', lastName)='".$borkers_name[0]."'", OBJECT );
@@ -141,9 +140,7 @@ if(isset($_REQUEST["c_businesscategories"]) && !empty($_REQUEST["c_businesscateg
 // Define function for applying filters
 //function filter_listings_obj($obj) => was moved into audemo/wp-content/plugins/bbcrm/bbcrm.php
 
-// echo '<pre>'; print_r(filter_listings_obj($obj, $k, $v)); echo '</pre>';
 
-//echo '<pre>'; print_r(count($decoded_json)); echo '</pre>';
 
 $sold_selection = false;
 
@@ -151,7 +148,6 @@ $sold_selection = false;
 $json = x2apicall(array('_class'=>'Clistings?'.$get_params));
 $decoded_json_All = json_decode($json);
 
-//echo '<pre>'; print_r(count($decoded_json_All)); echo '</pre>';
 
 $maxPerPage = MAX_LISTING_PER_PAGE;
 /*Get the current page eg index.php?pg=4*/
@@ -197,9 +193,6 @@ $get_params = $get_params.'&_limit='.$maxPerPage.'&_page='.$jsonPage;
 $jsonLimit = x2apicall(array('_class'=>'Clistings?'.$get_params));
 $decoded_jsonLimit = json_decode($jsonLimit);
 
-//print_r('<pre>');print_r($get_params);print_r('</pre>');
-
-//echo '<pre>'; print_r(count($decoded_jsonLimit)); echo '</pre>';
 
 
 
@@ -294,7 +287,6 @@ $html = '';
 $cjson = x2apicall(array('_class'=>'dropdowns/1086.json'));
 $colorjson = json_decode($cjson);
 $colors = (array) $colorjson->options;
-// print_r($colors);
 
 
 if(count((array)$results) > 0 && $results->status != "404"  &&  $results_false_flag){
@@ -325,25 +317,28 @@ $color = '';
 					$cats .='<a style="background:' . $color. ';" href="?find='.urlencode($cat).'">'.$cat.'</a> ';
 				}
 			}
- //echo '<pre>'; print_r($searchlisting->id. ' - '.$searchlisting->c_name_generic_c); echo '</pre>';
-			 //echo '<pre>'; print_r($images_results); echo '</pre>';
-			$images_results = $wpdb->get_results( 'SELECT gp.* FROM x2_gallery_photo gp RIGHT JOIN x2_gallery_to_model gm ON gm.galleryId = gp.gallery_id WHERE gm.modelName="Clistings" AND gm.modelId='.$searchlisting->id, OBJECT );
+//
+$json = x2apicall(array('_class'=>'Media/by:description=thumbnail;associationId='.$searchlisting->id.'.json'));
+$thumbnail = json_decode($json);
+$img_div = "<div class='searchlisting_featured_image'>";
+if(!$thumbnail->fileName){
+                        $img_div .= '';//<a href="/listing/'.sanitize_title($listing->c_name_generic_c).'" class="listing_link" data-id="'.$listing->id.'"><img src="'.plugin_dir_url(__DIR__).'images/noimage.png"></a>';
+                }else{
+                        $img_div .= '<a href="/listing/'.sanitize_title($listing->c_name_generic_c).'" class="listing_link" data-id="'.$listing->id.'"><img src="'.get_bloginfo('url').'/crm/uploads/media/'.$thumbnail->uploadedBy.'/'.$thumbnail->fileName.'" style="width:100%" /></a>';
 
-			$img_div = '';
-			if( !empty($images_results[0]) && $images_results[0]->id > 0)
-			{
-				 $img_div = "<div class='searchlisting_featured_image'><img src='/crm/uploads/gallery/_".$images_results[0]->id.".jpg' /></div>" ;
-			}
+                }
+$img_div .= "</div>";
 
-			$html .= "<div class='listing_search_result searchresult'>";
-			$html .= "	<div class='row'>";
-			$html .= "		<div class='col-md-3 searchlisting_photo_box'>";		    
-	        $html .= 			$img_div; 
+                        $html .= "<div class='listing_search_result searchresult'>";
+                        $html .= "      <div class='row'>";
+                        $html .= "              <div class='col-md-3 searchlisting_photo_box'>";
+                $html .=                        $img_div;
+
+//
 	        $html .= "		</div>";
 			$html .= "		<div class='col-md-9 searchlisting_content_box'>";
 		//Marc - LINE BELOW USES A PLACEHOLDER:".$searchlisting->c_listing_id_c." Some functional code needs to go here in its place :) In addition to the only float on the page ( kind you used for the "more button" on home-featured php file )
 
-//print_r($searchlisting);
 /* Failsafe. Need to move to create flow */
 if(empty($searchlisting->c_listing_frontend_url)){
 $json = x2apipost( array('_method'=>'PUT','_class'=>'Clistings/'.$searchlisting->id.'.json','_data'=>array('c_listing_frontend_url'=>'/listing/'.sanitize_title($searchlisting->c_name_generic_c)."/") ) );
@@ -366,11 +361,7 @@ $json = x2apipost( array('_method'=>'PUT','_class'=>'Clistings/'.$searchlisting-
 			//$html .= "		<div>".$searchlisting->c_listing_businesscat_c."</div>";	
 			
 			
-            $html .= "<div class='searchlisting_bottom_ref'>".__("Reference ","bbcrm").preg_replace("/[^0-9,.]/","",$searchlisting->c_name_generic_c)."</div>";
-            
-            
-             
-             
+            $html .= "<div class='searchlisting_bottom_ref'>".__("Reference ","bbcrm").$searchlisting->c_listing_frontend_id_c."</div>";
 			$html .= "		</div>";
 			
 			
