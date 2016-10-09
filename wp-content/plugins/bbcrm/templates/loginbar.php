@@ -9,6 +9,9 @@ $bbcrm_option = get_option( 'bbcrm_settings' );
 <li id="selectphone"><i class="fa  fa-phone"></i>&nbsp;<div id="ddpho" style='display:inline;color:#FFF !important;'><?php echo $bbcrm_option['bbcrm_loginbar_phone'];?></div>
 
 <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span></li> 	
+<li id="selectphone"><i class="fa  fa-fax"></i>&nbsp;<div id="ddpho" style='display:inline;color:#FFF !important;'><?php echo "+ 617 3368 4014";?></div>
+
+<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span></li> 
 		<li id="contactusli"><a href="<?php echo get_permalink($bbcrm_option['bbcrm_loginbar_contactus']);?>"><i class="fa fa-envelope"></i> <?php _e('Contact Us','bbcrm');?> </a><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span></li> 	
 		<?php if(!is_user_logged_in() ): ?>
 		<li id="loginli"><a href="#" class="loginlink"><i class="fa fa-lock"></i> <?php _e('Buyer Login','bbcrm');?> </a><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span></li>
