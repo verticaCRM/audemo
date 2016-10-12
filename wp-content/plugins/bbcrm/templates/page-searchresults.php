@@ -342,7 +342,7 @@ if(count((array)$results) > 0 && $results->status != "404"  &&  $results_false_f
 			}
 $json = x2apicall(array('_class'=>'Media/by:associationId='.$searchlisting->id.'.json'));
 $thumbnail = json_decode($json);
-//print_r('<pre>');print_r($thumbnail);print_r('</pre>');
+print_r('<pre>');print_r($thumbnail);print_r('</pre>');
 if (count($thumbnail) > 1)
 {
 	$thumbnailImg = $thumbnail[0];
@@ -351,7 +351,7 @@ else
 {
 	$thumbnailImg = $thumbnail;
 }
-
+print_r('<pre>');print_r($thumbnailImg);print_r('</pre>');
 $img_div = "<div class='searchlisting_featured_image'>";
 if(!$thumbnailImg->fileName){
                         $img_div .= '';//<a href="/listing/'.sanitize_title($listing->c_name_generic_c).'" class="listing_link" data-id="'.$listing->id.'"><img src="'.plugin_dir_url(__DIR__).'images/noimage.png"></a>';
