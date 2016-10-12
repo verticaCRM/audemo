@@ -342,6 +342,7 @@ if(count((array)$results) > 0 && $results->status != "404"  &&  $results_false_f
 			}
 $json = x2apicall(array('_class'=>'Media/by:associationId='.$searchlisting->id.'.json'));
 $thumbnail = json_decode($json);
+print_r('<pre>');print_r($json);print_r('</pre>');
 print_r('<pre>');print_r($thumbnail);print_r('</pre>');
 if (count($thumbnail) > 1)
 {
