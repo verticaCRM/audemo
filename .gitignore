@@ -7,8 +7,8 @@
 /cgi-bin/*
 /crm/assets/
 /crm/assets/*
-/crm/compass/.sass-cache/
-/crm/compass/.sass-cache/*
+/crm/compass/
+/crm/compass/*
 /crm/.sass-cache/
 /crm/.sass-cache/*
 /crm/uploads/
