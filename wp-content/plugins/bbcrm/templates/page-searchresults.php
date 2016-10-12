@@ -343,12 +343,17 @@ if(count((array)$results) > 0 && $results->status != "404"  &&  $results_false_f
 $json = x2apicall(array('_class'=>'Media/by:associationId='.$searchlisting->id.'.json'));
 $thumbnail = json_decode($json);
 print_r('<pre>');print_r($json);print_r('</pre>');
-print_r('<pre>');print_r($thumbnail);print_r('</pre>');
-
 if (isset($thumbnail->message) && $thumbnail->message == "Multiple records match.")
 {
 	$last_record = $thumbnail->directUris[count($thumbnail->directUris)]; 
+	
+	print_r('<pre>');print_r('last_record');print_r('</pre>');
+	print_r('<pre>');print_r(count($thumbnail->directUris));print_r('</pre>');
+	print_r('<pre>');print_r($last_record);print_r('</pre>');
+	
 	$last_recordParams = explode('/', $last_record);
+	print_r('<pre>');print_r('last_record Params');print_r('</pre>');
+	print_r('<pre>');print_r($last_recordParams);print_r('</pre>');
 	$last_record_ID = $last_recordParams[count($last_recordParams)];
 	
 	print_r('<pre>');print_r($last_record_ID);print_r('</pre>');
