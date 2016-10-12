@@ -3,6 +3,8 @@
 /crm/protected/config/X2Config.php
 /crm/cgi-bin/
 /crm/cgi-bin/*
+/cgi-bin/
+/cgi-bin/*
 /crm/assets/
 /crm/assets/*
 /crm/compass/.sass-cache/
