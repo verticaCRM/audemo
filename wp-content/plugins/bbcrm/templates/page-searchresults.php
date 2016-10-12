@@ -344,15 +344,28 @@ $json = x2apicall(array('_class'=>'Media/by:associationId='.$searchlisting->id.'
 $thumbnail = json_decode($json);
 print_r('<pre>');print_r($json);print_r('</pre>');
 print_r('<pre>');print_r($thumbnail);print_r('</pre>');
-if (count($thumbnail) > 1)
+
+if (isset($thumbnail->message) && $thumbnail->message == "Multiple records match.")
 {
-	$thumbnailImg = $thumbnail[0];
+	$last_record = $thumbnail->directUris[count($thumbnail->directUris)]; 
+	$last_recordParams = explode('/', $last_record);
+	$last_record_ID = $last_recordParams[count($last_recordParams)];
+	
+	print_r('<pre>');print_r($last_record_ID);print_r('</pre>');
+	
+	$json = x2apicall(array('_class'=>'Media/'.$last_record_ID));
+	
+	print_r('<pre>');print_r($json);print_r('</pre>');
+	
+	$thumbnailImg =json_decode($json);
+		
 }
 else
 {
 	$thumbnailImg = $thumbnail;
 }
 print_r('<pre>');print_r($thumbnailImg);print_r('</pre>');
+
 $img_div = "<div class='searchlisting_featured_image'>";
 if(!$thumbnailImg->fileName){
                         $img_div .= '';//<a href="/listing/'.sanitize_title($listing->c_name_generic_c).'" class="listing_link" data-id="'.$listing->id.'"><img src="'.plugin_dir_url(__DIR__).'images/noimage.png"></a>';
