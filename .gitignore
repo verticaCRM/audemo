@@ -2,7 +2,12 @@
 /wp-content/plugins/bbcrm/_auth.php
 /crm/protected/config/X2Config.php
 /crm/assets/
+/crm/assets/*
 /crm/uploads/
 /crm/uploads/*
+/crm/uploads2/
+/crm/uploads2/*
 /crm/protected/runtime/
+/crm/protected/runtime/*
 /wp-content/uploads/
+/wp-content/uploads/*
