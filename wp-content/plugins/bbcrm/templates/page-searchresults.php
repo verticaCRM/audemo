@@ -345,7 +345,7 @@ $thumbnail = json_decode($json);
 print_r('<pre>');print_r($json);print_r('</pre>');
 if (isset($thumbnail->message) && $thumbnail->message == "Multiple records match.")
 {
-	$last_record = $thumbnail->directUris[count($thumbnail->directUris)]; 
+	$last_record = $thumbnail->directUris[count($thumbnail->directUris)-1]; 
 	print_r('<pre>');print_r($thumbnail->directUris);print_r('</pre>');
 	
 	print_r('<pre>');print_r('last_record');print_r('</pre>');
