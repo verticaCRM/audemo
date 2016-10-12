@@ -2665,7 +2665,7 @@ public function actionShowListingFiles($listing_id, $portfolio_id, $buyer_id) {
         print_r('<pre>');print_r($sql);print_r('</pre>');	
         
         $sql = "CREATE TABLE IF NOT EXISTS `x2_portfolio_to_media` (
-					  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+					  `id` int(10) unsigned NOT NULL,
 					  `portfolio_id` int(10) unsigned NOT NULL,
 					  `media_id` int(10) unsigned NOT NULL,
 					  `private` tinyint(4) NOT NULL COMMENT '0-private;1-public',
@@ -2677,6 +2677,10 @@ public function actionShowListingFiles($listing_id, $portfolio_id, $buyer_id) {
         print_r('<pre>');print_r($sql);print_r('</pre>');	
         
         $sql = 'ALTER TABLE `x2_portfolio_to_media` ADD PRIMARY KEY (`id`)';
+        Yii::app()->db->createCommand($sql)->execute();
+        print_r('<pre>');print_r($sql);print_r('</pre>');
+        
+        $sql = 'ALTER TABLE `x2_portfolio_to_media` CHANGE `id` `id` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT;';
         Yii::app()->db->createCommand($sql)->execute();
         print_r('<pre>');print_r($sql);print_r('</pre>');
                 
