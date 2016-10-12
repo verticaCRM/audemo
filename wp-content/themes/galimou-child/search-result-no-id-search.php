@@ -331,13 +331,27 @@ get_header();
 												}
 
 //
-$json = x2apicall(array('_class'=>'Media/by:associationType=clistings;associationId='.$searchlisting->id.'.json'));
+$json = x2apicall(array('_class'=>'Media/by:associationId='.$searchlisting->id.'.json'));
 $thumbnail = json_decode($json);
+if (isset($thumbnail->message) && $thumbnail->message == "Multiple records match.")
+{
+	$last_record = $thumbnail->directUris[count($thumbnail->directUris)-1]; 
+	$last_recordParams = explode('/', $last_record);
+	$last_record_ID = $last_recordParams[count($last_recordParams)-1];
+	
+	$json = x2apicall(array('_class'=>'Media/'.$last_record_ID));
+	$thumbnailImg =json_decode($json);
+		
+}
+else
+{
+	$thumbnailImg = $thumbnail;
+}
 $img_div = "<div class='searchlisting_featured_image'>";
-if(!$thumbnail->fileName){
+if(!$thumbnailImg->fileName){
                         $img_div .= '';//<a href="/listing/'.sanitize_title($listing->c_name_generic_c).'" class="listing_link" data-id="'.$listing->id.'"><img src="'.plugin_dir_url(__DIR__).'images/noimage.png"></a>';
                 }else{
-                        $img_div .= '<a href="/listing/'.sanitize_title($listing->c_name_generic_c).'--'.$listing->id.'" class="listing_link" data-id="'.$listing->id.'"><img src="'.get_bloginfo('url').'/crm/uploads/media/'.$thumbnail->uploadedBy.'/'.$thumbnail->fileName.'" style="width:100%" /></a>';
+                        $img_div .= '<a href="/listing/'.sanitize_title($listing->c_name_generic_c).'--'.$listing->id.'" class="listing_link" data-id="'.$listing->id.'"><img src="'.get_bloginfo('url').'/crm/uploads/media/'.$thumbnailImg->uploadedBy.'/'.$thumbnailImg->fileName.'" style="width:100%" /></a>';
 
                 }
 $img_div .= "</div>";
