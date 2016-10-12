@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+	<!DOCTYPE propertyList SYSTEM "http://reaxml.realestate.com.au/propertyList.dtd">
+		<propertyList date="2016-09-08-11:28:02" username="xmlrest@absbusinesssales.com.au" password="2AYrQFKG">
+
+	<business modTime="2016-09-08-11:22:02" status="current">
+
+			<agentID>abs-bne</agentID>
+			<uniqueID>absb-sbus1447</uniqueID>
+			
+			<exclusivity value="exclusive"/>
+			<commercialListingType value="sale"/>
+			
+			
+			<underOffer value="no"/>
+			
+	<listingAgent id="1">
+			<name>Ray Dye</name>
+			<telephone type="BH">07 3368 4010</telephone>
+			<telephone type="mobile">0411 428 776</telephone>
+			<email>ray@absbrisbane.com</email>
+			<twitterURL></twitterURL><facebookURL></facebookURL><linkedInURL></linkedInURL>
+			
+	</listingAgent>
+	
+	<listingAgent id="2"></listingAgent>
+	
+			
+			<franchise value="no"></franchise>
+			
+			
+			<price>25000</price>
+			<priceView>$25,000 + SAV</priceView>
+			
+		<address streetview="yes" display="no">
+			<longitude>152.8680534</longitude>
+			<latitude>-27.5642429</latitude>
+			<subNumber></subNumber>
+			<streetNumber></streetNumber>
+			<street>186 Pioneer Crescent</street>
+				<suburb>Brisbane</suburb>
+			<state>qld</state>
+			<postcode>4000</postcode>
+			<country>AUS</country>
+		</address>
+			
+			<businessCategory id="1">
+				<name>Retail</name>
+					<businessSubCategory>
+						<name>Entertainment/Tech</name>
+					</businessSubCategory>
+			</businessCategory>
+			
+			<businessCategory id="2">
+				<name>Leisure/Entertainment</name>
+					<businessSubCategory>
+						<name>Amusements</name>
+					</businessSubCategory>
+			</businessCategory>
+			
+			<headline>Discount Party Supplies Shop - Business for Sale Ref:2977</headline>
+			<description>Situated on the Westside Brisbane, this retail shop is in a Shopping Centre that is popular and growing.  The Business includes Balloons, Accessories, Costumes Table-Ware and all your needs for a party.
+      
+* Parking for patrons
+* Well Established 
+* Busy Mall
+* Close to Food Court 
+* Ideal for a husband and wife team
+* Good Lease Opportunity
+* Destination business for all party needs (Children to Adults) 
+* Well stocked with quality items
+* Includes Online Sales with an operational Website
+* Have Occasion and Celebration of giftware
+* Includes an Active Database of Customers
+* Active in the Community 
+
+Selling Price Business: $25,000 + SAV $25,000.
+Ref: MB 2977
+</description>
+			
+		<buildingDetails>
+			<area unit="squareMeter">0</area>
+			<energyRating></energyRating>
+		</buildingDetails>
+	
+			
+				<externalLink href="" />
+				<externalLink href="" />
+			
+		<images>
+							<img id="m" modTime="2016-09-07-01:15:16" url="http://au-cdn.brolga.com.au/09929a48ff3ff93b5b393c-e.jpg" format="jpg" />
+							<img id="a" modTime="2016-09-07-01:15:16" url="http://au-cdn.brolga.com.au/314f4e4b690e4a1a77250b-e.jpg" format="jpg" />
+							<img id="b" modTime="2016-09-07-01:15:16" url="http://au-cdn.brolga.com.au/3e19b4445252f43d951ce2-e.jpg" format="jpg" />
+							<img id="c" modTime="2016-09-07-01:15:16" url="http://au-cdn.brolga.com.au/f7bc8f762c6f3a8788a1bc-e.jpg" format="jpg" />
+							<img id="d" modTime="2016-09-07-01:15:16" url="http://au-cdn.brolga.com.au/1b467e1dfc79a3e2d84ab0-e.jpg" format="jpg" />
+			<img id="e"/>
+			<img id="f"/>
+			<img id="g"/>
+			<img id="h"/>
+			<img id="i"/>
+			<img id="j"/>
+			<img id="k"/>
+			<img id="l"/>
+			<img id="n"/>
+			<img id="o"/>
+			<img id="p"/>
+			<img id="q"/>
+			<img id="r"/>
+			<img id="s"/>
+			<img id="t"/>
+			<img id="u"/>
+			<img id="v"/>
+			<img id="w"/>
+			<img id="x"/>
+			<img id="y"/>
+			<img id="z"/>
+			<img id="aa"/>
+			<img id="ab"/>
+			<img id="ac"/>
+			<img id="ad"/>
+			<img id="ae"/>
+			<img id="af"/>
+			<img id="ag"/>
+			<img id="ah"/>
+			<img id="ai"/>
+		</images>
+		<objects>
+			<floorplan id="1"/>
+			<floorplan id="2"/>
+		</objects>
+			
+			
+			
+			<miniweb>
+ <uri id="1">http://brolga.com.au/38466</uri>
+ </miniweb>
+	
+	</business>
+
+	
+</propertyList>
