@@ -363,7 +363,14 @@ if (isset($thumbnail->message) && $thumbnail->message == "Multiple records match
 	
 	$json = x2apicall(array('_class'=>'Media/'.$last_record_ID));
 	$thumbnailImg =json_decode($json);
+	if (strpos($thumbnailImg->mimetype, 'image') !== false) 
+	{
 		
+	}
+	else
+	{
+		$thumbnailImg = '';
+	}	
 }
 else
 {
