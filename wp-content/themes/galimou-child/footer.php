@@ -113,7 +113,7 @@ dynamic_sidebar('footer-sidebar-3');
 			</div>
         </div>
     </footer>
-	<!--GABRIELA TEST --!>
+	<!-- GABRIELA TEST -->
 <?php wp_footer(); ?>
 </body>
 </html>
