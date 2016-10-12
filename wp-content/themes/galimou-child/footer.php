@@ -38,9 +38,7 @@ dynamic_sidebar('footer-sidebar-3');
 						<p class="pull-left">
 							<small>Copyright © <?php echo date('Y'); ?> ABS Brisbane. All rights reserved. Powered by <a href="http://businessbrokerscrm.com">Business Brokers CRM.</a></small>
 						</p>
-						<p class="pull-right">
-							
-						</p>
+						<p class="pull-right"></p>
 					</div>
 				</div>
 			</div>
@@ -115,7 +113,7 @@ dynamic_sidebar('footer-sidebar-3');
 			</div>
         </div>
     </footer>
-	
+	<!--GABRIELA TEST --!>
 <?php wp_footer(); ?>
 </body>
 </html>
