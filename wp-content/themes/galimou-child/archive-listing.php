@@ -767,54 +767,48 @@ if($brokerimg->fileName){
     
 </div>
 
-<div class="col-12 col-sm-12 col-md-6 col-lg-5" style="background-color: #fff !important; margin-top:25px;">
+<div class="col-sm-12 col-md-12 col-lg-4" style="background-color: #fff !important; ">
 
-			<?php if ($listingbroker->name != '') { ?>
+
 			<div class="panel panel-default">
 				<div style="background-color: #fff !important;" class="panel-heading">
 					<h3 class="panel-title">
-						<?php if(is_user_logged_in()){ echo 'Your Business Broker'; } else { echo 'Listing Broker'; } ?>
+						Your Business Broker
 					</h3>
 				</div>
-				<div class="panel-body">
-						<div class="al-agent-image"><?php
-	                      if($brokerimg->fileName){
-	                          ?>							
-	                       <img src="<?php echo "http://".$apiserver."/uploads/media/".$brokerimg->uploadedBy."/".$brokerimg->fileName;?>" style="width:95px; height: auto;" align=right />
-	                        <?php } ?>
-	                    </div>
-						<ul class="agentData">
-							<li><h4><?php echo $listingbroker->name ;?>&nbsp;</h4></li>
-							<li>Phone: <strong><?php echo $listingbroker->c_office;?></strong></li>
-							<li>Mobile: <strong><?php echo $listingbroker->c_mobile;?></strong></li>
-							<li>Profile: <a href="/team-profile/hugo-martin,8"><strong>view profile</strong></a></li>
-							<li class="icon-links savelisting notsaved"><div class="btn btn-primary" style="color:#fff; width:auto;text-align:center; font-weight:600; font-size:.9em; background-color:#333; auto; padding:7px 8px 3px 8px; clear:right; height:auto; border-radius:4px;" > <span style="color:#fff;" class="glyphicon glyphicon-ok-circle"></span> <a style="color:#fff;" href="/registration/">SAVE / REQUEST CA</a></div></li>
-							
-						</ul>
-				
-					 <!-- <div class="pull-left" style="display:inline-block; width: 40%;" >
-						  <div class="al-agent-image"><?php
-	                      if($brokerimg->fileName){
-	                          ?>							
-	                       <img src="<?php echo "http://".$apiserver."/uploads/media/".$brokerimg->uploadedBy."/".$brokerimg->fileName;?>" height=170 align=right />
-	                        <?php } ?>
-	                      </div>
-	                  </div>
-	                         <div class="pull-right" style="display:inline-block; width: 60%; padding-left:5px;">
-	                         
-								<div style="display:inline-block; width: auto; font-weight:bold; font-size:17px;" class="property_detail"><label></label><?php echo $listingbroker->name ;?></div>
-								<div style="display:inline-block; width: auto;"class="property_detail"><label style="font-size:12px; font-weight: 200;">Phone:</label><?php echo $listingbroker->c_office;?></div>
-								<div style="display:inline-block; width: auto;"class="property_detail"><label style="font-size:12px; font-weight: 200;">Mobile:</label><?php echo $listingbroker->c_mobile;?></div>
-					            <div style="color:#fff; width:auto;text-align:center; font-weight:600; font-size:.9em; background-color:#333; auto; padding:7px 8px 3px 8px; clear:right; height:auto; border-radius:4px;" >
-					            <span style="color:#fff;" class="glyphicon glyphicon-ok-circle"></span> <a style="color:#fff;" href="/registration/">SAVE / REQUEST CA</a></div>
-					         </div>
-						-->
-	
-					</div>
+			<div class="panel-body">
+				  <div class="pull-left" style="display:inline-block; width: 40%;" >
+					  <div class="al-agent-image"><?php
+                      if($brokerimg->fileName){
+                          ?>							
+                       <img src="<?php echo "http://".$apiserver."/uploads/media/".$brokerimg->uploadedBy."/".$brokerimg->fileName;?>" style="width:100%" />
+                        <?php } ?>
+                      </div>
+                  </div>
+                         <div class="pull-right brokInfo" style="display:inline-block; width: 60%; padding-left:5px;">
+                         
+							<div style="display:inline-block; width: auto; font-weight:bold; font-size:17px;" class="property_detail"><label></label><?php echo $listingbroker->name ;?></div>
+							<div style="display:inline-block; width: auto;"class="property_detail"><label style="font-size:12px; font-weight: 200;">Phone:</label><?php echo $listingbroker->c_office;?></div>
+							<div style="display:inline-block; width: auto;"class="property_detail"><label style="font-size:12px; font-weight: 200;">Mobile:</label><?php echo $listingbroker->c_mobile;?></div>
+<?php
+if(is_user_logged_in() && !$inportfolio){
+?>
+                                                <form method=post>
+                                                        <input type=submit style="color:#ffffff !important; font-weight:600; font-size:1.0em; background-color:#333; width:auto;text-align:center; padding:7px 8px 3px 8px; float:right; clear:right; height:auto; border-radius:4px; border:0; vertical-align:bottom; position:absolute: bottom:0; margin-bottom: 4px;" value="SAVE"  />
+                                                        <input type=hidden name="action" value="add_to_portfolio" />
+                                                        <input type=hidden name="id" value="<?echo $listing->id;?>" />
+                                                </form>
+<?php 
+}else{
+	echo '<div style="color:#fff; font-weight:600; font-size:1.0em; background-color:#333; width:auto;text-align:center; padding:7px 8px 3px 8px; float:right; clear:right; height:auto; border-radius:4px; vertical-align:bottom; position:absolute: bottom:0; margin-bottom: 4px;" ><span style="color:#fff;" class="glyphicon glyphicon-ok-circle"></span> <a style="color:#fff;" href="/registration/">REQUEST CA</a></div>';
+}
+?>
+
+
 				</div>
-				<?php } ?>
+			</div>
 			
-			<div class="panel panel-default">
+			<div id="businesslinks" class="panel panel-default">
 				<div style="background-color: #fff !important;" class="panel-heading">
 					<h3 class="panel-title">
 						Business Links / Tools
@@ -823,16 +817,16 @@ if($brokerimg->fileName){
 				<div class="panel-body">
 					<ul class="listReset listingLinks">
 
-	<li class="icon-links"><a href="/pdf/re-pdf-1-hd.php?id=1429&amp;ut=1470051416" class="printPage" target="_blank"><span class="glyphicon glyphicon-print"></span> Print PDF</a></li>
-	<li class="icon-links"><a rel="prettyPhotoIFRAME" title="Email this listing to a friend" href="/re-email-friend.php?iframe=true&amp;width=800&amp;height=600&amp;lid=1429&amp;t=1470051416"><span class="glyphicon glyphicon-envelope"></span> Email to a Friend</a></li>
-	<li class="icon-links"><a href="" title="Superior Fruit and Vegetable Business for Sale – Ref: 2963" class="jQueryBookmark"><span class="glyphicon glyphicon-book"></span> Bookmark Page</a></li>
-	<li class="icon-links"><a href="http://maps.google.com/maps?daddr=Brisbane, Queensland 4001" target="_blank"><span class="glyphicon glyphicon-map-marker"></span> Map directions</a></li>
+	<li class="icon-links"><a href="javascript:print();" class="printPage" target="_blank"><span class="glyphicon glyphicon-print"></span> Print Page</a></li>
+	<li class="icon-links" style="display:none"><a rel="prettyPhotoIFRAME" title="Email this listing to a friend" href="/re-email-friend.php?iframe=true&amp;width=800&amp;height=600&amp;lid=1429&amp;t=1470051416"><span class="glyphicon glyphicon-envelope"></span> Email to a Friend</a></li>
+	<li class="icon-links" style="display:none"><a href="" title="Superior Fruit and Vegetable Business for Sale – Ref: 2963" class="jQueryBookmark"><span class="glyphicon glyphicon-book"></span> Bookmark Page</a></li>
+	<li class="icon-links" style="display:none;"><a href="http://maps.google.com/maps?daddr=Brisbane, Queensland 4001" target="_blank"><span class="glyphicon glyphicon-map-marker"></span> Map directions</a></li>
 </ul>
 
 				</div>
 			</div>
 			
-			<div class="panel panel-default">
+			<div class="panel panel-default" style="display:none">
 				<div style="background-color: #fff !important;" class="panel-heading">
 					<h3 class="panel-title">
 						Business Location
