@@ -270,7 +270,9 @@ if($portfoliolisting->c_release_status== "Released"){
 global $pagetitle;
 $pagetitle = "Listing: ".$listing->c_name_generic_c. " | ".get_bloginfo('name');
 
-
+//wp_enqueue_script('galleria',get_stylesheet_directory_uri().'/js/galleria-1.4.2.min.js',array('jquery'),'1.4.2');
+//wp_enqueue_script('galleriatheme',get_stylesheet_directory_uri().'/themes/classic/galleria.classic.min.js',array('jquery'));
+//wp_enqueue_style('galleriacss',get_stylesheet_directory_uri().'/themes/classic/galleria.classic.css');
 
 get_header();
 ?>
@@ -348,7 +350,7 @@ if(is_user_logged_in() && !$inportfolio){
 								
 <?php
 global $wpdb;
-$results = $wpdb->get_results( 'SELECT gp.* FROM x2_gallery_photo gp RIGHT JOIN x2_gallery_to_model gm ON gm.id = gp.gallery_id WHERE gm.modelName="Clistings" AND gm.modelId='.$listing->id, OBJECT );
+$results = $wpdb->get_results( 'SELECT gp.* FROM x2_gallery_photo gp RIGHT JOIN x2_gallery_to_model gm ON gm.id = gp.gallery_id WHERE gm.modelName="Clistings" AND gm.modelId='.$listing->id ." ORDER BY gp.rank ASC ", OBJECT );
 //var_dump($listing->id);
 //var_dump($results);
 if(!empty($results[0]->id)):
@@ -356,7 +358,7 @@ if(!empty($results[0]->id)):
 <div class="entry-content brokBox" style="background-color:#ffffff; border:1px solid #ddd; padding:13px;">
 						<h3 class="detailheader theme-color" style="cursor:pointer;width:100%;background-color:#ddd" onclick='jQuery("#propertygallery").slideToggle()'>Gallery <div style="display:inline;float:right;font-size:.6em;margin:auto 6px;">(click to hide/view)</div></h3>
 						
-<div id=propertygallery style="height:auto;display:block">
+<div id=propertygallery style="height:auto;display:block" class="galleria">
 <?php
 foreach ($results as $image){
 //echo $image->file_name;
@@ -365,6 +367,14 @@ echo "<div style='display:inline-block;padding:4px;width:200px;height:200px;over
 }
 ?>
 </div>
+<script>
+    //Galleria.loadTheme('/wp-content/');
+   /* Galleria.run('.galleria', {
+imageCrop:true,
+    height: .75,
+debug:false
+});*/
+</script>
 <?php endif; ?>					
 
 
