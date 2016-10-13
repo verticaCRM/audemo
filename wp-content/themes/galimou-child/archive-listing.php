@@ -352,32 +352,30 @@ if(is_user_logged_in() && !$inportfolio){
 								
 <?php
 global $wpdb;
-$results = $wpdb->get_results( 'SELECT gp.* FROM x2_gallery_photo gp RIGHT JOIN x2_gallery_to_model gm ON gm.id = gp.gallery_id WHERE gm.modelName="Clistings" AND gm.modelId='.$listing->id ." ORDER BY gp.rank ASC ", OBJECT );
-//var_dump($listing->id);
-//var_dump($results);
+$results = $wpdb->get_results( 'SELECT gp.* FROM x2_gallery_photo gp RIGHT JOIN x2_gallery_to_model gm ON gm.id = gp.gallery_id WHERE gm.modelName="Clistings" AND gm.modelId='.$listing->id, OBJECT );
 if(!empty($results[0]->id)):
 ?>
-<div class="entry-content brokBox" style="background-color:#ffffff; border:1px solid #ddd; padding:13px;">
-						<h3 class="detailheader theme-color" style="cursor:pointer;width:100%;background-color:#ddd" onclick='jQuery("#propertygallery").slideToggle()'>Gallery <div style="display:inline;float:right;font-size:.6em;margin:auto 6px;">(click to hide/view)</div></h3>
-						
-<div id=propertygallery style="height:auto;display:block" class="galleria">
+                                                <h3 class="detailheader theme-color" style="cursor:pointer;width:100%;background-color:#ddd" onclick='jQuery("#propertygallery").slideToggle()'>Gallery <div class="clicktoggle">(click to hide/view)</div></h3>
+
+<div class="galleria" style="max-width:70%;margin:0 auto">
 <?php
 foreach ($results as $image){
-//echo $image->file_name;
-//echo substr($image->file_name,-3);
-echo "<div style='display:inline-block;padding:4px;width:200px;height:200px;overflow:hidden;vertical-align:middle;margin-right:2px;'><img style='width:100%' src='/crm/uploads/gallery/_".$image->id.".jpg' /></div>";
+echo "<img src='/crm/uploads/gallery/_".$image->id.".jpg' />";
 }
 ?>
 </div>
 <script>
-    Galleria.loadTheme('/wp-content/');
+    //Galleria.loadTheme('/wp-content/');
     Galleria.run('.galleria', {
 imageCrop:true,
     height: .75,
 debug:false
 });
 </script>
-<?php endif; ?>					
+<?php
+endif;
+//print_r($listing);
+ ?>		
 
 
 <div class="row" style="">
