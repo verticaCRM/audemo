@@ -242,6 +242,8 @@ if(is_user_logged_in() ){
 		$generic_name =$listing->c_name_generic_c;
 		$description =$listing->description;
 		$region=$listing->c_listing_region_c;
+		$town=$listing->c_listing_town_c;
+		$idref=$listing->c_listing_frontend_id_c;
 		$terms=$listing->c_listing_terms_c;
 		$currency_symbol=$listing->c_currency_id;
 		$grossrevenue=number_format($listing->c_financial_grossrevenue_c);
