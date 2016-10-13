@@ -270,9 +270,9 @@ if($portfoliolisting->c_release_status== "Released"){
 global $pagetitle;
 $pagetitle = "Listing: ".$listing->c_name_generic_c. " | ".get_bloginfo('name');
 
-//wp_enqueue_script('galleria',get_stylesheet_directory_uri().'/js/galleria-1.4.2.min.js',array('jquery'),'1.4.2');
-//wp_enqueue_script('galleriatheme',get_stylesheet_directory_uri().'/themes/classic/galleria.classic.min.js',array('jquery'));
-//wp_enqueue_style('galleriacss',get_stylesheet_directory_uri().'/themes/classic/galleria.classic.css');
+wp_enqueue_script('galleria',get_stylesheet_directory_uri().'/js/galleria-1.4.2.min.js',array('jquery'),'1.4.2');
+wp_enqueue_script('galleriatheme',get_stylesheet_directory_uri().'/themes/classic/galleria.classic.min.js',array('jquery'));
+wp_enqueue_style('galleriacss',get_stylesheet_directory_uri().'/themes/classic/galleria.classic.css');
 
 get_header();
 ?>
@@ -368,12 +368,12 @@ echo "<div style='display:inline-block;padding:4px;width:200px;height:200px;over
 ?>
 </div>
 <script>
-    //Galleria.loadTheme('/wp-content/');
-   /* Galleria.run('.galleria', {
+    Galleria.loadTheme('/wp-content/');
+    Galleria.run('.galleria', {
 imageCrop:true,
     height: .75,
 debug:false
-});*/
+});
 </script>
 <?php endif; ?>					
 
