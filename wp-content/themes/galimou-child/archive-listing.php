@@ -352,7 +352,7 @@ if(is_user_logged_in() && !$inportfolio){
 								
 <?php
 global $wpdb;
-$results = $wpdb->get_results( 'SELECT gp.* FROM x2_gallery_photo gp RIGHT JOIN x2_gallery_to_model gm ON gm.id = gp.gallery_id WHERE gm.modelName="Clistings" AND gm.modelId='.$listing->id, OBJECT );
+$results = $wpdb->get_results( 'SELECT gp.* FROM x2_gallery_photo gp RIGHT JOIN x2_gallery_to_model gm ON gm.id = gp.gallery_id WHERE gm.modelName="Clistings" AND gm.modelId='.$listing->id.' ORDER BY gp.rank', OBJECT );
 if(!empty($results[0]->id)):
 ?>
                                                 <h3 class="detailheader theme-color" style="cursor:pointer;width:100%;background-color:#ddd" onclick='jQuery("#propertygallery").slideToggle()'>Gallery <div class="clicktoggle">(click to hide/view)</div></h3>
@@ -819,7 +819,7 @@ if(is_user_logged_in() && !$inportfolio){
 
 	<li class="icon-links"><a href="javascript:print();" class="printPage" target="_blank"><span class="glyphicon glyphicon-print"></span> Print Page</a></li>
 	<li class="icon-links" style="display:none"><a rel="prettyPhotoIFRAME" title="Email this listing to a friend" href="/re-email-friend.php?iframe=true&amp;width=800&amp;height=600&amp;lid=1429&amp;t=1470051416"><span class="glyphicon glyphicon-envelope"></span> Email to a Friend</a></li>
-	<li class="icon-links" style="display:none"><a href="" title="Superior Fruit and Vegetable Business for Sale – Ref: 2963" class="jQueryBookmark"><span class="glyphicon glyphicon-book"></span> Bookmark Page</a></li>
+	<li class="icon-links"><a href="" title="Superior Fruit and Vegetable Business for Sale – Ref: 2963" class="jQueryBookmark"><span class="glyphicon glyphicon-book"></span> Bookmark Page</a></li>
 	<li class="icon-links" style="display:none;"><a href="http://maps.google.com/maps?daddr=Brisbane, Queensland 4001" target="_blank"><span class="glyphicon glyphicon-map-marker"></span> Map directions</a></li>
 </ul>
 
