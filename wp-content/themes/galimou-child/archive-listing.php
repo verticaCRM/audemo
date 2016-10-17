@@ -818,7 +818,7 @@ if(is_user_logged_in() && !$inportfolio){
 					<ul class="listReset listingLinks">
 
 	<li class="icon-links"><a href="javascript:print();" class="printPage" target="_blank"><span class="glyphicon glyphicon-print"></span> Print Page</a></li>
-	<li class="icon-links" style="display:none"><a rel="prettyPhotoIFRAME" title="Email this listing to a friend" href="/re-email-friend.php?iframe=true&amp;width=800&amp;height=600&amp;lid=1429&amp;t=1470051416"><span class="glyphicon glyphicon-envelope"></span> Email to a Friend</a></li>
+	<li class="icon-links"><a rel="prettyPhotoIFRAME" title="Email this listing to a friend" href="javascript:emailCurrentPage()"><span class="glyphicon glyphicon-envelope"></span> Email to a Friend</a></li>
 	<li class="icon-links"><a href="" title="Superior Fruit and Vegetable Business for Sale – Ref: 2963" class="jQueryBookmark"><span class="glyphicon glyphicon-book"></span> Bookmark Page</a></li>
 	<li class="icon-links" style="display:none;"><a href="http://maps.google.com/maps?daddr=Brisbane, Queensland 4001" target="_blank"><span class="glyphicon glyphicon-map-marker"></span> Map directions</a></li>
 </ul>

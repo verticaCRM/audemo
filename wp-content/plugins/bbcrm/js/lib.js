@@ -564,6 +564,14 @@ function bookmark(title, url) {
 }
 
 
+// Email current Page Function
+function emailCurrentPage(){
+    window.location.href="mailto:?subject="+document.title+"&body="+escape(window.location.href);
+}
+
+
+
+
 /**
 	ON DOCUMENT READY
 */
