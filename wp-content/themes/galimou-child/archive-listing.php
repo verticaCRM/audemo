@@ -375,8 +375,8 @@ echo "<img src='/crm/uploads/gallery/_".$image->id.".jpg' />";
 		imageCrop:true,
 		height: .75,
 		//height: 1.5,
-		debug:false,
-		extend: function(options) {
+		debug:false
+		/*extend: function(options) {
 		
 		       // Galleria.log(this) // the gallery instance
 		       // Galleria.log(options) // the gallery options
@@ -394,7 +394,7 @@ echo "<img src='/crm/uploads/gallery/_".$image->id.".jpg' />";
 						});
 		            }));
 		        });
-		    }
+		    }*/
 });
 
 </script>
