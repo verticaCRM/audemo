@@ -46,23 +46,23 @@ if(empty($listing->c_listing_frontend_url) || $listing->c_listing_frontend_url !
 $json = x2apipost( array('_method'=>'PUT','_class'=>'Clistings/'.$listing->id.'.json','_data'=>array('c_listing_frontend_url'=>'/listing/'.sanitize_title($listing->c_name_generic_c)."/") ) );
 }
 
-if ($listing->c_assigned_user_id != '')
-{
-	$json = x2apicall(array('_class'=>'Brokers/by:nameId='.urlencode($listing->c_assigned_user_id).".json"));
-	$listingbroker =json_decode($json);
-}
-elseif ($listing->assignedTo != '')
+if ($listing->assignedTo != '')
 {
 	$results = $wpdb->get_results( "SELECT * FROM x2_users WHERE userAlias='".$listing->assignedTo."'", OBJECT );
 	$broker_nameId = $results[0]->firstName.' '.$results[0]->lastName.'_'.$results[0]->id;
 	$broker_name = $results[0]->firstName.' '.$results[0]->lastName;
+	$broker_nameID = $results[0]->nameId;
 	
 	$json = x2apicall(array('_class'=>'Brokers/by:name='.urlencode($broker_name).".json"));
+	//$json = x2apicall(array('_class'=>'Brokers/by:nameId='.urlencode($broker_nameID).".json"));
 	$listingbroker =json_decode($json);
 	
-	
 }
-
+elseif ($listing->c_assigned_user_id != '')
+{
+	$json = x2apicall(array('_class'=>'Brokers/by:nameId='.urlencode($listing->c_assigned_user_id).".json"));
+	$listingbroker =json_decode($json);
+}
 
 //var_dump($listing);
 
@@ -72,24 +72,28 @@ if(!$listingbroker->nameId){
 }
 if(!is_user_logged_in() ){	
 	
-	$json = x2apicall(array('_class'=>'Brokers/by:nameId='.urlencode($listingbroker->c_broker).".json"));
+	$json = x2apicall(array('_class'=>'Brokers/by:nameId='.urlencode($listingbroker->nameId).".json"));
 	$buyerbroker =json_decode($json);	
 
 	$json = x2apicall(array('_class'=>'Media/by:fileName='.$buyerbroker->c_profilePicture.".json"));
 	$brokerimg =json_decode($json);
 	
-	//print_r('<pre>');print_r('buyerbroker');print_r('</pre>');
-	//print_r('<pre>');print_r($listing);print_r('</pre>');
-	//print_r('<pre>');print_r($brokerimg);print_r('</pre>');
 }
-
 if(is_user_logged_in() ){	
 	$json = x2apicall(array('_class'=>'Contacts/by:email='.urlencode($userdata->user_email).".json"));
 	$buyer =json_decode($json);
 
 	$isuserregistered = ($buyer->c_buyer_status=="Registered")?true:false;
-	$json = x2apicall(array('_class'=>'Brokers/by:nameId='.urlencode($buyer->c_broker).".json"));
-	$buyerbroker =json_decode($json);	
+	if ($listingbroker->name == '')
+	{
+		$json = x2apicall(array('_class'=>'Brokers/by:nameId='.urlencode($buyer->c_broker).".json"));
+		$buyerbroker =json_decode($json);
+	}
+	else
+	{
+		$buyerbroker = $listingbroker;
+	}
+		
 
 	//print_r('<pre>');print_r('buyerbroker');print_r('</pre>');
 	//print_r('<pre>');print_r($buyerbroker);print_r('</pre>');
@@ -276,6 +280,7 @@ wp_enqueue_script('galleria',get_stylesheet_directory_uri().'/js/galleria-1.4.2.
 wp_enqueue_script('galleriatheme',get_stylesheet_directory_uri().'/themes/classic/galleria.classic.min.js',array('jquery'));
 wp_enqueue_style('galleriacss',get_stylesheet_directory_uri().'/themes/classic/galleria.classic.css');
 
+
 get_header();
 ?>
 <div class="container-fluid">
@@ -367,10 +372,31 @@ echo "<img src='/crm/uploads/gallery/_".$image->id.".jpg' />";
 <script>
     //Galleria.loadTheme('/wp-content/');
     Galleria.run('.galleria', {
-imageCrop:true,
-    height: .75,
-debug:false
+		imageCrop:true,
+		height: .75,
+		//height: 1.5,
+		debug:false,
+		extend: function(options) {
+		
+		       // Galleria.log(this) // the gallery instance
+		       // Galleria.log(options) // the gallery options
+		
+		        // listen to when an image is shown
+		        this.bind('image', function(e) {
+		
+		          //  Galleria.log(e) // the event object may contain custom objects, in this case the main image
+		          //  Galleria.log(e.imageTarget) // the current image
+		
+		            // lets make galleria open a lightbox when clicking the main image:
+		            $(e.imageTarget).click(this.proxy(function() {
+		               this.openLightbox({
+						  height: 1.5
+						});
+		            }));
+		        });
+		    }
 });
+
 </script>
 <?php
 endif;
@@ -767,30 +793,29 @@ if($brokerimg->fileName){
     
 </div>
 
-<div class="col-sm-12 col-md-12 col-lg-4" style="background-color: #fff !important; ">
+<div class="col-sm-12 col-md-12 col-lg-4" style="background-color: #fff !important; margin-top:25px; ">
 
-
+			<?php if ($buyerbroker->name != '') { ?>
 			<div class="panel panel-default">
 				<div style="background-color: #fff !important;" class="panel-heading">
 					<h3 class="panel-title">
-						Your Business Broker
+						<?php if(is_user_logged_in()){ echo 'Your Business Broker'; } else { echo 'Listing Broker'; } ?>
 					</h3>
 				</div>
-			<div class="panel-body">
-				  <div class="pull-left" style="display:inline-block; width: 40%;" >
-					  <div class="al-agent-image"><?php
-                      if($brokerimg->fileName){
-                          ?>							
-                       <img src="<?php echo "http://".$apiserver."/uploads/media/".$brokerimg->uploadedBy."/".$brokerimg->fileName;?>" style="width:100%" />
-                        <?php } ?>
-                      </div>
-                  </div>
-                         <div class="pull-right brokInfo" style="display:inline-block; width: 60%; padding-left:5px;">
-                         
-							<div style="display:inline-block; width: auto; font-weight:bold; font-size:17px;" class="property_detail"><label></label><?php echo $listingbroker->name ;?></div>
-							<div style="display:inline-block; width: auto;"class="property_detail"><label style="font-size:12px; font-weight: 200;">Phone:</label><?php echo $listingbroker->c_office;?></div>
-							<div style="display:inline-block; width: auto;"class="property_detail"><label style="font-size:12px; font-weight: 200;">Mobile:</label><?php echo $listingbroker->c_mobile;?></div>
-<?php
+				<div class="panel-body">
+						<div class="al-agent-image"><?php
+	                      if($brokerimg->fileName){
+	                          ?>							
+	                       <img src="<?php echo "http://".$apiserver."/uploads/media/".$brokerimg->uploadedBy."/".$brokerimg->fileName;?>" style="width:95px; height: auto;" align=right />
+	                        <?php } ?>
+	                    </div>
+						<ul class="agentData">
+							<li><h4><?php echo $buyerbroker->name ;?>&nbsp;</h4></li>
+							<li>Phone: <strong><?php echo $buyerbroker->c_office;?></strong></li>
+							<li>Mobile: <strong><?php echo $buyerbroker->c_mobile;?></strong></li>
+							<li>Profile: <a href="/team-profile/hugo-martin,8"><strong>view profile</strong></a></li>
+							<li class="icon-links savelisting notsaved">
+							<?php
 if(is_user_logged_in() && !$inportfolio){
 ?>
                                                 <form method=post>
@@ -800,13 +825,17 @@ if(is_user_logged_in() && !$inportfolio){
                                                 </form>
 <?php 
 }else{
-	echo '<div style="color:#fff; font-weight:600; font-size:1.0em; background-color:#333; width:auto;text-align:center; padding:7px 8px 3px 8px; float:right; clear:right; height:auto; border-radius:4px; vertical-align:bottom; position:absolute: bottom:0; margin-bottom: 4px;" ><span style="color:#fff;" class="glyphicon glyphicon-ok-circle"></span> <a style="color:#fff;" href="/registration/">REQUEST CA</a></div>';
+	echo '<div class="btn btn-primary" style="color:#fff; width:auto;text-align:center; font-weight:600; font-size:.9em; background-color:#333; auto; padding:7px 8px 3px 8px; clear:right; height:auto; border-radius:4px;" > <span style="color:#fff;" class="glyphicon glyphicon-ok-circle"></span> <a style="color:#fff;" href="/registration/">REQUEST CA</a></div>';
 }
 ?>
-
-
+							</li>
+							<!--<li class="icon-links savelisting notsaved"><div class="btn btn-primary" style="color:#fff; width:auto;text-align:center; font-weight:600; font-size:.9em; background-color:#333; auto; padding:7px 8px 3px 8px; clear:right; height:auto; border-radius:4px;" > <span style="color:#fff;" class="glyphicon glyphicon-ok-circle"></span> <a style="color:#fff;" href="/registration/">SAVE / REQUEST CA</a></div></li>-->
+							
+						</ul>
 				</div>
 			</div>
+			<?php } ?>
+			
 			
 			<div id="businesslinks" class="panel panel-default">
 				<div style="background-color: #fff !important;" class="panel-heading">
@@ -815,25 +844,64 @@ if(is_user_logged_in() && !$inportfolio){
 					</h3>
 				</div>
 				<div class="panel-body">
+					<?php
+					$hasMap = false;
+					$hasCoordinates = false;
+					$mapsLink = '';
+					if ($listing -> c_listing_longitude_c != '' && $listing -> c_listing_latitude_c != '')
+					{
+						$hasMap = true;
+						$hasCoordinates = true;
+						//$mapsLink = '//www.google.com/maps/place/'.$listing -> c_listing_latitude_c.','.$listing -> c_listing_longitude_c;
+						$mapsLink = '//maps.google.com/maps?q='.$listing -> c_listing_latitude_c.','.$listing -> c_listing_longitude_c;
+					}
+					elseif ($listing -> c_listing_postal_c != '' && $listing -> c_listing_city_c != '' && $listing -> c_listing_address_c != '')
+					{
+						$hasMap = true;
+						//$mapsLink = '//www.google.com/maps/place/'.$listing -> c_listing_latitude_c.','.$listing -> c_listing_longitude_c;
+						$mapsLink = '//maps.google.com/maps?daddr='.url_encode($listing -> c_listing_postal_c.' '.$listing -> c_listing_city_c.' '.$listing -> c_listing_address_c);
+					}
+				?>
 					<ul class="listReset listingLinks">
 
-	<li class="icon-links"><a href="javascript:print();" class="printPage" target="_blank"><span class="glyphicon glyphicon-print"></span> Print Page</a></li>
-	<li class="icon-links"><a rel="prettyPhotoIFRAME" title="Email this listing to a friend" href="javascript:emailCurrentPage()"><span class="glyphicon glyphicon-envelope"></span> Email to a Friend</a></li>
+	<li class="icon-links"><a href="javascript:print();" class="printPage"><span class="glyphicon glyphicon-print"></span> Print Page</a></li>
+	<li class="icon-links"><a rel="prettyPhotoIFRAME" title="Email this listing to a friend" href="mailto:?subject=Listing: <?php echo $generic_name; ?>&body=Check out <?php echo $generic_name; ?> at <?php echo get_site_url();?>/listing/<?php echo sanitize_title($generic_name)."--".$listing->id;?>"><span class="glyphicon glyphicon-envelope"></span> Email to a Friend</a></li>
 	<li class="icon-links"><a href="" title="Superior Fruit and Vegetable Business for Sale – Ref: 2963" class="jQueryBookmark"><span class="glyphicon glyphicon-book"></span> Bookmark Page</a></li>
-	<li class="icon-links" style="display:none;"><a href="http://maps.google.com/maps?daddr=Brisbane, Queensland 4001" target="_blank"><span class="glyphicon glyphicon-map-marker"></span> Map directions</a></li>
+	<?php if ($mapsLink) { ?>
+	<li class="icon-links" ><a href="<?php echo $mapsLink;?>" target="_blank"><span class="glyphicon glyphicon-map-marker"></span> Map directions</a></li>
+	<?php } ?>
 </ul>
 
 				</div>
 			</div>
 			
-			<div class="panel panel-default" style="display:none">
+			<div class="panel panel-default" >
 				<div style="background-color: #fff !important;" class="panel-heading">
 					<h3 class="panel-title">
 						Business Location
 					</h3>
 				</div>
-				<div class="panel-body">
-					GoogleMap Here
+				<div class="panel-body" id="business_map" style="height: 350px;">
+					<script>
+						//function initMap() {
+					        var myLatLng = {lat: <?php echo $listing -> c_listing_latitude_c; ?>, lng: <?php echo $listing -> c_listing_longitude_c; ?>};
+					
+					        var map = new google.maps.Map(document.getElementById('business_map'), {
+					          zoom: 16,
+					          center: myLatLng
+					        });
+					
+					        var marker = new google.maps.Marker({
+					          position: myLatLng,
+					          map: map,
+					          title: '<?php echo $generic_name; ?>'
+					        });
+					     // }
+
+				      
+				    </script>
+				    <!--<script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>-->
+
 				</div>
 			</div>
 

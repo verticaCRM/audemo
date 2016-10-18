@@ -589,7 +589,7 @@ jQuery(document).on('ready', function()
 	      this.title = document.title;
 	      return true;
 	    } else { // webkit - safari/chrome
-	      alert('Press ' + (navigator.userAgent.toLowerCase().indexOf('mac') != -1 ? 'Command/Cmd' : 'CTRL') + ' + D to bookmark this page.');
+	      alert('Please press <' + (navigator.userAgent.toLowerCase().indexOf('mac') != -1 ? 'Command/Cmd' : 'CTRL') + ' + D> to bookmark this page. Thank you.');
 	    }
 	});
 
