@@ -362,7 +362,7 @@ if(!empty($results[0]->id)):
 ?>
                                                 <h3 class="detailheader theme-color" style="cursor:pointer;width:100%;background-color:#ddd" onclick='jQuery("#propertygallery").slideToggle()'>Gallery <div class="clicktoggle">(click to hide/view)</div></h3>
 
-<div class="galleria" style="max-width:70%;margin:0 auto">
+<div class="galleria" style="max-width:45%;margin:0 auto">
 <?php
 foreach ($results as $image){
 echo "<img src='/crm/uploads/gallery/_".$image->id.".jpg' />";
@@ -390,11 +390,12 @@ echo "<img src='/crm/uploads/gallery/_".$image->id.".jpg' />";
 		            // lets make galleria open a lightbox when clicking the main image:
 		            $(e.imageTarget).click(this.proxy(function() {
 		               this.openLightbox({
-						  height: 1.5
+						  height: 600
 						});
 		            }));
 		        });
-		    }*/
+		
+	}*/
 });
 
 </script>
@@ -848,19 +849,36 @@ if(is_user_logged_in() && !$inportfolio){
 					$hasMap = false;
 					$hasCoordinates = false;
 					$mapsLink = '';
-					if ($listing -> c_listing_longitude_c != '' && $listing -> c_listing_latitude_c != '')
+					if($inportfolio && $isaddressreleased )
 					{
-						$hasMap = true;
-						$hasCoordinates = true;
-						//$mapsLink = '//www.google.com/maps/place/'.$listing -> c_listing_latitude_c.','.$listing -> c_listing_longitude_c;
-						$mapsLink = '//maps.google.com/maps?q='.$listing -> c_listing_latitude_c.','.$listing -> c_listing_longitude_c;
-					}
-					elseif ($listing -> c_listing_postal_c != '' && $listing -> c_listing_city_c != '' && $listing -> c_listing_address_c != '')
+						if ($listing -> c_listing_longitude_c != '' && $listing -> c_listing_latitude_c != '')
+						{
+							$hasMap = true;
+							$hasCoordinates = true;
+							//$mapsLink = '//www.google.com/maps/place/'.$listing -> c_listing_latitude_c.','.$listing -> c_listing_longitude_c;
+							$mapsLink = '//maps.google.com/maps?q='.$listing -> c_listing_latitude_c.','.$listing -> c_listing_longitude_c;
+						}
+						elseif ($listing -> c_listing_postal_c != '' && $listing -> c_listing_city_c != '' && $listing -> c_listing_address_c != '')
+						{
+							$hasMap = true;
+							//$mapsLink = '//www.google.com/maps/place/'.$listing -> c_listing_latitude_c.','.$listing -> c_listing_longitude_c;
+							$mapsLink = '//maps.google.com/maps?daddr='.urlencode($listing -> c_listing_postal_c.' '.$listing -> c_listing_city_c.' '.$listing -> c_listing_address_c.' '.$listing -> c_listing_country_c);
+							$mapsAddress = urlencode($listing -> c_listing_postal_c.' '.$listing -> c_listing_city_c.' '.$listing -> c_listing_address_c.' '.$listing -> c_listing_country_c);
+						}
+					} 
+					else
 					{
-						$hasMap = true;
-						//$mapsLink = '//www.google.com/maps/place/'.$listing -> c_listing_latitude_c.','.$listing -> c_listing_longitude_c;
-						$mapsLink = '//maps.google.com/maps?daddr='.url_encode($listing -> c_listing_postal_c.' '.$listing -> c_listing_city_c.' '.$listing -> c_listing_address_c);
+						if ($listing -> c_listing_town_c != '' && $listing -> c_listing_city_c != '' && $listing -> c_listing_country_c != '')
+						{
+							$hasMap = true;
+							$mapsLink = '//maps.google.com/maps?daddr='.urlencode($listing -> c_listing_country_c.' '.$listing -> c_listing_town_c.' '.$listing -> c_listing_city_c);
+							$mapsAddress = urlencode($listing -> c_listing_country_c.' '.$listing -> c_listing_town_c.' '.$listing -> c_listing_city_c);
+							
+							
+						}
+						
 					}
+					
 				?>
 					<ul class="listReset listingLinks">
 
@@ -874,7 +892,7 @@ if(is_user_logged_in() && !$inportfolio){
 
 				</div>
 			</div>
-			
+			<?php if ($hasMap) { ?>
 			<div class="panel panel-default" >
 				<div style="background-color: #fff !important;" class="panel-heading">
 					<h3 class="panel-title">
@@ -882,6 +900,7 @@ if(is_user_logged_in() && !$inportfolio){
 					</h3>
 				</div>
 				<div class="panel-body" id="business_map" style="height: 350px;">
+					<?php if ($hasCoordinates) { ?>
 					<script>
 						//function initMap() {
 					        var myLatLng = {lat: <?php echo $listing -> c_listing_latitude_c; ?>, lng: <?php echo $listing -> c_listing_longitude_c; ?>};
@@ -897,14 +916,38 @@ if(is_user_logged_in() && !$inportfolio){
 					          title: '<?php echo $generic_name; ?>'
 					        });
 					     // }
-
-				      
 				    </script>
 				    <!--<script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>-->
-
+					<?php } else { ?>
+					<script>
+						var geocoder = new google.maps.Geocoder();
+				            geocoder.geocode({ 'address': '<?php echo $mapsAddress; ?>' }, function (results, status) {
+					            if (status == google.maps.GeocoderStatus.OK) {
+				                    var latitude = results[0].geometry.location.lat();
+				                    var longitude = results[0].geometry.location.lng();
+				                    
+				                     var myLatLng = {lat: latitude, lng: longitude};
+									    var map = new google.maps.Map(document.getElementById('business_map'), {
+								          zoom: 10,
+								          center: myLatLng
+								        });
+								
+								        var marker = new google.maps.Marker({
+								          position: myLatLng,
+								          map: map,
+								          title: '<?php echo $generic_name; ?>'
+								        });
+								        
+				                } else {
+				                   
+				                }
+						    });
+						
+					</script>		
+					<?php } ?>
 				</div>
 			</div>
-
+			<?php } ?>
 
 </div>
 						</div><!-- .entry-content -->

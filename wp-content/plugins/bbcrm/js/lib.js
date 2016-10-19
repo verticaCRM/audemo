@@ -282,7 +282,7 @@ function clear_business_all_search_fields()
 function get_business_search_value_after_reload()
 {	
 	var category_tag_val = '';
-	$('#business_container.searchlists_container a').on('click', function()
+	jQuery('#business_container.searchlists_container a').on('click', function()
 	{
 		category_tag_val = $(this).attr('data-cat');
 	});
@@ -523,11 +523,11 @@ function do_real_est_lease_search_value_after_reload()
 	*function for Real Estates Search Sidebar Toggles
 */
 function do_sidebar_tabs() {
-	$('.tab_container').on('click', function()
+	jQuery('.tab_container').on('click', function()
 	{
-		if( !$(this).hasClass('active') )
+		if( !jQuery(this).hasClass('active') )
 		{
-			var id = $(this).find('div').attr('toggle-id');
+			var id = jQuery(this).find('div').attr('toggle-id');
 			// Do local storage form saving for specific tab
 			if (id == 'for_lease')
 			{
@@ -538,10 +538,10 @@ function do_sidebar_tabs() {
 				do_real_est_sale_search_value_after_reload();
 			}
 
-			$('.toggle_content').removeClass('active');
-			$('#'+id).addClass('active');
-			$('.tab_container').removeClass('active');
-			$(this).addClass('active');
+			jQuery('.toggle_content').removeClass('active');
+			jQuery('#'+id).addClass('active');
+			jQuery('.tab_container').removeClass('active');
+			jQuery(this).addClass('active');
 		}
 	});
 }
@@ -579,7 +579,7 @@ function emailCurrentPage(){
 jQuery(document).on('ready', function()
 {
 
-	$("a.jQueryBookmark").click(function(e){
+	jQuery("a.jQueryBookmark").click(function(e){
 		e.preventDefault();
 	    if (window.sidebar && window.sidebar.addPanel) { // Mozilla Firefox Bookmark
 	      window.sidebar.addPanel(document.title, window.location.href, '');
