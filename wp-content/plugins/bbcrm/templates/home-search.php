@@ -224,4 +224,3 @@ selectCountyTxt = "<?php _e("Please select a city",'bbcrm');?>";
 		</button>
 	</div>
 </form>
-</div>

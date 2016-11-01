@@ -810,11 +810,14 @@ if($brokerimg->fileName){
 	                       <img src="<?php echo "http://".$apiserver."/uploads/media/".$brokerimg->uploadedBy."/".$brokerimg->fileName;?>" style="width:95px; height: auto;" align=right />
 	                        <?php } ?>
 	                    </div>
+	                    <form method=POST id="broker_frm_<?php echo $buyerbroker->id; ?>" action="<?php echo get_permalink($bbcrm_option["bbcrm_pageselect_broker"]);?>">
+		                    <input type=hidden name=eid value="<?php echo $buyerbroker->nameId; ?>">
+	                    </form>
 						<ul class="agentData">
 							<li><h4><?php echo $buyerbroker->name ;?>&nbsp;</h4></li>
 							<li>Phone: <strong><?php echo $buyerbroker->c_office;?></strong></li>
 							<li>Mobile: <strong><?php echo $buyerbroker->c_mobile;?></strong></li>
-							<li>Profile: <a href="/team-profile/hugo-martin,8"><strong>view profile</strong></a></li>
+							<li>Profile: <a href="javascript: document.getElementById('broker_frm_'+<?php echo $buyerbroker->id; ?>).submit();"><strong>view profile</strong></a></li>
 							<li class="icon-links savelisting notsaved">
 							<?php
 if(is_user_logged_in() && !$inportfolio){
