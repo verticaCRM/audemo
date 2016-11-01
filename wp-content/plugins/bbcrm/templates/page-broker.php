@@ -136,7 +136,7 @@ get_header();
 
 <div class="container-fluid">
 	<div class="row">
-		<div class="col-md-12">
+		<div class="col-md-12" style="display:none">
 			<div class="tabbable" id="tabs-181305">
 				<ul class="nav nav-tabs">
 					<li class="active">
