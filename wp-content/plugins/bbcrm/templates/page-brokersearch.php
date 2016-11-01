@@ -9,6 +9,7 @@ if(is_user_logged_in()){
 //...only if logged in?...
 $userdata = get_userdata(get_current_user_id());
 }
+$bbcrm_option=get_option("bbcrm_settings");
 get_header();
 ?>
 <section id="content" class="container" style="font-size: 0;">
