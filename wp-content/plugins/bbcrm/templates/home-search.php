@@ -30,7 +30,7 @@
 		<span class="selected_number_of_categories">(<span class="selected_number">0</span> selected)</span>
 		<i class="fa fa-chevron-up" aria-hidden="true"></i>
 	</div>
-	<div class="sidebar_categories_container">
+	<div class="sidebar_categories_container home_search">
 <?php 
 	
 	$json = x2apicall(array('_class'=>'dropdowns/1000.json'));
@@ -52,7 +52,6 @@ foreach ($buscats->options as $k=>$v)
 			$parent_flag = 1;
 		}
 	}
-
 	if($parent_flag)
 	{
 		if($i != 0)

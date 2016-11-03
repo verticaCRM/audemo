@@ -590,7 +590,7 @@ if($brokerimg->fileName){
 
 <!-- Gail's added tables start here -->	
 
-<h4 class="detailheader theme-color">Occupancy Expenses</h4>
+				<h4 class="detailheader theme-color">Occupancy Expenses</h4>
 				<table id="listingtable">
 					<tr>
 						<td class="listingtablelabel">Rent:</td>
@@ -766,11 +766,11 @@ if($brokerimg->fileName){
 					</table>
                     
 <!-- Gail's added tables end here 	-->
-					<!-- <?php elseif($isuserregistered): 
-						_e('For more details on this listing, please add it to your portfolio.','bbcrm');				
+					<?php elseif($isuserregistered): 
+						//_e('For more details on this listing, please add it to your portfolio.','bbcrm');				
 					else: 
-						_e("In order to see more details about this listing, please contact your broker to become registered.",'bbcrm');
-					endif; ?>-->
+						//_e("In order to see more details about this listing, please contact your broker to become registered.",'bbcrm');
+					endif; ?>
 					<?php } ?>
 					<br clear=all><br>
 							<div class="property_detail"><label style="font-weight:100">Broker:</label> <?php echo $listingbroker->name ;?><label></label> <?php echo $listingbroker->c_mobile;?> / <?php echo $listingbroker->c_email;?></div>

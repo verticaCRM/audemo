@@ -172,8 +172,8 @@ $limits = (int)($pageNo - 1) * $maxPerPage;
 $jsonPage = (int)($pageNo - 1);
 
 $sort_order_param = 'sortRecent';
-$order_column = '+createDate';
-	
+$order_column = '-createDate';
+
 if(isset($_GET['sort_order'])){
 	$sort_order_param = $_GET['sort_order'];
 	if ($_GET['sort_order'] == 'sortRecent')
@@ -186,18 +186,19 @@ if(isset($_GET['sort_order'])){
 	}
 	elseif ($_GET['sort_order'] == 'sortPricel')
 	{
-		$order_column = '-c_listing_askingprice_c';
-	}
-	elseif ($_GET['sort_order'] == 'sortPricel')
-	{
 		$order_column = '+c_listing_askingprice_c';
+	}
+	elseif ($_GET['sort_order'] == 'sortPriceh')
+	{
+		$order_column = '-c_listing_askingprice_c';
 	}   
 }
 $sort_order = '&_order='.$order_column;
 
-$get_params = $get_params.'&_limit='.$maxPerPage.'&_page='.$jsonPage;
+$get_params = $get_params.'&_limit='.$maxPerPage.'&_page='.$jsonPage.$sort_order;
 $jsonLimit = x2apicall(array('_class'=>'Clistings?'.$get_params));
 $decoded_jsonLimit = json_decode($jsonLimit);
+
 
 //print_r('<pre>');print_r($get_params);print_r('</pre>');
 

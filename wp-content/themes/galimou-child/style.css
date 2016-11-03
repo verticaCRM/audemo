@@ -205,12 +205,15 @@ li.current_page_item { background-color:#d2d1d1;}
     border: 1px solid #eee;
     margin-top: 5px;
 }
-
+.sidebar_categories_container.home_search {
+	 background: none;
+    border: none;
+}
 .child_category_container {
     display: none;
 }
 
-.parent_category_title {
+.parent_category_title, .sidebar_categories_container label {
     font-weight: bold;
     font-size: 14px;
     color: rgb(65, 64, 64);
