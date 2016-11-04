@@ -332,29 +332,31 @@ get_header();
 												}
 
 //
-$json = x2apicall(array('_class'=>'Media/by:associationId='.$searchlisting->id.'.json'));
+$get_images_params = array();
+$get_images_params['_order'] = '-id';		
+$get_images_params['associationId'] = $searchlisting->id;
+//$get_images_params['associationType'] = 'clistings';	
+$jsonImages = x2apicall(array('_class'=>'Media?_partial=1&_escape=0&_order=-id&associationId='. $searchlisting->id));
+$thumbnailImages = json_decode($jsonImages);
+//print_r('<pre>');print_r($thumbnailImages);print_r('</pre>');
+
+$json = x2apicall(array('_class'=>'Media/by:_order=-id;associationId='.$searchlisting->id.'.json'));
 $thumbnail = json_decode($json);
-if (isset($thumbnail->message) && $thumbnail->message == "Multiple records match.")
+//print_r('<pre>');print_r($thumbnail);print_r('</pre>');
+if (is_array($thumbnailImages) && count($thumbnailImages) > 1)
 {
-	$last_record = $thumbnail->directUris[count($thumbnail->directUris)-1]; 
-	$last_recordParams = explode('/', $last_record);
-	$last_record_ID = $last_recordParams[count($last_recordParams)-1];
-	
-	$json = x2apicall(array('_class'=>'Media/'.$last_record_ID));
-	$thumbnailImg =json_decode($json);
-	if (strpos($thumbnailImg->mimetype, 'image') !== false) 
+	foreach($thumbnailImages as $thumbnail_info)
 	{
-		
+		if (strpos($thumbnail_info->mimetype, 'image') !== false) 
+		{
+			$thumbnailImg = $thumbnail_info;
+			continue;
+		}
 	}
-	else
-	{
-		$thumbnailImg = '';
-	}	
-		
 }
-else
+elseif (is_array($thumbnailImages) && count($thumbnailImages) == 1)
 {
-	$thumbnailImg = $thumbnail;
+	$thumbnailImg = $thumbnailImages[0];
 }
 $img_div = "<div class='searchlisting_featured_image'>";
 if(!$thumbnailImg->fileName){

@@ -479,19 +479,22 @@ if($brokerimg->fileName){
 					
                     <h4 class="detailheader theme-color">Additional Information</h4>
 					<div class="property_detail"><label>Reason for Selling:</label> <?php echo $listing->c_listing_reasonforselling_c;?></div>
-                    <div class="property_detail"><label>Hours of Operation:</label> <?php echo $listing->c_listing_hours_c;?></div>
+                    <!--<div class="property_detail"><label>Hours of Operation:</label> <?php echo $listing->c_listing_hours_c;?></div>-->
                     <div class="property_detail"><label>Lease Terms:</label> <?php echo $listing->c_Leaseterms;?></div>
-                    <div class="property_detail"><label>Lease Contract Date Start:</label> <?php echo date_format($listing->c_Contractdatestart);?></div>
-                    <div class="property_detail"><label>Lease Contract Date End:</label> <?php echo date_format($listing->c_Contractdateend);?></div>
+                    <!--<div class="property_detail"><label>Lease Contract Date Start:</label> <?php echo date_format($listing->c_Contractdatestart);?></div>
+                    <div class="property_detail"><label>Lease Contract Date End:</label> <?php echo date_format($listing->c_Contractdateend);?></div>-->
+                    <div class="property_detail"><label>Lease Date Start:</label> <?php echo date_format($listing->c_LeaseDateStart);?></div>
+                    <div class="property_detail"><label>Lease Date End:</label> <?php echo date_format($listing->c_LeaseDateEnd);?></div>
                     <div class="property_detail"><label>Lease Improvements:</label> <?php echo $listing->c_financial_leaseimpr_c;?></div>
+                    <div class="property_detail"><label>Lease Options:</label> <?php echo $listing->c_LeaseOptions;?></div>
                     <div class="property_detail"><label>Lease Copy Available?</label> <?php echo $listing->c_listing_leasecopy_c;?></div>
                     <div class="property_detail"><label>Security:</label> <?php echo $listing->c_listing_security_c;?></div>
                     <div class="property_detail"><label>Rental Increase:</label> <?php echo $currency_symbol . number_format($listing->c_financial_rentincrease_c);?></div>
 					<?php } ?>
                     
-<h3 class="detailheader theme-color">Business Information</h3>
-				<table id="listingtable">
-					<tr>
+					<h3 class="detailheader theme-color">Business Information</h3>
+					<table id="listingtable">
+					<tr> 
 						<td class="listingtablelabel">Franchise?</td>
 						<td class="listingtabledata"><?php echo $listing->c_listing_franchise_c;?></td>
 						<td class="listingtablelabel">New Franchise?</td>
@@ -509,12 +512,24 @@ if($brokerimg->fileName){
 						<td class="listingtablelabel">Support/Training?</td>
 						<td class="listingtabledata"><?php echo $listing->c_listing_support_training_c;?></td>
 					</tr>
+					<tr>
+						<td class="listingtablelabel">Tax Returns</td>
+						<td class="listingtabledata"><?php echo $listing->c_taxreturns;?></td>
+						<td class="listingtablelabel">Misc</td>
+						<td class="listingtabledata"><?php echo $listing->c_misc;?></td>
+					</tr>
                     <tr>
 					  <td class="listingtablelabel">Real Estate Available?</td>
 					  <td class="listingtabledata"><?php echo $listing->c_listing_reavail_c;?></td>
 					  <td class="listingtablelabel">Store Size (Sq.m.):</td>
 					  <td class="listingtabledata"><?php echo number_format($listing->c_listing_area_c);?></td>
 				 	</tr>
+				 	<tr>
+					 <td class="listingtablelabel">Freehold Available?</td>
+					  <td class="listingtabledata"><?php echo $listing->c_listing_reavail_c;?></td>
+					  <td class="listingtablelabel">Square Meters:</td>
+					  <td class="listingtabledata"><?php echo $currency_symbol . number_format($listing->c_listing_area_c);?></td>
+					</tr>
 					<tr>
 					 <td class="listingtablelabel">Parking Spaces:</td>
 					  <td class="listingtabledata"><?php echo $listing->c_listing_pkgspace_c;?></td>
@@ -527,18 +542,32 @@ if($brokerimg->fileName){
 					  <td class="listingtablelabel">PT Employees:</td>
 					  <td class="listingtabledata"><?php echo number_format($listing->c_listing_emp_pt_c);?></td>
 				  </tr>
-					<tr>
-					  <td class="listingtablelabel">FF&E:</td>
-					  <td class="listingtabledata"><?php echo $currency_symbol . number_format($listing->c_ffae);?></td>
+				  <tr>
+					  <td class="listingtablelabel">Casual Employees:</td>
+					  <td class="listingtabledata"><?php echo number_format($listing->c_CasualEmployees);?></td>
 					  <td class="listingtablelabel">Rent up to Date?</td>
 					  <td class="listingtabledata"><?php echo $listing->c_listing_rentutd_c;?></td>
 				  </tr>
 					</table>
-           <div style="height:10px;"></div>    
-           <div class="property_detail"><label>Inventory/Stock Included in Price?</label> <?php echo $listing->c_listing_inventory_incl_c;?></div>   
-           <div class="property_detail"><label>Recent Leasehold Improvements:</label> <?php echo $currency_symbol . number_format($listing->c_recentleaseholdimprovements);?></div>
-           <p>&nbsp;</p>
-           <h3 class="detailheader theme-color" >Financial Information</h3>
+		           <div style="height:10px;"></div>
+		           <div class="property_detail"><label>Days of Operation:</label> 
+			           <div>
+				           Monday: <?php echo ($listing->c_OperatingMonday == 1)? 'yes' : '-';?> <br/>
+				           Tuesday: <?php echo ($listing->c_OperatingTuesday == 1)? 'yes' : '-';?> <br/>
+				           Wednesday: <?php echo ($listing->c_OperatingWednesday == 1)? 'yes' : '-';?> <br/>
+				           Thursday: <?php echo ($listing->c_OperatingThursday == 1)? 'yes' : '-';?> <br/>
+				           Friday: <?php echo ($listing->c_OperatingFriday == 1)? 'yes' : '-';?> <br/>
+				           Saturday: <?php echo ($listing->c_OperatingSaturday == 1)? 'yes' : '-';?> <br/>
+				           Sunday: <?php echo ($listing->c_OperatingSunday == 1)? 'yes' : '-';?> <br/>
+				           Public Holidays: <?php echo ($listing->c_OperatingPublicHolidays == 1)? 'yes' : '-';?> <br/>
+			           </div>
+			           
+			       </div>    
+		           <div class="property_detail"><label>Inventory/Stock Included in Price?</label> <?php echo $listing->c_listing_inventory_incl_c;?></div>   
+		           <div class="property_detail"><label>Recent Leasehold Improvements:</label> <?php echo $currency_symbol . number_format($listing->c_recentleaseholdimprovements);?></div>
+		           <div class="property_detail"><label>"Business Notes Payable" up to date?:</label> <?php echo $listing->c_financial_notedutd_c;?></div>
+		           <p>&nbsp;</p>
+		           <h3 class="detailheader theme-color" >Financial Information</h3>
                     <h4 class="detailheader theme-color">Income</h4>
                     <table id="listingtable">
 						<tr>
@@ -547,6 +576,13 @@ if($brokerimg->fileName){
 							
 							<td class="listingtablelabel">Monthly Gross Sales:</td>
 							<td class="listingtabledata"><?php echo $currency_symbol . number_format($listing->c_financial_monthly_sales_c);?></td>
+						</tr>
+						<tr>
+						  <td class="listingtablelabel">Yearly Sales:</td>
+							<td class="listingtabledata"><?php echo $currency_symbol . number_format($listing->c_financial_sales_c);?></td>
+							
+							<td class="listingtablelabel">Other Income:</td>
+							<td class="listingtabledata"><?php echo $currency_symbol . number_format($listing->c_financial_other_income_c);?></td>
 						</tr>
 												
 						<tr>
@@ -559,9 +595,9 @@ if($brokerimg->fileName){
 						<tr>
 						  <td class="listingtablelabel">Less Sales Tax (-):</td>
 							<td class="listingtabledata"><?php echo $currency_symbol . number_format($listing->c_lesssalestax);?></td>
-						<td class="listingtablelabel">Monthly Gross Profit:</td>
+							<td class="listingtablelabel">Monthly Gross Profit:</td>
 							<td class="listingtabledata"><?php echo $currency_symbol . number_format($listing->c_financial_monthly_profit_c);?></td>
-					  </tr>
+					  	</tr>
 						<tr>
 						 <td class="listingtablelabel">Cost of Goods Sold (%):</td>
 							<td class="listingtabledata"><?php echo number_format($listing->c_financial_cgs_c) . "%";?></td>
@@ -575,17 +611,17 @@ if($brokerimg->fileName){
 						  <td>&nbsp;</td>
 						</tr>
 						<tr>
-						  <td class="listingtablelabel">Other Income:</td>
-						  <td class="listingtabledata"><?php echo $currency_symbol . number_format($listing->c_financial_other_income_c);?></td>
-						  <td>&nbsp;</td>
-						  <td>&nbsp;</td>
-			  </tr>
+						  <td class="listingtablelabel">Monthly Operating Profit:</td>
+							<td class="listingtabledata"><?php echo $currency_symbol . number_format($listing->c_MonthlyOperatingProfit);?></td>
+							<td class="listingtablelabel">Annual Operating Profit:</td>
+							<td class="listingtabledata"><?php echo $currency_symbol . number_format($listing->c_AnnualOperatingProfit);?></td>
+					  	</tr>
 						<tr>
-						<td class="listingtablelabel">Gross Profit:</td>
+							<td class="listingtablelabel">Gross Profit:</td>
 						  <td class="listingtabledata"><?php echo $currency_symbol . number_format($listing->c_financial_grossprofit_c);?></td>
 						  <td>&nbsp;</td>
 						  <td>&nbsp;</td>
-			  </tr>
+			  			</tr>
 </table>
 
 <!-- Gail's added tables start here -->	
@@ -593,22 +629,29 @@ if($brokerimg->fileName){
 				<h4 class="detailheader theme-color">Occupancy Expenses</h4>
 				<table id="listingtable">
 					<tr>
-						<td class="listingtablelabel">Rent:</td>
+						<td class="listingtablelabel">Gross Rent:</td>
+						<td class="listingtabledata"><?php echo $currency_symbol . number_format($listing->c_GrossRent);?></td>
+						<td class="listingtablelabel">Net Rent:</td>
 						<td class="listingtabledata"><?php echo $currency_symbol . number_format($listing->c_financial_rent_c);?></td>
+					</tr>
+					<tr>
+						<td class="listingtablelabel">Outgoings:</td>
+						<td class="listingtabledata"><?php echo $currency_symbol . number_format($listing->c_cam);?></td>
 						<td class="listingtablelabel">Utilities:</td>
 						<td class="listingtabledata"><?php echo $currency_symbol . number_format($listing->c_financial_utilities_c);?></td>
 					</tr>
-					<tr>
-						<td class="listingtablelabel">CAM:</td>
-						<td class="listingtabledata"><?php echo $currency_symbol . number_format($listing->c_cam);?></td>
-						<td class="listingtablelabel">Financial Insurance:</td>
-						<td class="listingtabledata"><?php echo $currency_symbol . number_format(intval($listing->c_financial_ins_c));?></td>
-					</tr>						
+											
 					<tr>
 						<td class="listingtablelabel">Repairs/Maintenance:</td>
 						<td class="listingtabledata"><?php echo $currency_symbol . number_format($listing->c_financial_repairsmaint_c);?></td>
 						<td class="listingtablelabel">Rubbish Removal:</td>
 						<td class="listingtabledata"><?php echo $currency_symbol . number_format($listing->c_financial_rubbish_c);?></td>
+					</tr>
+					<tr>
+						<td class="listingtablelabel">Financial Insurance:</td>
+						<td class="listingtabledata"><?php echo $currency_symbol . number_format(intval($listing->c_financial_ins_c));?></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
 					</tr>					
 				</table>
 
@@ -660,22 +703,22 @@ if($brokerimg->fileName){
             <h4 class="detailheader theme-color">Payroll Expenses</h4>
 				<table id="listingtable">
 					<tr>
-						<td class="listingtablelabel">Officer Salary:</td>
-						<td class="listingtabledata"><?php echo $currency_symbol . number_format($listing->c_financial_officersalary_c);?></td>
-						<td class="listingtablelabel">Payroll:</td>
-						<td class="listingtabledata"><?php echo $currency_symbol . number_format($listing->c_financial_payroll_c);?></td>
-					</tr>
-					<tr>
+						<td class="listingtablelabel">Owner Salary:</td>
+						<td class="listingtabledata"><?php echo $currency_symbol . number_format($listing->c_OwnerSalary);?></td>
 						<td class="listingtablelabel">Payroll Taxes:</td>
 						<td class="listingtabledata"><?php echo $currency_symbol . number_format($listing->c_financial_payrolltaxes_c);?></td>
-						<td class="listingtablelabel">Employee Health Insurance:</td>
-						<td class="listingtabledata"><?php echo $currency_symbol . number_format($listing->c_employeehealthinsurance);?></td>
+					</tr>
+					<tr>
+						<td class="listingtablelabel">Full Time Wages:</td>
+						<td class="listingtabledata"><?php echo $currency_symbol . number_format($listing->c_FullTimeWages);?></td>
+						<td class="listingtablelabel">Part Time Wages:</td>
+						<td class="listingtabledata"><?php echo $currency_symbol . number_format($listing->c_PartTimeWages);?></td>
 					</tr>						
 					<tr>
-						<td class="listingtablelabel">Owner's Health Insurance:</td>
-						<td class="listingtabledata"><?php echo $currency_symbol . number_format($listing->c_financial_healthins_owner_c);?></td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
+						<td class="listingtablelabel">Casual Wages:</td>
+						<td class="listingtabledata"><?php echo $currency_symbol . number_format($listing->c_CasualWages);?></td>
+						<td class="listingtablelabel">Total Wages Expense:</td>
+						<td class="listingtabledata"><?php echo $currency_symbol . number_format($listing->c_TotalWages);?></td>
 					</tr>
 				</table>
 
@@ -704,18 +747,36 @@ if($brokerimg->fileName){
                     
                 <h4 class="detailheader theme-color">Add-Backs/Adjustments</h4>
 
-<table id="listingtable">
+				<table id="listingtable">
 					<tr>
-						<td class="listingtablelabel">Officers' Salaries:</td>
-						<td class="listingtabledata"><?php echo $currency_symbol . number_format($listing->c_financial_officersalaries_c);?></td>
-                        <td class="listingtablelabel">Owner's Health Insurance:</td>
-						<td class="listingtabledata"><?php echo $currency_symbol . number_format($listing->c_financial_ownerhealthins_c);?></td>
+						<td class="listingtablelabel">Owner's Salary/Wage:</td>
+						<td class="listingtabledata"><?php echo $currency_symbol . number_format($listing->c_OwnersSalaryWage);?></td>
+                        <td class="listingtablelabel">Owner's Superannuation:</td>
+						<td class="listingtabledata"><?php echo $currency_symbol . number_format($listing->c_OwnersSalaryWage);?></td>
 					</tr>
 					<tr>
 						<td class="listingtablelabel">Loans:</td>
 						<td class="listingtabledata"><?php echo $currency_symbol . number_format($listing->c_financial_loans_c);?></td>
 						<td class="listingtablelabel">Interest:</td>
 						<td class="listingtabledata"><?php echo $currency_symbol . number_format($listing->c_financial_interest_c);?></td>
+					</tr>	
+					<tr>
+						<td class="listingtablelabel">Borrowing Costs:</td>
+						<td class="listingtabledata"><?php echo $currency_symbol . number_format($listing->c_BorrowingCosts);?></td>
+						<td class="listingtablelabel">Depreciation - Vehicle/s:</td>
+						<td class="listingtabledata"><?php echo $currency_symbol . number_format($listing->c_DepreciationVehicle);?></td>
+					</tr>
+					<tr>
+						<td class="listingtablelabel">Depreciation - Leasehold:</td>
+						<td class="listingtabledata"><?php echo $currency_symbol . number_format($listing->c_DepreciationLeasehold);?></td>
+						<td class="listingtablelabel">Depreciation - Plant:</td>
+						<td class="listingtabledata"><?php echo $currency_symbol . number_format($listing->c_DepreciationPlant);?></td>
+					</tr>
+					<tr>
+						<td class="listingtablelabel">Internet:</td>
+						<td class="listingtabledata"><?php echo $currency_symbol . number_format($listing->c_Internet);?></td>
+						<td class="listingtablelabel">Motor Vehicle Expenses:</td>
+						<td class="listingtabledata"><?php echo $currency_symbol . number_format($listing->c_MotorVehicleExpenses);?></td>
 					</tr>						
 					<tr>
 						<td class="listingtablelabel">Owner's Credit Card:</td>
@@ -729,6 +790,18 @@ if($brokerimg->fileName){
 						<td class="listingtablelabel">Owner's Fuel Expense:</td>
 					    <td class="listingtabledata"><?php echo $currency_symbol . number_format($listing->c_financial_ownerfuel_c);?></td>
 			 		</tr>
+			 		<tr>
+						<td class="listingtablelabel">Parking:</td>
+						<td class="listingtabledata"><?php echo $currency_symbol . number_format($listing->c_Parking);?></td>
+						<td class="listingtablelabel">One Off Repairs:</td>
+						<td class="listingtabledata"><?php echo $currency_symbol . number_format($listing->c_OneOffRepairs);?></td>
+					</tr>
+					<tr>
+						<td class="listingtablelabel">Travel Expenses:</td>
+						<td class="listingtabledata"><?php echo $currency_symbol . number_format($listing->c_TravelExpenses);?></td>
+						<td class="listingtablelabel">Amortization (Intangible - eg Goodwill):</td>
+						<td class="listingtabledata"><?php echo $currency_symbol . number_format($listing->c_Amortization);?></td>
+					</tr>
 					<tr>
 						<td class="listingtablelabel">Miscellaneous 1:</td>
 					    <td class="listingtabledata"><?php echo $currency_symbol . number_format($listing->c_misc6);?></td>
@@ -746,7 +819,13 @@ if($brokerimg->fileName){
 						 <td class="listingtabledata"><?php echo $currency_symbol . number_format($listing->c_misc10);?></td>
 					     <td>&nbsp;</td>
 						 <td>&nbsp;</td>
-			  		</tr>					
+			  		</tr>
+			  		<tr>
+						<td class="listingtablelabel">Current Adjusted Net Profit:</td>
+						<td class="listingtabledata"><?php echo $currency_symbol . number_format($listing->c_CurrentAdjustedNetProfit);?></td>
+						<td class="listingtablelabel">Weekly Adjusted Net Profit:</td>
+						<td class="listingtabledata"><?php echo $currency_symbol . number_format($listing->c_WeeklyAdjustedNetProfit);?></td>
+					</tr>					
 			</table>
             
             <h3 class="detailheader theme-color">Totals:</h3>

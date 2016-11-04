@@ -340,16 +340,48 @@ if(count((array)$results) > 0 && $results->status != "404"  &&  $results_false_f
 					}
 				}
 			}
-$json = x2apicall(array('_class'=>'Media/by:associationId='.$searchlisting->id.'.json'));
+$get_images_params = array();
+$get_images_params['_order'] = '-id';		
+$get_images_params['associationId'] = $searchlisting->id;
+//$get_images_params['associationType'] = 'clistings';	
+$jsonImages = x2apicall(array('_class'=>'Media?_partial=1&_escape=0&_order=-id&associationId='. $searchlisting->id));
+$thumbnailImages = json_decode($jsonImages);
+//print_r('<pre>');print_r($thumbnailImages);print_r('</pre>');
+
+$json = x2apicall(array('_class'=>'Media/by:_order=-id;associationId='.$searchlisting->id.'.json'));
 $thumbnail = json_decode($json);
-if (isset($thumbnail->message) && $thumbnail->message == "Multiple records match.")
+//print_r('<pre>');print_r($thumbnail);print_r('</pre>');
+if (is_array($thumbnailImages) && count($thumbnailImages) > 1)
 {
+	foreach($thumbnailImages as $thumbnail_info)
+	{
+		if (strpos($thumbnail_info->mimetype, 'image') !== false) 
+		{
+			$thumbnailImg = $thumbnail_info;
+			continue;
+		}
+	}
+}
+elseif (is_array($thumbnailImages) && count($thumbnailImages) == 1)
+{
+	$thumbnailImg = $thumbnailImages[0];
+}
+/*if (isset($thumbnail->message) && $thumbnail->message == "Multiple records match.")
+{
+	//find last file uploaded that is an image
+	
 	$last_record = $thumbnail->directUris[count($thumbnail->directUris)-1]; 
 	$last_recordParams = explode('/', $last_record);
 	$last_record_ID = $last_recordParams[count($last_recordParams)-1];
 	
+	print_r('<pre>');print_r($last_record_ID);print_r('</pre>');
+	
 	$json = x2apicall(array('_class'=>'Media/'.$last_record_ID));
+	print_r('<pre>');print_r($json);print_r('</pre>');
 	$thumbnailImg =json_decode($json);
+	
+	print_r('<pre>');print_r($thumbnailImg);print_r('</pre>');
+	
 	if (strpos($thumbnailImg->mimetype, 'image') !== false) 
 	{
 		
@@ -364,7 +396,8 @@ else
 {
 	$thumbnailImg = $thumbnail;
 }
-
+*/
+//print_r('<pre>');print_r($thumbnailImg);print_r('</pre>');
 $img_div = "<div class='searchlisting_featured_image'>";
 if(!$thumbnailImg->fileName){
                         $img_div .= '';//<a href="/listing/'.sanitize_title($listing->c_name_generic_c).'" class="listing_link" data-id="'.$listing->id.'"><img src="'.plugin_dir_url(__DIR__).'images/noimage.png"></a>';
