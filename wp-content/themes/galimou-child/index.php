@@ -34,7 +34,7 @@
 						<br> 
 						  <div class="" >
 						<p class="align-center">
-							<a href="/free-business-appraisal"><img class="img-responsive" src="http://sc.absbusinesssales.com.au/default/img/abs-336X280.jpg" ></a>
+							<a href="/free-business-appraisal"><img class="img-responsive" src="wp-content/uploads/2016/08/abs-336X280.jpg" ></a>
 							</p>
 	            </div>			
 				
@@ -60,7 +60,7 @@ echo get_the_post_thumbnail(get_the_ID(),array(252,252),array('align'=>'left','s
       </div>
 </div>
  
-<p style="text-align: center !important;"><a style="text-align:center; margin-right: 3%;" href="http://audemo.businessbrokerscrm.com/free-business-appraisal/"><img class="aligncenter" src="http://audemo.businessbrokerscrm.com/wp-content/uploads/2016/07/abs-970X90.jpg" width="970" height="90" /></a></p>				 
+<p style="text-align: center !important;"><a style="text-align:center; margin-right: 3%;" href="http://audemo.businessbrokerscrm.com/free-business-appraisal/"><img class="aligncenter" src="/wp-content/uploads/2016/07/abs-970X90.jpg" width="970" height="90" /></a></p>				 
 					 
       </div>
 </div>

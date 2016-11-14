@@ -46,7 +46,7 @@ get_header();
 									  <br>
 										<div class="" >
 									  <p class="align-center">
-										  <a href="/free-business-appraisal"><img class="img-responsive" src="http://sc.absbusinesssales.com.au/default/img/abs-336X280.jpg" ></a>
+										  <a href="/free-business-appraisal"><img class="img-responsive" src="/abs-336X280.jpg" ></a>
 										  </p>
 							  </div>			
 				

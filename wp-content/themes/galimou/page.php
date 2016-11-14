@@ -37,9 +37,6 @@ Template Name: Post page
 						  <?php echo do_shortcode('[searchbyid addbutton=false]'); ?>	
 					  </div>
 						<br> 
-						  <div class="" >
-						<p style="text-align: center !important;"><a style="text-align:center; margin-right: 3%;" href="/free-business-appraisal/"><img class="aligncenter" src="/wp-content/uploads/2016/07/abs-970X90.jpg" width="970" height="90" /></a></p>
-	            </div>			
 				
 		</div>
 
@@ -62,7 +59,7 @@ Template Name: Post page
       </div>
 </div>
  
-			<p style="text-align: center !important;"><a style="text-align:center; margin-right: 3%;" href="http://audemo.businessbrokerscrm.com/free-business-appraisal/"><img class="aligncenter" src="http://audemo.businessbrokerscrm.com/wp-content/uploads/2016/07/abs-970X90.jpg" width="970" height="90" /></a></p>		 
+			<p style="text-align: center !important;"><a style="text-align:center; margin-right: 3%;" href="/free-business-appraisal/"><img class="aligncenter" src="/wp-content/uploads/2016/07/abs-970X90.jpg" width="970" height="90" /></a></p>		 
 					 
       </div>
 </div>
