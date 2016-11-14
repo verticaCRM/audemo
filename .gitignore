@@ -1,5 +1,4 @@
 /wp-config.php
-/wp-content/plugins/bbcrm/_auth.php
 /crm/protected/config/X2Config.php
 /crm/cgi-bin/
 /crm/cgi-bin/*
